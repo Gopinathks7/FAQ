@@ -1,0 +1,15 @@
+  public void scrollToProduct(WebElement element)
+	  {
+		  executor=(JavascriptExecutor)driver;
+		  executor.executeScript("arguments[0].scrollIntoView();",element );
+	  }
+
+
+  public void clickByJavascript(WebElement element)
+	  
+	  {
+			JavascriptExecutor executor = (JavascriptExecutor)driver;
+			executor.executeScript("arguments[0].click();", element);
+		
+}
+

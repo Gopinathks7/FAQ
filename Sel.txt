@@ -1,0 +1,1715 @@
+HCL interview questions:
+Written Test Questions:
+Write a code to get the text available in 3rd window and move the control to 2nd window and close it.
+Count no. Of words and sentence in notepad.
+Count no. Of words and sentence in notepad and arrange them in ascending order.
+Wat s d deault port id.
+GRID concept bit.
+Different version / flavours of Selenium
+If u have entered URL, but trying perform remaining code operation, which exception u will get.
+Listeners concept.
+Bug life cycle
+Field available Test case/design template
+Exception concept
+Which framework  you have used and why?
+Why automation ?
+Write the format of XML file for BATCH EXICUTION?
+How synchronisation resolved in automation?
+How many wait statements you know ?
+Have u used constructor in WebDriver?
+Tell me the flow of your framework?
+Write a  java code to read the data through excel file?
+I have some reusable methods and i have some new feture,so i want to acess the reusable methods to my current application,how can i do that?
+Is it possible to write the xpath using IE browser?
+What exactly your file structure looks like when you are automating something by using of eclipse ?
+How did you verify that given number on webpage in sorted order ?
+How can i do priority based testing using webDriver ?@test(priority=1)
+Write a login  code using page factory ?
+Is that necessary to creat Generic Lib. For  every project?
+Write a code for screen shot ?
+Why we r using some tool for reporting?
+What is TestNg ?tell me the annotations of TestNG? (if you are using TestNG)
+Can you write a sample  for parallel execution  in TestNG.xml file?
+How are you maintaining the objects in your project?
+Actually  X-path writing a confusion task for me, is there any way to find webElement in UI?
+How wil you capture the dynamic object using selenium webDrive?
+Tell me the syntax for Implicity wait() and Explicity wait()
+Please explain your project architecture with framework with diagram?
+Difference between webdriver listner and testNg lister? asked in Hcl
+Return type of data provider ? asked in synechron
+how we can clear the cookie in selenium ? asked in Hcl
+how we will check the cookies in selenium ? asked in hcl
+there are 5 input box in a page and first i have to select 3rd input box write some data into it and
+return back to 2 input box. how u will do it. asked in synechron
+how to run the test cases through command prompt. HCL
+there are one string say Aattribute , so write a code to find the repeated word in that string 
+and it should work for case insensitive(work for lower case and upper case) asked in synechron.
+difference between selenium RC and webdriver? synechron and HCL both
+Can you write a dynamic xpath
+Can you write a build.Xml
+What are the advantages of pom frame work in selenium
+WebDriver driver=new FirefoxDriver();
+login on facebook and description of each method
+can we other function behalf of get().
+there is 2 textbox id password.something is already written in text field like "Emailid",how can you copy from emailid field and paste in password field.
+How to handle the drop downlist.
+we have a excel sheet some thing is written in excel sheet then compare those value with web page values.
+find higdest value in list.
+find the duplicate value in list.
+how will upload a file if the text is not editiable.
+what is the difference between RC and webdriver
+what is freamwork explain it.
+why we use wait statement.
+What are the things u stored in PageFactory ? Why ?
+Explain TestNG
+How do you handle dynamics objects in a webpage?
+How do you handle untrusted SSL certificate in Webdriver?
+What is the difference between beforemethod and beforetest?
+How to verify a particular image and its size in a webpage?(Webpage has got many images out of which you have select particular one)
+What is the use of DesiredCapabilities in Selenium WebDriver?
+How do you know the Remote m/c details. Like OS, browsers details.
+How do you find out active elements?
+How do U chk the file size (Ex if file size s 2mb)
+There is lengthy sentence,and the length of the final output should be 3. How will you do it.
+Question on Window Handles (switching b/w windows)
+Wat s StringBuffer and StringBuilder. 
+how to handle alert pop up
+diff b/w assert and verify
+if i click on any product then it will redirect to a new page that display the product image and its attribute how you will verify that not based on your header on your page based on attributes
+What is subString()
+Which automation tool u r using in ur project
+Sysntax of xpath
+Diff in Junit & TestNG
+Dif between sets and lists
+Write a code or syntax for AutoIT?
+difference between partial link text and linktest.
+i have properties file and from there i have to fetch data. what is the approach?
+17.selenium supports MAC or not ?
+18.what is difference between test data and testing data?
+Where are cookies actually stored on the hard disk?
+How to accessing element using javascript?
+What are error handlers in Java scripts?
+How do you handle Child Browser window?
+How do you handle Alert pop up?
+how do you handle dynamic element if the value is changing frequently
+2.what is d code to get data from excel and write back to excel
+3.wat is d browser used in your project and how to use other browsers
+in selenium
+5.wat are d different element locators are there and which locators
+you used more in your project
+2.where do you store objects?
+3.where do you store element locators
+18) questions on collections like how do you do sorting using collections?
+Ans- Collections.sort(List arg).
+19)Giving an example, he asked me to chose which collection would I chose for that particular scenario.. Like getwindowhandles returns set, but can I also make use of list or any other collection? Similar questions..
+Ans- No we can't use List.
+19) testNG and how you could initiate your automation script..
+Ans-TestNG is a unit Testing tool/Framework; We can run TestNG class directly or through TestNG Suite(xml)  we can also integrate with other tool like ANT, Maven, Jenkins
+20) how to connect to database using selenium, it's requirements for connection and commands for connection.
+Ans-using JDBC.
+Example
+Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/student","root","");
+Driver a = DriverManager.getDriver("com.mysql.jdbc.Driver");
+ResultSet r = con.createStatement().executeQuery("select * from student");
+int cc=r.getMetaData().getColumnCount();
+while(r.next())
+{for (int i=1;i<cc;i++)
+{
+System.out.println(r.getString(i));
+}
+}
+r.close();
+con.close();
+Please refer class notes for details.
+21) differences between overloading and overriding, what is polymorphism, what is abstraction and write a program which shows me something which I understand about these concepts.
+Ans- overloading – developing the same method with different arg type.
+Overriding- developing the methods with same method signature but different method body. Inheritace must for overriding.
+Polymorphism- an object showing different behaviour at different stages of development is known as Polymorphism.
+Abstraction- its like hiding the implementations of the methods.
+ex- class A{
+void test1(){
+System.out.println(“test1 of A”);
+}
+}
+class B extends A{
+void test1(){
+System.out.println(“test1 of B”);
+}
+}
+class C extends B{
+void sample(A  a){
+System.out.println(“sample method”);
+a.test1();
+}
+}
+class D{
+public static void main(String[] args){
+C c1 = new C();
+c1.sample(new A());
+c1.sample(new B());
+c1.test1();
+}
+}
+output of this program -
+A
+B
+B
+22) write a program to check if the given input is palindrome or not by taking input from user at runtime.
+Ans- class Palindrome{
+public static void main(String[] args){
+Scanner in = new Scanner(System.in);
+int n = in.nextInt();
+int a = n;
+int palindrome =0;
+int r = 0;
+while(n>0){
+r = n%10;
+n = n/10;
+palindrome = palindrome*10 + r;
+}
+if(palindrome==a){
+System.out.println(a+” number is palindrome.”);
+}else{
+System.out.println(a+” number is not palindrome.”);
+}
+}
+}
+23) what is advantages of using testng, why can't we run selenium code directly?
+Ans- can have 3kinds of report, parallel execution, skip a particular tc, change the order of execution, lots of annotaions, can execute without main method etc..
+It is not necessary to use testng.xml to run the selenium code. You can directly run your selenium code. In order to create a test suite and run seperate test cases, you need some framework which drive the automation. Here testng.xml can be called as "driver" which drives several test cases automated using selenium code.
+
+24) have you worked on Jenkins? What is advantages of it? What if developer does not use Jenkins, but testing team has been asked to use it? Can you do so without developer creating the build in Jenkins, your automation code can start?
+Ans- Jenkins is a continues integration  tool; we use it to start the framework execution automatically as soon as the build is received from dev team ; If Dev team is not using Jenkins still testing team can use it where we can schedule the framework execution time or we can write customized script which can trigger the Frame Work
+
+25)disadvantages and advantages of selenium, where can all I not use selenium?
+Ans-Disadvantages- can't automate windows based application, Cant Handle Tab Browseres ,Cant Handle Existing Browser; Cant Hanled Flex/Flash application etc.
+Advantages- Free,Open Source, Platform independed;Supports All Browsers
+26) given just 2days and you have like 100 testcases to manually execute and your colleague is on long leave, what will you do? U think this situation can occur real time? Can u execute all testcases alone within deadlines?
+Ans- depends on the complexity of the application, if the each tc won't take much time then we can execute 100 tc. If it's taking much time in that case we will execute the test case's on the priority and severity basis. Like new test cases should be executed and if time remain then we will try to execute as many as we can from the existing tcs.
+27) what is the code to find the active element in the web page?
+Ans- List<WebElement> allElements = driver.findElements(By.xpath("//*"));
+for(int i=0;i<allElements.size();i++)
+{
+WebElement e=allElements.get(i);
+
+if(e.isEnabled())
+{
+System.out.println(e.getTagName());
+}
+}
+
+28) write a selenium program to verify that the navigation of the web page is landing at the correct URL at the next page..
+Ans- driver.fiindElement(By.xpath(“xpath of anylink which u wan to check”)).click();
+String expURL = “give expected url”;
+String act = driver.getCurrentUrl();
+Assert.assertEquals(act,exp);
+
+29) write a code to make use of assert if my username is incorrect.
+Ans- try{
+Assert.assertEquals(actUserName),expUserName)
+}catch(Exception e){
+Syste.out.println(“name is invalid”);
+}
+30) what is the skeleton of testng.xml? What all does/can it contain?
+Ans-
+suite
+|- test
+|-classes
+|- class
+
+refer http://testng.org/doc/documentation-main.html#testng-xml
+31) code for switching frames back and forth( getting into frames and out to main frame)
+Ans-
+driver.switchTo().frame(arg);
+driver.switchTo().defaultContent();
+32) write a program to extract information from xl sheet and print it to the reporting sheet(reporter.log) and console.
+Ans- FileInputStream fis = new FileInputStream(“path of file”);
+Workbook wb = WorkbookFactory.create(fis);
+String info = wb.getSheet(“SheetName”).getRow(rownum).getCell(cellNum).getStringCellValue();
+Reporter.log(info, true);
+33) how confident are you in manual testing,selenium,java?
+Ans- out of 10- manual – 7, selenium-9, and java – 9.
+34) code to write the usage of actions class with an example, usage of select class
+Ans- ex- Actions act = new Actions(driver);
+act.moveToElement(webElement).perform();
+Select sel = new Select(WebElement);
+sel.selectByValue("v");
+35) switching between the two browsers(parent and child), popup differences and identification.
+Ans- Iterator<String> it = driver.getWindowHandles().iterator();
+String parent = it.next();
+String child = it.next();
+driver.switchTo().window(child);
+driver.switchTo().window(parent);
+
+There are 6 Diff types of Popups-Alert;Hidden Div;Page on Load;File Upload;File Download;Window popup
+(Refer class notes for details)
+
+
+36) how to make use of external support like AutoIT or robotium and at what conditions?
+Ans- They are used to Handle Winow Popup
+(Refer class notes for details)
+
+37) can we do any mouse actions like click using AutoIT? If yes how, if no what is the alternative?
+Ans-
+MouseClick("left")
+//Double click at the x, y position of 0, 500.
+MouseClick("left", 0, 500, 2)
+
+Einfochips
+
+1.	Can we use Xpath for Internet Explorer?
+Ans- yes, we can use. But as of now we don't have any specific tool to verify the xpath in IE as firepath in FF.
+2.Which Repository we are using in selenium for .xls sheet(To store and retrieve data from .xls sheet )?
+Ans- we can store it inside project i.e. open the java project and copy the .xls file there and use it.
+3.Different way to find out the web elements?
+Ans- xpath(), tagName(), className(), linkText(), partialLinkText(), cssSelector(), id(), name().
+4.What is the command to open the Firefox Browser and URL?
+Ans- WebDriver driver = new FirefoxDriver();
+driver.get(“url”); or driver.navigate().to(“url”);
+5.What is Hybrid Framework?
+Ans- Its is the combinations of Datadriven, method driven, modular driven frameworks.
+6.What is the difference between Hybrid Framework and Function driven Framework?
+Ans- In Function driven fw,we use the same functions/methods again and again by calling them in different modules. Hybrid driven framework is the combinations of Datadriven, method driven, modular driven frameworks.
+7.When we use CSS Selector?
+And- it is used to find any web element in the web page. Some time it is better to use css selector in place of xpath because of performance point of view.
+8.What are the difficulties faced by you using selenium ?
+Handling Popup;Mouse actions;identifying dynamic elements; integration with other tools..
+2.	----------------------------------------------------------------------------------------
+What if the static keyword is removed from public static void main , what is the result or the output or error ?
+How do u locate webelements on windows based application ?
+Diff between verify and assert ?
+Difference between interface and abstract ?
+Wat is smoke testing and sanity testing ?
+When u perform smoke testing how do u favour it to the uat team for further testing ?
+Explain webdriver ?
+Diff between CSS and xpath , why prefer xpath ?
+Why use selenium webdriver over selenium rc ?
+Explain defect life cycle ?
+How do U choose test cases to convert dem to automation scripts ?
+How do u obtain data for automation ?
+How to obtain all links present in webpage ?
+
+Bosch interview question
+
+1. How do u handle Context Menu
+ANS:=>actions.contextClick(element).perform();
+actions.sendKeys("t").perform();
+
+2. Defect Life cycle
+3. Disadvantages of selenium
+ANS:=>We can automate only WebApp, We can't handle Existing Browser,We Cant handle Tabbed Browser,We cant Handle Flash app, We cant handle Window Popups
+
+4. TestNG
+5. Your project has to be delivered tomorrow
+but u know it can't be done what u will do?
+6. In online  shopping cart app
+if customer purchases 100 products he gets 5% discount
+if customer purchases 150 products he gets 10% discount
+how do u automate this?
+ANS:=>Using Data Driven framework
+
+Manhattan Associates.....interview questions for selenium 2 years of exp
+
+1st round:written test
+
+10 question from testing
+10 question including analytical and logical and puzzle
+10 questions from database to predict output
+10 question from java to predict output
+
+2nd round with technical panel:
+
+1.xpath for dynamic objects(they gave 1 table structure)
+
+2.webdriver code to read the data from excel sheet and login into application
+
+3.code for database connectivity
+
+4.how to handle exception
+
+5.Automation test cycle
+
+6.fuctions to find objects in UI
+
+7.code to click on a link which will open another window and perform an operation on 2nd window to open a frame and then perform an operation on a frame
+
+8.types of wait in webdriver and difference 
+
+9.code to work with IE and settings required for this
+
+10.which framework u used in your company and why
+
+11.what is dataprovider why we use dataprovider
+
+12.what is pagefactory and why we use page factory
+
+13.what is SVN
+
+14.what is selenium grid and why we use this
+
+15.which test cases can't be automated
+
+16.Interface and why we use it
+
+17.diffrence between interface and abstract class,and when we use interface,when we use abstract class
+
+18.explain oop's concept
+
+19.bug life cycle
+
+20.regression,compatibility,adhoc,smoke,useability.load,stability,security testing and why we do these testing
+
+21.functional,integration,system testing,and what is module,what is component
+
+22.test case design techniques,give an example of boundary value analysis
+
+23.what is severity and priority
+
+24.when we set bug status as deferred
+
+25.which bug tracking tool u used in ur company
+
+26.explain test scenario and test case
+
+27.throws for runtime or compile time? and try catch for runtime or compile time?
+
+3rd round:(technical and managerial with director)
+
+1.what is class and why we use class
+
+2.what is inheritence and why we use it,write a code
+
+3.WebDriver code to print username in the welcome page
+
+4.code to find a particular word from a string and explain line by line
+
+5.code to write a java program (any program) 
+
+6.explain public static void main
+
+7.access specifiers and their use
+
+8.difference between primary key and unique key
+
+10.write test case template which u follow in ur company
+
+11.difference between array and linklist
+
+12.7-8 managerial questions
+
+Huawei technologies
+
+1.login page is given with time limit 2-6 Seconds page takes to
+load.asked me to write code to test this page.
+2.test cases to test ATM  machine with 10k transactions per day,3 is d
+max transaction limit,4k max transaction amount.
+3.TEsting life cycle.
+4.gave one xml file asked to write a code to test whether all opened
+tags are closed and say it is proper xml.
+5.LOGIC of palindrome
+6.wat is queue,stack,linked list,circular linked list,dqueue
+
+7.LIFE cycle of a thread.
+8. Function of garbage collector.how to stop garbage collector not to
+clear the memory?
+
+question asked in girmiti software for testing profile
+1.what do you mean by globalization testing?
+2.when will you start testing?
+3.which type of testing you will perform in the begening and why,how?
+4.waht is difference between sanity & smoke testing
+5.what will you do when found a defect?
+6.explain seviarity and priority?
+7.how will you decide seviarity over priority?
+8.give one example of seviarity over priority?
+9.what is selenium ide?
+10.what is selenium rc?
+11.explain code for alert popup?
+12.how will you handle download popup?
+13.how will you perform cross browser testing in selenium
+14.wrtite code to open chrome browser 
+15.why we use testng?
+16.what do you mean by selenium framework?
+17.final year project explanation?
+
+// manhattan associates
+1.written test :java,manual testing,aptitude question
+2.tell me abt ur self?
+3.junit vs Testng?
+4.write a script  for google search?
+5.explain architecture of ur project?
+6.what is Webdriver?
+7.puzzles
+8.delete vs truncate?
+9.joins in sql?
+10.rc vs webdriver?
+11.what r roles and responsibilities in ur current project?
+
+1. What are the flavors of selenium?
+2. What is selenium?
+3. Advantages of selenium over other tools?
+4. What is main difference between RC and webdriver?
+5. Why you choose webdriver over RC
+6.What is the difference between assert and verify
+7.How will you run a test in  internet explorer or FF or chrome using webdriver?
+8.what are the advantages of webdriver?
+9. What are the different ways to identify objects in sleneium?
+10. what is xpath and css?
+11. Which one is better xpath or CSS?
+12. how will youhandle dynamic elements?
+13. What is implicit wait in webdriver?
+14  what are the different assertions or check points used in your script?
+15.How to store a value which is text box usign webdriver?
+16  How to switch between the windows
+17. how to handle alerts and confirmation boxes
+18. how to switch between frames
+19. how to mousehover on en element?
+20. What is actions class in webdriver?
+21. how to get number of links available on the page.
+22. What is TestNG?
+23. different annotations in testNG
+24. What is the difference between beofe method and before class
+25. What are the different attributes for @Test annotation?
+26. Can we run group of test cases using TestNG?
+27. What is your frame work or explain your framework
+28. What is object repository?
+29. how will you read data from external files (excel)
+30. Write customized command for mousehover
+31. What are oops concepts?
+32. what is inheritance?
+33.Diff b/w overload and override
+34.Does java supports multiple inheritance?
+36. How to handle flex or flash contents/objects on web page?
+37. What are yo9ur roles and responsibilities?
+38. what are the challenges or issues you faced while automating the scripts?
+39. Write a java program for swapping of two numbers?
+40. Write a java program for factorial of a given number
+41.What is the different between inheritance and interface.?
+42. What are different access modifiers in Java?
+
+1.assert vs verify?
+2.explain oops concepts?
+3.hashmap vs hashtable?
+4.array vs arraylist
+5.interface vs abstract
+6.Automation test life cycle?
+7.how to hanlde frames?
+8.dropdown list without select tag?
+By using SendKyes we can
+9.explain testng annotations?
+10.how to handle runtime pop-ups on linux ?
+11.duration of sprint?
+12.why css selector is faster than xpath?
+14.explain ur framework?
+15.what is nullpointer expection?
+16.what is data driven testing?
+17.webdriver is class or  an interface?
+Interface
+18.how to execute scripts parallel using testng?
+19.how to handle download and page on pop-ups ?
+4.What is the application that you have worked on?
+5.What is Smoke testing? Is it done by developers as well?
+6.What is for loop? (Java)
+7.What is Ajile?
+8.What is a daily standup meeting?
+Scrum
+9.What are scripts?
+10.Who gathers the requirements?
+1.      1 
+        a a 
+       2 2 2 
+      b b b b 
+     3 3 3 3 3
+write java program for a above pyramid
+
+2. how to find broken links on page using selenium webdriver?
+3.there are 100 testcases i want execute only 3 test cases  without using testng groups 
+4:what is reflection API? with example
+5.how u validate email id in selenium?(in qtp we use Reg Exp for validating string)
+6. how do u adapt i ur company  if requirements keep on changing?
+7.Stress  vs load testing vs performance testing?can we use selenium for the  performance testing?
+
+1.Give an example for abstraction(writing program)
+2. how many test cases have u written and automated
+3. What are the challenges u met while automating.
+4. How will you handle drop down list
+5. How will you Download popup
+6. What are the different browsers u have used
+7. What are the settings to be done in case of IE chrome and Firefox browsers
+8. What's Overloading and overriding n difference
+9. How so u use selenium ide
+10. 3 versions of selenium n drawbacks
+11. In eclipse while automating how will b your file structure of your scripts
+1. Test cases for date picker
+3 a) write the xpath  to click the check box present in fourth column of 3rd row in a table
+b) xpath with wild characters(@*) and asked me explain that
+4. If assertion fails how do you handle that.
+5. one question of css selector
+6. difference between abstract class and interface
+
+1.      1 
+        a a 
+       2 2 2 
+      b b b b 
+     3 3 3 3 3
+write java program for a above pyramid
+
+2. how to find broken links on page using selenium webdriver?
+3.there are 100 testcases i want execute only 3 test cases  without using testng groups 
+4:what is reflection API? with example
+5.how u validate email id in selenium?(in qtp we use Reg Exp for validating string)
+6. how do u adapt i ur company  if requirements keep on changing?
+7.Stress  vs load testing vs performance testing?can we use selenium for the  performance testing?
+Company:  Odessa Technologies Pvt Ltd
+(Rounds: 7)
+Input: “This is a book”
+Output: “book a is This”
+3rd Round: Technical ( 1hour or 2 hours)
+Selenium Testing (if we mention in resume)
+How you test the web page?
+How do you test the particular website like pizza?
+Using selenium can we test the machines?
+What are different testing tools?
+1.Which oops concept are you using in Data driven framework?
+2.How you handle operating system pop-up?
+3.How you test the scenario in which output of one test case will be input of other test case in data driven framework?
+Q-how to enable firefox addon for the web driver launch browser?
+Q-how to handle ssl certification pop up in IE Browser?
+Q-how to capture tooltip of the  image?
+write a Script on Google search edit box, write part of the word and
+get all the items from the auto suggest list and display it inconsole?
+how to count no of alert in ui?
+how to select last value from the dropdown without using getoption()?
+1. framework
+2. Ant 
+3. Jenkins
+4. xpath
+5. How to integrate Jenkins with github ?
+6. How to start qc server ?
+7. Bug tracking tool
+8. How to create Graphical report ?
+9. write a code(script) for the given testcase(around 10 to 15 lines code)
+10. how to execute parallel test case?(write code)
+11. how to execute your script on chrome and IE ?(code)
+12. pop-ups and frames(some codes like how to handle a file download pop-up )
+Interview questionsIBS
+ Talk about yourself
+Testing duties performed till now
+ What is agile methodology?
+ What is difference between RAD model and spiral model?
+
+Interview Questions from Mcfadeyn:
+1. What is difference between product backlog and testing backlog?
+2.Explain Agile process and methodology?
+3 Explain Boundary Values Analysis and Equivalence Partitioning with eg?
+4 In ur current project severity: minor and priority:high?
+5 Explain bug life cycle?
+6 What is Retrospective Meeting?
+7 If ur bug is valid and development team is not accepting? wht to do?
+8 Difference between https and httpd?
+9 Difference between truncate and drop?
+10 How do u test web application?
+ Odessa Technologies
+Manual Testing from EMIDS.
+1.       Traceability Matrix
+2.       Test Case you have written in the Project.
+3.       How will you pick regression test case if I Give you 50 Test cases
+4.       Types of testing you have done.
+5.       Explain about your project
+6.       Internationalization testing
+7.       How you make sure that you have covered all scenarios?
+8.       Test Case Design Techniques
+9.       Rate yourself in manual, How confortable you are in Manual?
+10.   Any Healthcare Domain Experience ?
+
+RevTech solutions pvt ltd selenium qustions (fresher)
+1. what is the main diff b/w verify and assert .
+2. how will u find out the colour and font size of tag name.
+3. explain testNG, jenkins.
+4. write a selenium code to handle chrome, mozilla, IE.
+5. how will you retains the data using selenium , write a code
+6.explain locators .
+7. they gave 1 html tree and asked to find xpath elements
+8. write a automation script for your project (login and logout of actitime)
+9. basic java questions
+10. what is dynamic and static polymorphism , give real time example 
+11. how do you handle select and multiple select box
+12. diff b/w selenium IDE and selenuim webdriver.
+13. simple manual questions
+14. how will you solve synchronisation problem .
+1)Diff b/w Assert & verify
+2) diff b/w absolute path & relative path
+3) write a script to read the data from external source and put into username field
+4) if there is modification or mistakes  in xpath then how will u identify and where will     u edit it?
+5) how will you use AJAX in selenium?
+6) If error msg displayed then how will you verify whether it is proper error msg and whether it is displayed in proper position?
+7)  In selenium how will identify which browser u r using and which API u use for this?
+8)How will you generate the report in selenium? which API u use?
+9)diff b/w findelement and findelements?
+10)Does same script works for all the browser in selenium ? if it runs whether it runs simultaneously or one by one?
+11) what is jenkins?
+12) how will you verify u r successfully logged into application? which API u use?
+
+Selenium:
+1.	what is selenium-ide?
+2.	what is type of locators?
+3.	what are challenge you face?
+4.	what is the difference between selenium remote control and selenium webdriver?
+5.	what is the difference between Junit and testNG?
+6.	what is assert?
+7.	what are the type of automation framework?
+8.	what type of annotation?
+
+Java:
+1.	what is abstraction?
+2.	what is encapsulation?
+3.	what is polymorphism?
+4.	they had given one matrix program and test only logic.
+
+Manager round:
+1.	What is the procedure you follow test the application?
+2.	What is difference between data driven module.
+3.	What approach would you take to test critical application.
+4.	How many employee are there in your current company.
+5.	What is your roles and responsibility in your current company.
+
+
+
+Explain briefly your hybrid framework?
+How to call keywords in scripts?
+What is reflection API? Why we use this concept?
+What is your roll in framework?
+Is inheritance used in frame work ?where ?
+Is polymarphisam used ?where explain?
+Where is keep element locators? Which type locators used ?
+Can you write email script?
+Are you used ANT? Why we use ANT?
+
+
+
+
+What is selenium
+what is Jenkins why we need iy?
+what are the differences between rc and web driver
+Difference b/w Grid & WebDriver?
+Daily role in offfice?
+About current project?
+What is TestNg?why we need it?
+Write code for gmail Login in RC & Driver?
+Have you ever impressed your client?
+
+2nd Round
+Tell me about yourself?
+Current project full end to end scenario..?
+Differences bw RC and Webdriver
+what is abstract class how it use for us?
+What is Datadriven framework & Keyword Driven?
+what is the difference between / and // in xpath
+SDLC & Stlc? 
+We have SDLC but why we need STLC?
+How you improve your knowledge on project?
+Bug life cycle?
+Did you involve in Test plan preparation?
+What is smoke testing & sanity?
+What type of testing did you do in your work?
+If I give 5 freashers you only responsible what will you do?
+What are that challenges you faced?
+what value would u add to our company?
+1)What are the components of selenium?
+2)What kind of AUTOMATION FRAMEWORK u are working upon?
+3)If an object is changing after every build ,how can u handle it through coding?
+EX-: "NAME" IS A TEXT FIELD,AND DEVELOPER KEEP ON CHANGING      THE THE NAME OF THIS TEXT FIELD
+
+4)I Want to execute one FEATURE 50% and then want to execute other FEATURE  fully, how will u do it?
+5)What are the issues u have faced in the AUTOMATION FRAMEWORK?
+6)Want to execute particular module ,what will be your approach?
+7)On what platform JENKINS is working?
+8)How in JENKINS u will execute particular module?
+9)How the testng class's execution happen?
+10)What is the difference between ID and NAME?
+11)What is the advantage of using locators like ID ,NAME over XPATH?
+12)HOW u are executing the application on different platforms(OS)?
+1.how do u handle dynamic elements without using xpath ( with example)
+2.what are the different types of driver implementation?
+4.program to display sysdate and time in text file (using file handling)
+5.code for handling url in firefox browser?
+6.How to get the text from the UI in runtime?
+7.What is Check-in & check-out revert?
+8.Which repository you have used to store the test scripts?
+9.How to work with web list @ radio button in web driver?
+10.How to work with dynamic web table?
+what is hybrid framework ?
+which framework ur using?
+explain ur framework in detail?
+y u choose this frame work?
+which type of test cases u select to automate ?and y ?
+write a  selenium code that u wrote in ur current project?
+difference between find element and find elements?
+explain abt select class and methods?
+other way u can select  element other than select class?
+wat r the challenges u faced in ur project ?how u overcome it?
+wat is ajax elements?how u can handle it ?
+what is encapuslation?
+what is abstract class ,method  how u handle  it ?
+difference between throw and throws?
+explain try catch block?
+wat is ur contribution to ur organization or team?
+wat is ur contribution in prepration of ur framework?
+give me one invalid scenario in ur project? apart from usual reqirement
+if an option given to change a framework wat is approach and y ?
+wat is fianlly block ?how execution goes ?is finally block executes isrespective of expection or not
+give a scenario where finally block doesnt execute
+expalin abt test ng and ant tool?
+how u used in ur project?
+wat is the use xml file in testng ?
+given a scenario that 5 test cases r there i need to excute first and last 3 means 2 one shld  not be excuted ?how u make a changes in testng xml file
+wat is null pointer exception ?is it checked or not
+explain how will automate drop down list ?how will get size ?and text present in it?
+give me another way u can send values other than sendkeys?
+wat is rating u give urself in selenium and java?
+if an option given manual/automation testing which one u will select and y ?
+how do u prioritize ur work ?
+1.explain about ur selenium profile
+2.what is differnce between datadriven and hybrid framework?
+3.what is hybrid?
+4.which framework you have used in ur project?
+5.where do u add testtacse
+6.what is // and /slash
+7.what are the challanges you have faced in ur project
+8.what is xpath
+9.which selenium version ur working
+10.how do find the xpath
+11.what is regular expression
+12.how do u connect database thro' selenium
+13.how do u connect database thro' java
+14.difference between verify and assert
+3.Explain about selenium architecture in your company
+4.What is Selenium IDE
+5.What is Selenium RC
+6.What is Selenium Webdriver
+7.Difference between RC and Webdriver
+8.Write a program to reverse a string in java
+10.What is Bug lifecycle
+11.What is final method in java
+12.How do you call function in java
+13.What kind of framework do you use
+14.What is junit and how do you read data from xls
+15.Have you used TestNG
+16.How do you work on selenium
+17.How do you handle popups
+18.How do you handle https website in selenium
+19.What is agile
+20.What is sprint
+1.How do you get requirements
+23.How do you start selenium server
+24.How do you download and use selenium
+25.What problems did you face in selenium
+26.How do you identify element in Xpath
+27.What is the use of Xpath
+30.Different types of locators?
+31. Selenium Framework that you are using in your current project?
+32. How do you identify the Xpath of element on your browser?
+33. Selenium function used for retrieving the attribute or value?
+34. How do you differentiate check box if more than one check box is existed in your application?
+35. Difference between Assert and Verify?
+1. What is the alternate way to click on login button?
+1. sendKeys(Keys.ENTER)
+2. If the element is inside a form, you can use driver.findElement().submit();
+2. How do you verify if the checkbox/radio is checked or not
+driver.findElement().isSelected();
+3. How to get the href of a link / get the source of image
+driver.findElement(By.linkText("")).getAttribute("href");
+driver.findElement(By.xpath("")).getAttribute("src");
+4. Count the number of links in a page
+List<WebElement> allLinks = driver.findElements(By.tagName("a"));
+System.out.println(allLinks.size());
+5. How to check all checkboxes in a page
+for (WebElement chkBox : allChkBoxes) {
+chkBox.click();
+}
+for(int i=0;i<=allChkBoxes.size();i++){
+allChkBoxes.get(i).click();
+}
+6. What is the output of the below code?
+driver.findElements(By.tagName("img"));
+7. How do you handle browser popup?
+8. How do you handle elements present inside frame?
+9. How do you handle Javascript alert/confirmation popup?
+10. How do you launch IE/chrome browser?
+11. How to perform right click using WebDriver?
+12. How do perform drag and drop using WebDriver?
+13. How to send ENTER/TAB keys in WebDriver?
+14. Example for method overload in WebDriver
+15. How do you upload a file?
+16. How do you click on a menu item in a drop down menu?
+17. How do you work with page onload authentication popup / windows based popup?
+18. How do you simulate browser back and forward?
+19. How do you get the current page URL?
+20. What is an xpath?
+21. What is the difference between ‘/’ and ‘//’
+22. What is the difference between findElement and findElements?
+23. How do you achieve synchronization in WebDriver?
+24. Explain implicit and explicit wait
+25. How do you handle untrusted certificates?
+26. Write the code for Reading and Writing to Excel through Selenium
+27. How do get typed text from a textbox?
+28. What are the different exceptions you get when working with WebDriver?
+•	InvalidSwitchToTargetException [The frame or window target to be switched doesn’t exist.]
+•	NoSuchElementException
+•	NoSuchFrameException
+•	TimeoutException
+•	SessionNotFoundException
+1.	What is the current WebDriver version?
+2.	What is SIDE?
+3.	What is WebDriver
+4.	Explain the challenges you faced in automation
+5.	What are the languages supported by WebDriver?
+6.	What is the difference between verify and assert?
+7.	What are the limitations of Selenium IDE?
+8.	What are the browsers supported by Selenium IDE?
+9.	What are the disadvantages of Selenium?
+10.	How many ways can you identify an element using WebDriver / which are the locators used for recognizing the objects in selenium WebDriver?
+11.	How do you clear the contents of a textbox in selenium
+12.	Is it possible to interact with hidden elements using WebDriver?
+1.What is a Framework?
+2.What are the different kinds of Framework?
+3.What is Keyword driven Framework?
+4.What is Hybrid Framework?
+5.Different components of your framework?
+6.Can you explain the Framework flow with a diagram?
+7.How do you accommodate project specific methods in your framework?
+8.How is the failure handled in your framework?
+9.What kind of reports are generated by your framework?
+1. Which is the default port on which selenium  RC runs?
+2. What are the prerequisites to run selenium webdriver?
+3. What is the difference between selenium 1.0 and webdriver?
+4. What are the advantages of selenium webdriver?
+5. How to handle multiple windows in selenium webdriver?
+6. Which are the locators used for recognizing the objects in selenium webdriver?
+7. What is webdriver backed selenium?
+8. When to use web driver backed selenium?
+9. How to invoke an application in webdriver?
+10. Where to download selenium webdriver?
+11. Explain the technical problems that you had with Selenium tool?
+12. What is Selenium Grid?
+13. How many browsers are supported by Selenium IDE?
+14. Can Selenium test an application on iPhone's Mobile Safari browser?
+15. Can Selenium test an application on Android browser?
+16. How many programming languages can you use in Selenium Web driver?
+17. Have you read any good books on selenium?
+18. Use of following-sibling ?
+19. What is the Page Object design pattern?
+20. What is StaleElementException? When does it occur?
+21. How to get the number of frames on a page?
+22. How to verify that an element is not present on a page?// use . length
+23. How do you simulate scroll down action?
+24. What is Robot class?
+25. How do you verify that the given list of  numbers on a web page is sorted in ascending order?
+26. How to verify the presence of the success message on a page?
+27. Which  is the package which is to be imported while working with webdriver?
+28. Who is the first person who started working on selenium?
+29. Who is the person who started on webdriver?
+30. How to verify whether the background color of  a paragraph is green or not?
+31. How to verify that the image changes on mouse hover?
+32. How to login into facebook using webdriver?
+33. How do you check that the pagination on google search page is working fine or not?
+34. How to check if an element is visible on the web page?
+
+35. How to check if a button is enabled on the page?
+
+36. How to check if a text is highlighted on the page?
+
+37. What is the selenium's recording language?
+
+38. What are the capabilities of selenium IDE?
+
+39. What are the selenium components?
+
+40. How to insert a break point in selenium IDE?
+
+41. How to insert a comment in selenium IDE?
+
+42. How do you handle Ajax controls using selenium?
+
+43. How do you handle the secured connection error in HTTPS?
+
+44. How do you compare two strings or values are same?
+
+45. How to handle the dynamic alerts which don't always appear?
+
+46. How to upload a file using selenium?
+
+47. How to navigate with browser buttons in selenium webdriver?
+
+48. How to run the tests without a browser or with HTML unit driver in selenium webdriver?
+
+49. How to check the checkbox or radio button is selected?
+
+50. How to get the title of the page?
+
+51. How do u get the width of the textbox?
+
+52. How do u get the attribute of the web element?
+
+53. How do u read the text from the hidden elements?
+
+54. What is the use of apache poi?
+
+55. How to check whether a text is underlined or not?
+
+56. How to verify whether the size of a div is 320px or not?
+
+57. How to check the cursor type changes on hovering on a link?
+
+58. How to verify that the font-size of a text is 12px?
+
+59. How to verify that an image is to the right of text?
+
+60. How to verify the presence of a horizontal line on a page?
+
+61. How to change the URL on a webpage using selenium web driver?
+
+62. How to get the CSS attribute of a web element using web driver?
+
+63. How to verify the presence of tooltips on a web page?
+
+64. How to hover the mouse on a element?
+
+65. What is the use of getOptions() method?
+
+66. What is the use of deSelectAll() method?
+
+67. Can you handle flash using web driver?
+
+68. Is WebElement an interface or a class?
+
+69. FirefoxDriver is class or an interface and from where is it inherited?
+
+70. Which is the super interface of webdriver?
+
+71. What is the difference b/w close() and quit()?
+
+72. What is the difference b/w getWindowHandles() and getWindowHandle() ?
+
+73. What is the use of contextClick() ?
+
+74. How to press Shift+Tab?
+
+75. How to enter :(colon using web driver) ?
+
+76. How to perform double click using webdriver?
+
+77. How to check whether on click of an element ,a new tab will be opened before clicking on that element?
+
+76. What is the use of AutoIt?
+
+77. What is the difference between dragAndDrop() and dragAndDropBy()?
+
+78. How to type text in a new line inside a text area?
+
+79. How to switch back from a frame?
+
+80. What is the use of getPageSource()?
+
+Sportskeeda
+We have 65,000 URLs which we release 3 times a day. How will you test using          selenium ?
+keep 6500 urls and destination page in 10 excel sheet(10X6500=65000)
+use threads and run the web driver code to check URL present in each sheet.
+   how to right click,
+.how do u do mouse action.write a program.
+.design framework.
+.what is constructor
+5.what is inh
+
+1.  How to work with page onload authentication pop up/windows based pop up
+2. How do you send ENTER/TAB keys in webdriver.
+3. How do you upload a file.
+4. How do handeled untrusted certification,what is untrusted certification
+5. what is use of
+act.sendkeys(keys.ARROW_DOWN).perform()
+act.sendkeys("w").perform()
+explain with example
+how to launch Default browser through WebDriver?
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.firefox.internal.ProfilesIni;
+public class Demo {
+        public static void main(String[] args) {
+                ProfilesIni prof = new ProfilesIni();
+                FirefoxProfile p = prof.getProfile("default");
+                WebDriver driver = new FirefoxDriver(p);
+                driver.get("http://demo.actitime.com/login.do");
+        }
+}
+
+
+Diff waits in Selenium?
+driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+Thread.sleep(3000);
+
+WebDriverWait w=new WebDriverWait(driver,1);
+w.until(ExpectedConditions.titleContains("actiTIME - Enter Time-Track"));
+How do you take screen shot?
+FileUtils.copyFile(((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE),new File("d:/abcd.png"));
+How to add it in to result window
+WebDriver driver= new FirefoxDriver();
+ driver.get("http://www.gmail.com");
+ FileUtils.copyFile(((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE),new File("d:/abcd.png"));
+ 
+Reporter.log("<img src='d:/abcd.png'></img>");
+in eclipse Goto Run->Run ->Run Configurations-> Argument tab -> VM arguments
+type following code
+
+-Dorg.uncommons.reportng.escape-output=false
+How to enter date in date field using java script in web Driver?
+WebDriver driver=new FirefoxDriver();
+driver.manage().window().maximize();
+driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+driver.get("http://www.yatra.com/");
+JavascriptExecutor js=(JavascriptExecutor)driver;
+js.executeScript("document.getElementById('datePickerDepart_dom1').value='18/07/2013'");
+ow to take complete screen shot of the application and screen shot of required element?
+WebDriver driver=new FirefoxDriver();
+driver.manage().window().maximize();
+driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+driver.get("http://www.yatra.com/");
+File f=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);	FileUtils.copyFile(f,new File("d:/FullImage.png"));
+//photo of which element?
+WebElement flights=driver.findElement(By.id("btnFindFlights"));
+int x=flights.getLocation().getX();
+int y=flights.getLocation().getY();
+int width=flights.getSize().width;
+int height=flights.getSize().height;
+ImageIO.write(ImageIO.read(f).getSubimage(x,y,width,height),"png",f);
+FileUtils.copyFile(f,new File("d:/flight.png"));
+. Suppose we have multiple tabs like in TestNG(Failed Tests,Run Last-test etc..)how will u handle it?
+if a tab is inside a page then it will be like clicking on Link, but web driver cant handle tabbed browser
+2. How to check whether the check-box or radio is checked or not?What is the method?
+isSelected
+3. In a drop-down we have many options out of which i want to write xpath for particular option,How will u write?
+//select[@name='somename]/options[1]
+4. We have two similar hidden elements with same attribute how can u write xpath?
+we should use style attribute
+contains(@style,'display: none')  --> for invisible elements
+contains(@style,'display: block') --> for visible elements
+5. How to handle untrusted connection in selenium-2?
+it is automatically suppressed in Mozilla, for other we can use java script
+6. Using AND,OR operation how can u write xpath for dynamic elements?
+//a[text()>6 and text()<9]
+//a[text()>6 or text()<9]
+Class.forName( "sun.jdbc.odbc.JdbcOdbcDriver" ) ;
+Connection conn = DriverManager.getConnection( "jdbc:mysql://server","un","pwd" ) ;
+Statement stmt = conn.createStatement() ;
+ResultSet rs = stmt.executeQuery( "SELECT * FROM lk_ask_queries" ) ;
+String res=rs.getString(1) - FIRST COLUMN
+rs.close() ;
+stmt.close() ;
+conn.close() ;
+
+8. How to automate windows or android mobile devices?
+its big story..
+9. How many test cases u automate per day?
+4 to 5
+10. Explain Automation Test life cycle?
+Please see the class notes
+11. I have a server message(Report generated successfully) but i need only report,how u write the script?
+String sMsg=driver.findElement(By.id()).getText();
+System.out.println(sMsg.split(" ")[0]);
+
+12. Why u call it as IDE?What actually mean IDE?
+Its Integrated development environment
+because it conatins Editor,Debugger,Intelli-sense coding features
+
+13. How to handle Default Browser in Selenium-2?
+you mean opening Browser with default profile?
+ProfilesIni prof = new ProfilesIni();
+FirefoxProfile p = prof.getProfile("default");
+WebDriver driver = new FirefoxDriver(p);
+
+
+14. What is bitmap Comparison?why we use it?
+use to compare expected and actual images
+
+15. will we use regular expressions?if so why?if not why?
+we can use * in xpath for dynamic element
+1. How do u compare bitmap in selenium webdriver?
+We use "TakesScreenshot"  and ImageIO classto comapare bitmap
+2. How do u find whether checkbok is there or not?
+findelement with try catch
+3. Write a code to connect to a database?
+Class.forName( "sun.jdbc.odbc.JdbcOdbcDriver" ) ;
+Connection conn = DriverManager.getConnection( "jdbc:mysql://server","un","pwd" ) ;
+Statement stmt = conn.createStatement() ;
+ResultSet rs = stmt.executeQuery( "SELECT * FROM lk_ask_queries" ) ;
+String res=rs.getString(1) - FIRST COLUMN
+rs.close() ;
+stmt.close() ;
+conn.close() ;
+
+4. What is Agile method?
+its a type of SDLC and it is based on iterative and incremental development
+5. What is scrum in agile method?
+its a meeting
+6. What are the templates of webdriver?
+NO
+7. How to capture the images in selenium webdriver?
+We use "TakesScreenshot"
+8. Why not regular expressions in selenium-2?
+xpath is powerfull
+1. How to get the partial server message using selenium webdriver?
+it depends on how the server message is displayed,need more info on server message
+2. I want to scroll the webpage?(30%,80%)
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Test1 {
+    public static void main(String[] args) {
+        WebDriver driver=new FirefoxDriver();
+        driver.get("http://news.google.co.in/nwshp?hl=en&tab=wn");
+        JavascriptExecutor js = (JavascriptExecutor)driver;
+        Object o=js.executeScript("return document.body.scrollHeight");
+        int i=Integer.parseInt(o.toString());
+        System.out.println("Total height of the page:"+i+" pixels");
+        int percentage=30;
+        i=(i*percentage)/100;
+        js.executeScript("javascript:window.scrollTo(0,"+i+")");
+        System.out.println("Scrolling to "+percentage+"%");
+
+    }
+}
+3. Want to take screenshot in a webpage?(Full or Part of it in a page)
+WebDriver driver=new FirefoxDriver();
+        driver.get("http://news.google.co.in/nwshp?hl=en&tab=wn");
+
+        File f = ((TakesScreenshot)driver).
+getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(f, new File("d:/abc.jpg"));
+
+4. When do we go for automation?
+For long term project having more regression cycle and app is stable
+
+
+5. I have 50 testcases,out of which are all u go for automating it?
+regression
+
+6. What is Jmeter?where do u use it?
+its a load testing tooll, can be used to test JDBC database connections, FTP, LDAP, Webservices, JMS, HTTP, generic TCP connections and OS Native processes
+
+7. Suppose i have RFE in an existing application,How do u automate it?
+NO
+
+
+8. What is the difference between QTP and Selenium?
+QTP is proprietary software of HP, can automate any type of app, uses VBS
+Selenium open source, only for web app, uses java/python/ruby/C#
+
+9. Technical challenges in Selenium?
+Cant work on existing browser, handling window popups, cant handle tab browser....
+10. What is the difference that Selenium do extra than QTP?
+parallel execution (GRID), supports all browsers, platform independent...
+11. Difference between REaltive and Absolute Xpath?
+relative is xpath by attribute (//)
+absolute is xpath by position(/)
+
+12. Types of locators?
+8 types...id,name....
+13. All the popups u taught in the class.
+14. DIfference between Xpather and Xpath Checker?
+they are just diff tools to check the xpath
+
+1. How to get the partial server message using selenium webdriver?
+what is server message? how it displ
+2. I want to scroll the webpage?(30%,80%)
+3. Want to take screenshot in a webpage?(Full or Part of it in a page)
+4. When do we go for automation?
+5. I have 50 testcases,out of which are all u go for automating it?
+6. What is Jmeter?where do u use it?
+7. Suppose i have RFE in an existing application,How do u automate it?
+8. What is the difference between QTP and Selenium?
+9. Technical challenges in Selenium?
+10. What is the difference that Selenium do extra than QTP?
+11. Difference between REaltive and Absolute Xpath?
+12. Types of locators?
+13. All the popups u taught in the class.
+14. DIfference between Xpather and Xpath Checker?
+
+15. How to identify 2 buttons (every thing same) but one is invisible?
+xpath => //input[@style="display:none;"]        //display:block
+//input[@style="visibility:hidden"]	//visibility:visible
+
+Star mark
+1)How to specify some delay in loading WebPage?
+2)How to handle Confirmation Pop-Up?
+3)What is the difference between TestNG and Junit?
+4)Give the overview of your frame-work?
+5)What is your role in your current project?
+6)What is the benefit of using TestNG?
+7)What is Selenium IDE and Selenium RC?
+8)What is WebDriver?
+9)Can you inspect an WebElement with FireBug if the Browser is   opened by WebDriver?
+10)Can you open CMD using WebDriver?
+1)Difference between Static and Non-Static Members?
+2)Diffence between Array and ArrayList?
+3)How to achieve Multiple Inheritance in Java?:Not supported
+4)What is Polymorphism? What are the different types of   Polymorphism?
+5)Diffence between Abstract Class and Interface?
+6)What are the different kinds of Access Specifiers?Explain   their visibilty?
+7)In which type of Collection Dupplicate values are not   allowed?
+8)How to check whether two names or two Strings are equal or   not?
+9)What are Annotations?What is the use of Annotations?
+10) Why Multiple Inheritance is not supported in Java?
+11)What are the different Annotations methods?
+
+
+1.How to retrieve the data from XML for login page?write a script..
+DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+DocumentBuilder builder = factory.newDocumentBuilder();
+Document doc = builder.parse("D:\\login.xml");
+String un=doc.getElementsByTagName("un").item(0).getFirstChild().getNodeValue();
+String pwd=doc.getElementsByTagName("pwd").item(0).getFirstChild().getNodeValue();
+
+2.I have 50 test cases out of which i need to run only 1 to 10 testcase how do u handle?
+Use testing.xml
+Select only 10 testNG class, right click and select convert to TestNG which creates testing.xml
+with selected 10 testcases and run it
+3.Write the code for retrieving data from database for login Page,where login page consists of Emailid textbox,Password textbox,Login & Reset Button.If password is wrong should reset,else should get login..
+
+Please see the attached JDBC code for getting data from data base and pass them as arguments for the method which does the above steps
+
+4.Write the script so that any textbox should not exceed more than 10 characters?
+Question is not clear..
+
+5.How do u automate widgets which changes every millisecond?
+
+Use  explicit wait or jQuery or Java Scripts
+
+6.How to automate videos?
+No possible
+
+7.How to run the tests without a browser or with HTML unit driver in selenium webdriver?
+WebDriver driver=new HtmlUnitDriver(true);
+driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+driver.get("http://demo.actitime.com/login.do");
+System.out.println(driver.getTitle());
+
+8.How to run Selenium 1.0 tests in webdriver?
+
+WebDriver driver = new FirefoxDriver();
+WebDriverBackedSelenium selenium = new WebDriverBackedSelenium(driver, "http://demo.actitime.com");
+selenium.open("/login.do");
+selenium.type("name=username", "admin");
+
+9.   How to convert selenium 1.0 tests to webdriver tests?
+Same as above
+
+10.   What is webdriver backed selenium?
+Same as above
+
+
+
+11.   When to use web driver backed selenium?
+already code is written in selenium RC and want to use the same code in webdriver
+
+
+12.   Which version of selenium IDE supports webdriver?
+2.3
+
+13.   How to invoke an application in webdriver?
+WebDriver driver= new FirefoxDriver();
+driver.get(url);
+
+14.   Which of Selenium IDE commands not supported in webdriver?
+Nothing is supported
+
+15.   where do u add test tacse
+File->add testcase
+
+16.   how do u connect database thro' selenium
+No should use java code only
+
+17.   how do u connect database thro' java
+Please see the attached JDBC code for getting data from data base
+
+18.   Explain about selenium architecture in your company
+Explain the Frame work diagram
+
+19.   How do you handle https website in selenium
+using RC or WebDriver
+
+20.   How do you start selenium server
+
+java -jar selenium-server-standalone-2.34.0.jar -role hub
+McAfee Interview Question
+
+Questions:
+1. He has given a scenario, like Say there is a coffee vending machine, it has 3 buttons, one for coffee, one for tea and one for milk.
+and there is  LCD display, and a led light to show whether the power is on or not.
+Tell me as many as scenarios to test the functionality of the coffee machine.(both Functional and non functional).
+2. Logic to find whether the number is prime or not.
+3. String comparison of two strings. (==)
+4. Defect life cycle.
+5.Logical thinking question: two trains are approaching each other, one is at 60kms/hr and another is 90kms/hr.
+the distance b/n them is 1800kms. What is the distance b/n them 20mns before they collide each other.
+6. Selenium code to open some browser and typing something in the text field.
+7. Handling the Dynamic Check boxes inside a table.
+8.Selenium code to reboot the system?
+and some other Testing basics.
+8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
+1.tell me some of the tools name which is used to store the script in common place?
+2.how do you integrate selenium webdriver and java?
+3explain with example Verify and Assert cammands?wher and when it s used?
+4selenium IDE internally which language it uses?
+5.Selenium IDE will allow to convert test written in java.c# when u switch over to selenium webdriver?
+6.if you have 1000 test scripts u  want to execute it in 2 hrs?how you handle this environment ?is it possible you to handle in webdriver?
+7.how to get a multiple data's from excel file?example list of 10 firstname and Lastname?where and how you wil pass the values?explain with logic nd code?
+.how to get delimiters(@,":&#) from text file?
+
+what’s differences between findElement() and findElements()?
+write the code to get URL of link in selenium?
+write a code get the page title..?driver.getTitle()
+what is get() & navigate()?
+how can u right click?contextclick()
+How can u refresh?
+how can u send a screen shot through selenium?
+gave a expression & asked me finding the xpath?
+How can u implement frame work in ur project?
+What is the scope of implicitly wait?
+How can u find rows from a webpage? what is the method you used?
+int rows=driver.findElements(By.xpath("//tr")).size();
+s.o.p(rows);
+
+2.How to take screen Shot in selenium code for failed Test Case.
+FileUtils.copyFile(((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE),new File("d:/abcd.png"));
+
+3.How do u configure only Required Testcases for running the TestNG suit in XML..
+add only required testng classes or create a Group and specify it
+
+Nous interview Questions
+1)Mouse Hover(MoveToElement ofActions class)
+2)Selenium Framework
+3)Launching Browser
+4)Difference between Alert and Pop up
+5)Web Table
+
+6)Clicking on a link and performing the action
+7)IExcel sheet contains 5 rows with id name and attribute delete the first row which contains     previous data
+	
+how do u know that a webpage is fully loaded in the java code?
+
+WebDriver driver = new FirefoxDriver();
+driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+driver.get("http://www.fatcow.com/");
+JavascriptExecutor js=(JavascriptExecutor)driver;
+String state = (String) js.executeScript("return document.readyState");
+System.out.println(state);
+
+
+why automation
+different locators
+program to login to any webpage
+web element methods
+
+2. how many locators r there wat r they?
+8 types of locators
+3. how u will identify the locators in web page?
+4. how u will find out the colour of the text?
+5. If parent browser having one field and child browser having one field how u will compare and check
+6. if i have a web page called espn in that i have the name and ranking of cricketers how u will check the ranking and name of cricketers in database are same or not.
+7. inheritance topics
+8. diff btwn testng and junit.
+1. wat is diff btwn testng and junit?
+3. is framework needed? y? can we run scripts with out using frame work yes or no?
+4. wat is assertion? wat is the drawback? instead of that wat we use to overcome?
+5 wat is globalization testing? localization testing?
+9 wat is nested class? enum?
+10  wat is implicitly wait()? explicitly wait()? difference? where we use it?
+11 how u traverse from child browser to parent browser?
+12 if  parent browser have 4 child browsers how u will get the order which 1 is first?
+13 how u will handle window popups?AutoIT or anyother supporting tools
+14 wat is polymorphism? method overloading and method over riding?
+18 wat is hybrid frame work? explain hybrid frame work?
+
+Tavant
+write  automation code for Frame?
+driver.switch to(). frame(Element);
+define keyword rewan framework?
+define hybrid rewan framework?
+ 
+Where we can store xpath or other locator value , (like object repository in qtp)
+why we can not use CSS selector instead of xpath.
+what is difference between @Before Method and @before Test
+what is diffrence between @After Method and @After Test
+
+Selnium:
+1)Explain about framework?
+2)How do you handle File down popup,File upload popup.and alert and confirmation popup.
+In case if FireFox FileUpoad can be handel by using sendKeys() method
+In chrome and IE we need to use AUTIIT 
+Alert() and Confirmation are handeled by accept() and dismiss() method of Alert class
+3)write a code to read data from excel sheet.
+
+File fin=new File();
+
+
+Questions on selenium:
+1)How do you do mouse over action.
+By using MoveToElement method of Actions class
+2)How do  you read data from excel sheet and notepad
+Ans:i have said reading data from excel sheet so he said ok
+3)Automation framework
+
+
+1)Where we can store xpath or other locator value , (like object repository in qtp)
+POM Class
+2) why we can not use CSS selector instead of xpath.
+3) what is difference between @Before Method and @before Test
+4) what is diffrence between @After Method and @After Test
+
+1-Which browsers are supported by selenium RC?
+2-How do you identify the automation test cases?
+Any test case which don’t require human interfance
+4-Diff b/w Selenium RC and Web driver?
+
+how many primitive data type
+8 type
+why string is not primitive
+String is an Class and character array collection
+access specifier
+difference between default and protected
+what is formatters sop("%d %f",3545,546.45)
+can we store object
+how to avoid any variable to serialize 
+
+
+What is the difference between list and set?
+List preserves insertion order
+List are indexed type collection
+List allow duplicated
+List all null value
+Set are not indexed type
+Set dont allow duplicated
+Set allow only one NULL value
+
+2. How will you switch to other window?
+getWindowHandles();
+
+3. What is the return type of driver.findelement/driver.getwindowhandles()?
+return type is WebElement got driver.findElements and Set<String>is the return type for driver.getwindowhandels
+
+5. How will you achieve dynamic polymorphism?
+Mehtod Overriding()
+
+6. What is inheritance and encapsulation? 
+Inheritance is the process of aquring the peoperties of super class to sub class 
+encapsulation: is the process of winding the data members and function member into single unit is encapsulation  
+it is achived by declaring the data members as private and giving the access through the getter and setter methods
+
+7. Can you override static methods?
+No we cannot override statci method
+
+8. Can main method be overloaded?
+Main method can be overloaded but still compiler give importance for the main method with arguments
+
+9. What is Singleton?
+For a class which we can create only one instance is singleTon
+
+10. What is collections in Java?
+Collections is a class which is having basic utilty method which can be used by all collectio
+
+11. What is nested class?
+An class which is declared inside another class is know as nested class
+
+1;-Static inner class
+static class 
+2:non static inner class
+3Annoyums inncer class
+12. How will you call a protected method in a nested class?
+13. In a web page, how will you ensure that page has been loaded completely?
+14. What is the difference between build and perform method in Actions Class?
+
+15. What are different annotations in TestNG?
+@BeforeSuite @Before Test @Before Class @Before Test
+@AfterSuite @After Test @After Class @After Test
+
+16. What is the difference between before method and before test?
+@Before MEthod will execute before execution of any method
+@After Method will execute after execution of every method
+
+17. How will you display the character count in a string "Steve Jobs" by ignoring space on between? 
+public class Count{
+{
+String name= "Steve jobs"
+char []c=name.toCharArray();int v=c.length; system.out.printlm(v);
+int count=0;
+for(char b:c)
+{
+count++;
+}
+system.out.println(count);
+18. What is a constructor and when will you use this and super in a constructor?
+Constructor is special kind of method and use to initialise the non statci members of the class 
+The name of the constructor should be as same as the class name
+There are two type of constructor zero argument and parametrised constructor
+All java should have constructor
+By default compiler writes default constructor at th time of complie  implictly
+If user write the consrutctor expacilty then complier dont write default constructor
+
+Super statment is used to invlke the super class constructor to sub class constructor
+Super statment should be alwasy writtenin first line of the constructor
+If use dont write super statment then compiler write super statment implictly
+If construct have any paramanet then user has to write super statment by passing parameter
+
+
+19. If you want to call a constructor from parent class, what will you do?
+user super() statment
+
+20. How will you run your tests using Data Driven Framework?
+
+21. What are static variables and methods?
+Any variable declared with static key word are static variable and method declared with static is static method
+static method  and statci variable can be called usign the class name with dot operator
+
+22. How will you handle Alerts in selenium?
+Alert alert=new Alert()
+alert.swithcTo().alert()
+alert.accept();
+
+23. How will you handle a file upload window using Selenium?
+in case of firefox browser we use sendKeys(path);
+else for other browser autoit
+24. Can I define one class into another class?
+
+25. What are different types of modifiers present in Java?
+public,protected,package level(default)private
+
+public enity will be visible for all the package in project
+Protected enity will be visibile for the package where it is declared
+It can be accessed to another class using inheritance concept
+Package level (default modifier)visible for the package
+
+26. How will you make a build using Jenkins?
+27. How will you install ReportNG in your project?
+download jar file and copy and paste that the jar file folder in the framework and add to build path
+28. How will you control data using XML?
+29. How will you display a value of a particular cell in a web table?
+
+30. How will you handle dynamic elements using XPath?
+ First we need to identify a common path between the independent and dependent and from that point we neeed to move towards duplicate or dynamic elem
+ent
+31. What is POM?
+POM is an java  patteren design toold used to devalop and test the web page but in selenium it is used to avoid staleElemetnReference exception
+Page object model is java module used to develop web page in Selenium we use POM to avod Stale Element exceptionin valid address of element due to page refresh
+
+
+Please explain your project architecture with framework with diagram?
+1.Difference between webdriver listner and testNg lister? asked in Hcl
+WebDriver Listener belongs to selenium where as testnG listener belongs to TestNG jars
+2. Return type of data provider ? asked in synechron
+2 dimensional array
+3. how we can clear the cookie in selenium ? asked in Hcl
+4. how we w.*-\ill check the cookies in selenium ? asked in hcl
+5. there are 5 input box in a page and first i have to select 3rd input box write some data into it and return back to 2 input box. how u will do it. asked in synechron
+7. how to run the test cases through command prompt. HCL
+java -cp bin;jars/*arg.testng.TestNG testing.xml
+9. difference between selenium RC and webdriver? synechron and HCL both
+1. Can you write a dynamic xpath
+3. Can you write a build.Xml
+
+
+8. What are the advantages of pom frame work in selenium
+WebDriver driver=new FirefoxDriver();
+login on facebook and description of each method
+can we other function behalf of get().
+driver.navigateTo("http;//www.facebook.com");
+
+6.there is 2 textbox id password.something is already written in text field like "Emailid",how can you copy from emailid field and paste in password field.
+
+11.How to handle the drop downlist.
+
+Action action=new Action();
+
+action.mousrOver();
+
+
+14.we have a excel sheet some thing is written in excel sheet then compare those value with web page values.
+
+
+how to take screenshot give the diagram write a scrpt..
+tell me about Project .What are the challenge face during project
+what is the difference between RC and webdriver
+
+why we use wait statement.
+since findElement use 1/2 seconds to find elements in some case where page loading take more time in that findElemets throw no suc Elemetns in order to avoid that we use wait method
+
+5.What are the things u stored in PageFactory ? Why ?
+
+1.How do you handle dynamics objects in a webpage?
+by usign the Xpath(dependent and independent ) we handel dynamic objects or by usign the partial link text
+
+3.What is the difference between beforemethod and beforetest?
+@Executebefore mthods excetute before any methods execure 
+@Before Test execute before execution of any test
+
+What is the use of DesiredCapabilities in Selenium WebDriver?
+
+7.How do you find out active elements?
+FindElemetn
+
+11.how to handle alert pop up
+
+driver.switchTo().alert();
+
+alert.accept();
+
+7. How to handle dynamic xpath using independent and dependent concept
+
+
+5. code to get date from excel sheet
+17. What is subString()
+
+
+4. Take a scenario from ur project and Write a code in selenium where u have to get data from excel sheet
+
+ for user login and while creating the part we pass the value for description since we have limit to 142 character and no special character
+
+
+
+take snapshot
+
+WebDriver driver=new firefoxDriver();
+EventfiringWebDriver snap= new EventfiringWebdriver(driver);
+
+File scr=snap.getSnapshotAs("");
+
+File out=new File(file.out)
+
+fileUtils in=copy.
+
+Mention 5 different exceptions you had in Selenium web driver?
+The 5 different exceptions you had in Selenium web drivers are
+
+WebDriverException
+NoAlertPresentException
+NoSuchWindowException
+NoSuchElementException
+TimeoutException
+NosuchFramePresstn
+NoSuchWindowPressent
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+TestListenerAdapter t= new TestListenerAdapter();
+	TestNG testng=new TestNG();
+	testng.setTestClasses(new Class[]
+			{
+					AWSRun.class
+			});
+	testng.addListener(t);
+	testng.run();
+}

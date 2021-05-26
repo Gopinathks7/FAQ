@@ -1,0 +1,42 @@
+package com.TestNGFiles.jars;
+
+import java.io.FileInputStream;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+
+public class TestXLS {
+
+	public static void main(String[] args) 
+	
+	{
+		
+		try
+		{
+			
+			String xpath="F:\\test .xlsx";
+			FileInputStream fis=new FileInputStream(xpath);
+			Workbook book=WorkbookFactory.create(fis);
+			int  row=book.getSheet("Sheet1").getLastRowNum();
+			int col=book.getSheet("Sheet1").getRow(0).getLastCellNum();
+			for(int i=0;i<=row;i++)
+			{
+			for(int j=0;j<col;j++)
+			{
+						
+			Cell c=book.getSheet("Sheet1").getRow(i).getCell(j);
+			System.out.print(c+"  ");
+			}
+				System.out.println(" ");
+			}
+		 }
+	catch(Exception e)
+		{
+		System.out.println(e.toString());
+		}
+	}
+
+	}
+
+	

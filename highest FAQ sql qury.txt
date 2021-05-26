@@ -1,0 +1,1 @@
+select sal from(select sal from employee ORDER BY sal LIMIT 3)as T ORDER BY sal DESC LIMIT 1;

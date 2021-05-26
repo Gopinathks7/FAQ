@@ -1,0 +1,7 @@
+Note: The LEFT JOIN keyword returns all records from the left table (Customers), even if there are no matches in the right table (Orders)
+
+Note: The RIGHT JOIN keyword returns all records from the right table (Employees), even if there are no matches in the left table (Orders).
+
+The INNER JOIN keyword selects records that have matching values in both tables.
+
+https://www.slideshare.net/EdurekaIN/selenium-interview-questions-and-answers-selenium-tutorial-selenium-training-edureka?trk=v-feed

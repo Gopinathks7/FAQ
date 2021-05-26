@@ -1,0 +1,77 @@
+1) Diff b/w Static and Non static Members
+2)Explain about Diamond problem in Java.
+3)Explain about Ploymorphism.
+14 wat is polymorphism? method overloading and method over riding?
+1. What is method overloading?
+2. What is method overriding?
+4.what is the difference between array & arrayList?
+5.What do u mean by mutable & string is mutable or not?
+6.difference between stringbuffer & strringbuilder
+7.what is Interface & abstract class. Difference between them?
+8.What is Type Casting? Give example?
+9.Which collections are u used in ur project? 
+10.Write a program for string reverse?
+3)How to achieve Multiple Inheritance in Java?
+4)What is Polymorphism? What are the different types of   Polymorphism?
+6)What are the different kinds of Access Specifiers?Explain   their visibilty?
+7)In which type of Collection Dupplicate values are not   allowed?
+8)How to check whether two names or two Strings are equal or   not?
+9)What are Annotations?What is the use of Annotations?
+10) Why Multiple Inheritance is not supported 
+11Wat s constructor.
+16.Interface and why we use it
+17.diffrence between interface and abstract class,and when we use interface,when we use abstract class
+18.explain oop's concept
+1.what is class and why we use class
+2.what is inheritence and why we use it,write a code
+4.code to find a particular word from a string and explain line by line
+6.explain public static void main
+7.access specifiers and their use
+8. Function of garbage collector.how to stop garbage collector not to
+clear the memory?
+1. What are oops concepts?
+32. what is inheritance?
+33.Diff b/w overload and override
+39. Write a java program for swapping of two numbers?
+40. Write a java program for factorial of a given number
+41.What is the different between inheritance and interface.?
+
+3.hashmap vs hashtable?
+4.array vs arraylist
+15.what is nullpointer expection?
+1.Give an example for abstraction(writing program)
+4:what is reflection API? with example
+Ex: Reverse a given statement 
+Input: “This is a book”
+ Output: “book a is This”
+10. what is dynamic and static polymorphism , give real time example 
+what is abstraction?
+what is encapsulation?
+what is polymorphism?
+what is abstract class how it use for us?
+what is encapuslation?
+what is abstract class ,method  how u handle  it ?
+difference between throw and throws?
+explain try catch block?
+What is final method in java
+How do you call function in java
+6. difference between Hash map , Hash Table and Arraylist ? asked in synechron
+8. there are one string say Aattribute , so write a code to find the repeated word in that string 
+and it should work for case insensitive(work for lower case and upper case) asked in synechron.
+16.string reverse .
+6.What is binding(Early and Late binding)
+1.What is the Difference between final,finally,finalize
+2.what is the difference between Call by value and call by referance
+3.How to find out the length of the string without using length function
+4.How to find out the part of the string from a string
+5.difference between throw & throws
+
+1.Reverse a number
+2.1,2,3,4,5,65,76,5,,4,33,4,34,232,3,2323,
+find the biggest number among these
+simple string programe.
+how to take screenshot 
+give the diagram write a scrpt..
+
+
+

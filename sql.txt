@@ -1,0 +1,23 @@
+SELECT MAX(Salary) FROM Employee
+WHERE Salary NOT IN (SELECT MAX(Salary) FROM Employee 
+
+SELECT *FROM Employee Emp1 WHERE (1) = (SELECT COUNT(DISTINCT(Emp2.Salary))
+FROM Employee Emp2 WHERE Emp2.Salary > Emp1.Salary)
+
+Q#8. What is a primary key? 
+Ans. A Primary key is column whose values uniquely identify every row in a table. Primary key values can never be reused.
+
+
+What are foreign keys?
+Ans. When a one table’s primary key field is added to related tables in order to create the common field which relates the two tables, it called a foreign key in other tables.
+Foreign Key constraints enforce referential integrity.
+
+13) What are triggers? How to invoke a trigger on demand?
+
+Triggers are special kind of stored procedures that get executed automatically when an INSERT, UPDATE or DELETE operation takes place on a table.
+
+Triggers can't be invoked on demand. They get triggered only when an associated action (INSERT, UPDATE, DELETE) happens on the table on which they are defined.
+
+23) Can Primary key is a Foreign Key on the same table?
+
+Yes, Primary key is a Foreign Key on the same table

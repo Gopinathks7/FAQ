@@ -1,0 +1,91 @@
+What kind of tests should NOT be automated?
+Usability Testing – at times this can be an impossible task to perform by automation as the computer cannot efficiently judge if the system is of any use to its users
+
+Why would you want to automate a test? Is it to:
+he main reason why you would want to automate a test, is because you want to repeat the same test many times.
+
+
+What criteria do you consider for automating a test?
+
+http://www.gcreddy.com/2012/09/automation-framework-interview-questions.html
+
+Currently I do not have any automation in place in my project, now I want to implement automation, what would be my steps?
+
+First identify which type of testing / test cases you want to automate
+Identify the tool
+Design the framework
+Create the utility files and environment files
+Start scripting
+Identify and work on the reporting
+Allocating time for enhancing and maintaining the scripts.
+
+Can you do without a framework?
+
+Frameworks are guidelines and not mandatory rules, so we can do without a framework, but if we create it and follow it, enhancing and maintaining would be easy to implement.
+
+Modular – The framework should be adaptable to change. Testers should be able to modify the scripts as per the environment or login information change
+
+
+Can you tell some good coding practices while automation?
+
+Some of the good coding practices include:
+
+Add appropriate comments
+Identify the reusable methods and write it in separate file
+Follow the language specific coding conventions
+Maintain the test data in a separate file
+Run your scripts regularly
+
+
+How do you select which automation tool is best suited for you?
+
+Selecting the automation tool depends upon various factors like:
+
+Scope of the application which we want to automate
+Management overhead like cost and budget
+Time to learn and implement the tool
+Type of support available for the tool.
+Limitation of the tool
+
+
+(By.xpath("//input[@type='text' or @type='password']"));
+
+
+Hybrid Framework:
+
+This framework is the combination of both data-driven and keyword driven testing frameworks. It allows data driven scripts to take advantage of the powerful libraries and utilities in a keyword based approach.
+
+Advantages:
+
+The Hybrid framework is build with a number of reusable modules / function libraries that are developed with the following features in mind:
+
+Maintainability – Hybrid framework significantly reduces maintenance effort
+Re-usability – It allows to reuse test cases and library functions
+Manageability - effective test design, execution, and traceability
+Accessibility – easy to design, develop, modify and debug test cases while executing
+Availability – Allows to schedule automation execution
+Reliability – due to advanced error handling and scenario recovery
+Flexibility – framework independent of system or environment under test
+Measurability – customizable reporting of test results ensure the quality output
+
+Data Driven Framework:
+
+In this methodology, test data is separated from test scripts and results are returned against the test data. And finally if all the test data combinations are pass, then only the test case is treated as "PASS". If any one of the test data combination is failed, then the entire test case will be treated as "FAIL"
+
+key features and benefits
+
+Early automation: On confirmation of test requirements, test automation can be conducted concurrently with preparation of manual test cases
+Faster time to market and increased ROI: Provides competitive advantage and enables routing of cost savings to other IT and business initiatives
+Pre-built function libraries: Reduces the cost of developing an automation test suite by up to 30%. They enable generation of automated scripts after documenting the logical flow of test cases
+Offline automation: Lowers investment in test tool licenses by limiting the need for multiple test tool licenses to the test execution phase. Licenses are required only during test execution and creation of the object repository for the application under test (AUT)
+Reusable business components: Enables higher reusability and reduced effort during maintenance.
+ Automated test cases based on the design of the business processes result in higher reuse of scripts
+End-to-end automation framework: Scalable and extensible automation framework covering multiple application technology platforms and packages ensures lower investment cost and faster ROI as the framework is well defined, easy to use, robust and scalable
+Automation methodology: Reduces development cost by enabling 
+
+
+how to build robus frame work?
+Automation framwork Anyone/less technical person should be able to contribute in test automation
+Time to add a new test into the existing suite should be less.
+Use business keywords to build new tests like login,logout, search, order, edit, cancel etc
+No thread.sleep anywhere in the tests

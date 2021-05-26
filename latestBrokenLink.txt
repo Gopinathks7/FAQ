@@ -1,0 +1,43 @@
+
+public class BrokeLink
+ {
+public static void main(String[] args) {
+		
+String key="webdriver.chrome.driver";
+String value="E:/BrowserDrivers/chromedriver.exe";
+System.setProperty(key, value);
+WebDriver driver=new ChromeDriver();
+driver.get("https://www.google.com");
+List<WebElement> links = driver.findElements(By.tagName("a"));
+int count=links.size();
+System.out.print(count);
+for(int i=0;i<count;i++)
+{
+WebElement lnk=links.get(i);
+String url=lnk.getAttribute("href");
+verifyLinkActive(url);
+}
+}
+public static void verifyLinkActive(String URL)
+{
+	try {
+		URL u= new URL(URL);
+		HttpsURLConnection hconnectin =  (HttpsURLConnection)u.openConnection();
+			hconnectin.setConnectTimeout(3000);
+			hconnectin.connect();
+			if(hconnectin.getResponseCode()==200)
+			{
+				System.out.println(u+" "+hconnectin.getResponseMessage());
+			}
+			if(hconnectin.getResponseCode()==HttpsURLConnection.HTTP_NOT_FOUND)
+			{
+				System.out.println(u+"   "+hconnectin.getResponseCode()+"  "+hconnectin.HTTP_NOT_FOUND);
+			}
+				} 
+	
+	catch (Exception e) {
+		
+		e.printStackTrace();
+	}
+}
+}

@@ -1,0 +1,36 @@
+2. GRID concept bit.
+3. Different version / flavours of Selenium
+Which framework  you have used and why?
+Data Driver framework? to test application with different tyep of input
+Why automation ?
+
+In order to have consistance we use framework
+Write the format of XML file for BATCH EXICUTION?
+
+How synchronisation resolved in automation?
+Either by using implictlyWait() and expactly wait and thread.wait()
+How many wait statements you know ?
+
+What  is polymorphisim?
+Have u used constructor in WebDriver?
+6. difference between Hash map , Hash Table and Arraylist ? asked in synechron
+8. there are one string say Aattribute , so write a code to find the repeated word in that string and it should work for case insensitive(work for lower case and upper case) asked in synechron.
+
+12.overloading and overridding
+it's a overloading or overridding will it compile or not.
+public int m1(int a,int b)
+public float m1(int c,int d)
+16.string reverse .
+17. find higdest value in list.
+18.find the duplicate value in list.
+19.how will upload a file if the text is not editiable.
+1.What is the Difference between final,finally,finalize
+2.what is the difference between Call by value and call by referance
+3.How to find out the length of the string without using length function
+4.How to find out the part of the string from a string
+5.difference between throw & throws
+6.What is binding(Early and Late binding)
+1.Reverse a number
+2.1,2,3,4,5,65,76,5,,4,33,4,34,232,3,2323,
+find the biggest number among these
+simple string programe.

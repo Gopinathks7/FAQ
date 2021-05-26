@@ -1,0 +1,243 @@
+What is framework and explanation?
+What is testng?
+
+Process of Automation?
+
+tools selection
+Define scope of automation
+planning and designing and development
+Test Exceution
+Mainitanance
+
+What is maven
+  How to automate a login page?
+Ø  How you will review test script?
+1. Does the script implement each step of the test case?
+2. Does the script implement each step in the correct order?
+3. Does the script implement each validation given in the test case?
+4. Does the script have each validation after the correct step?
+Ø  How to handle dynamic table?
+
+Ø  What is log4j why we used?
+Ø  Write your test case format?
+Ø  If an application given to you what is your 1st approach to start testing?
+Ø  what do u know about maven.
+Ø  maven uses other than updation
+Ø  roles and responsibilities of automation
+how do u create test data in ur framework
+All global teast data are place in config file like URl and admin user id and password
+
+Ø  what is xpath
+xpath is an XMl paht and it is language used to identify the element on web page when other locator are failed to identify the elements 
+
+write xpath for button
+//input[@type='button']
+
+  xssfworkbook
+user to perform read and write operation on reads and writes Office Open XML (XLSX) format files. 
+Ø  classes and interfaces used in screenshots
+Ø  Given one lengthy code I don’t remember it’s a pseudo code where he will check how you will optimize the java code?
+Ø  Explain your Framework?
+Ø  How do you handle Pageloading in your application?
+Ø  Did you used any third party for fetching data?
+Ø  Difference between Implicitwait &Explicitwait?
+Ø  What is Selenium WebDriver and Difference between Selenium WebDriver & Selenium RC?
+Ø  What are locators ?
+Ø  Different Types of Locators  Available?
+Ø  What is the use of These locators? & Where You have used these Locators’ in your FrameWork?
+Ø  Write and show how to create methods for Elements present in Login Page? And How to call these methods?
+Ø  Write X-path for a text box Element ?
+Ø  What is TestNG & Different Uses of it?
+Ø  What is Assertion & Why it is Used?
+Ø  How will you validate each and  every Test Script?
+Ø  What is Maven & Why it is Used?
+Ø  SCENARIO:  Using Click Method it is not able to Click on a Button, What is the Alternate way to  click on that Button ?
+Ø  SCENARIO:  Some Elements Property values keeps changing Dynamically, so how will you handle such Elements ?
+Ø  How Datas are  Driven to Application?
+Ø  which class extends Firefox driver?
+RemoteWebDriver class
+Ø  What is the difference between findelement and findelements method?
+Ø  How to handle child windows?
+driver.getWindowhandels method
+Ø  scenario: How would you click on button using selenium webdriver without using click method .(button is enabled).
+Ø  scenario: write an xpath for a webelement which has an attribute value( you cannot rely on tagname )
+Ø  how would you run test script without Jenkins?
+By using the TestNG suite we can run script
+Ø  what kind of locators have you used in your project?
+Ø  What is the benefits of testNG?
+Ø  how would you compare results of file in CSV and word file?
+Ø  how you validated the test scripts?
+Ø  what is the difference Assert and verify?
+Ø  What is Maven? Why is it used?
+Ø  how you used data provider in your framework?
+Ø  explain how you converted test case and test script?
+Ø  how many members where there in automation team ?
+Ø  Why testNG is used?
+Ø  Why testNG is called a tool?
+Ø  Why apache POI used?
+Ø  If business requires ,Are you ready to work for extra hours ?
+Ø  What is the difference between explicit wait and implicit wait ?
+Ø  What is the difference between close() and quit() functions?
+Ø  How to handle dynamic element
+Ø  Explain xpath how you will use
+Ø  What is MAVEN
+Ø  What is Hybrid framework and why have you used hybrid frame work?
+Ø  Given a scenario that a new framework is already created eg using only 1 framework eg. Modular framework. What the checks you would do before automating your project?
+Write code for reading data from excel sheet
+String path="filepath";
+FileInputStream fis=new FileInputStream(path);
+Workbook book=Workbookfactory.create(fis);
+Cell cell=book.getSheet("Sheet1").getRow(0).getCell(0);
+system.out.println(cell+" "
+Ø  How to save image?
+Ø  How to capture image only part of the window(Just one image present in the webpage)
+Ø  What all the things which you have implemented in your framework
+Ø  What are the exceptions you have captured until now and how did you solve it
+How did you handle StateElementReferenceException
+
+What are the packages of java you have used in your project
+io package,Util package,awt package,Simpledata package
+
+How do u handle mouse over actions
+Ø  Create own html report other than testng. How would you create it?
+Ø  Benefits of Selenium?
+Ø  Difference between implicit wait and explicit wait?
+implict 
+Ø  What is automation life cycle?
+Ø  What is framework?
+Ø  Write a script to open the Firefox without using FirefoxDriver class
+Ø  How to take the screen shot of webelement?
+Ø  How to verify to verify whether the element is present or not using findElements method
+Ø  Write a script to verify whether the check box is selected or not.
+Ø  How to verify whether the list box is dropdown list or multi-select list.
+Ø  Why POM??
+Ø  How to handle windows popup?
+using autoit script
+Ø  difference b/w assert  verify taking your application as example
+assert is used to compare two vales if compare fails execution stops
+verify is used to compare two values and if fails it wil print message and continue the execution
+Ø  difference b/w windowhandles & windowhandle
+getWindowHandel is for single window and return type is string
+getWindowHandels is for multiple window and return type is Set<string>
+Ø  how do handle chrome, IE & firefox browser(syntax)
+Ø  Different types of Waits & its syntax
+Ø  Annotation used in your appliaction
+Ø  Explain encapsulation(any topic in OOPS concept)
+Ø  Syntax of and return type of getWindowHandles.
+Set<string> string is type safe for the set interface 
+Set will not allowduplicate
+Ø  Why getWindowHandles returns Set of values Why not List.
+Ø  Which Scripting language used in AutoIt.
+Ø  What are the advantages of Maven.
+Ø  Explain bug lifecycle and all the status of bug lifecycle.
+Ø  In detail concept of Jenkins.
+Ø  What is parallel Execution and how do you do parallel execution.
+Ø  How to handle exception in finally and catch block.
+Ø  Why POM is used when I can write my code in one single script?
+ That code will become local and chances are there of getting staleElementRefernece exception
+Ø  How to you handle windows popup in respect to browsers?
+ By using the getWindowHandles method we can handle
+Ø  If autoIt is used how would you achieve it with respect to cross browser testing?
+Ø  How would you handle elements using selenium especially when they are dynamic in nature ?
+Ø  Explain some of the dynamic xpaths?
+Ø  Have you used any other design for the framework and if so explain?
+Ø  How would you connect with a external resource for getting data?
+Ø  Write Xpath for dynamic images in any application?
+Ø  In shopping cart application images will be keepon change in front page? write xpath for second image?
+Ø  Write a code to take screenshot?
+EventFiringWebDriver scree=(EventFiringWebDriver )driver;
+File source=screen.getScreenshotAs(OutputType.File)
+FileUtils.copyFile()
+Ø  Difference between .ipa and .apk?
+Ø  How will you came to know whether it is native view or in web view?
+Ø  How do u Handle frames?
+Ø  I want to know how many squares are there in chess board? write a code for it?
+Ø   Which cases you use Actions class?
+Ø  What is maven?
+Ø  What are the challenges you faced in selenium?
+Ø  When will you autoIt?
+Ø  What is data driven Framework? how to retrieve data from excel sheet?
+Ø  In parallel excecution you have execute in different browsers what is ur approach?
+Ø  How will you set the desired capabilites?
+Ø  Take any scenario and explain your framework by writing code?
+Ø  explain your framework structure?
+Ø  How do u automate mobile app?
+Ø  How do you know native or hybrid App?
+Ø  Write a code to fetch data from xl sheet??
+Ø  Write down a output for the code below:-
+Ø  Public static void main(String args[]){
+Ø  Public void foo(){
+Ø                  If(null == null)
+Ø  {
+Ø  //Some code
+Ø  Sysout();
+Ø  }
+Ø  }
+Ø  }
+
+Ø  How you will handle tooltip in selenium?
+Ø  Explain about your framework?
+Ø  How you will find if the content of the drop down list contains duplicate how you will handle?
+Ø  Write testng annotations?
+Ø  How to extract only numbers from a text file and save it in another text file ?
+Ø   How to extract each characters from a string using regular expression ?
+Ø   There are images of different states on a webpage, you need to click on karnataka image
+Ø  how you will handle window pop ups
+Ø   how you will hadndle Alert pop ups
+Ø  Difference between @beforetest and @beforeclas?
+Ø   How do u perform click() without using driver click()?
+Ø  How do u generate Reports?
+Reprts are generated usign Log4j Files
+Ø  what is central repository and local repository?
+Object element declared in same page of script is know as local 
+object Element declared in POM method as resualbe is know as central
+Ø  WAP to print all the duplicates available in drop down list using selenium.
+Ø  WAP to print 2 highest ant 2 smallest number in array without using inbuilt function.
+ Using Selenium:a)Read the username and password from the external excel file which are having 5 rows b)Open the firefox enter gmail c)Enter Username and password d)Send a mail to me@slingmedia.com e)Repeat d and c f)close browser
+o   Using Selenium:
+Ø  open flipkart using chrome
+Find redmi 3s. count and display of all the links which are having red color verify link exist or not
+
+**********************JAVA********************************************************************
+Ø  how to acheive multiple inheritance.
+Ø  why we cannot achieve multiple inheritance in java.
+Ø  what is garbage collector.
+Ø  what do you mean by static. where u used in ur framework.
+Ø  exception handling?
+Ø  arrayslist .give syntax?
+Ø  how to fetch all the rows from arraylist.
+Ø  difference between  set and hashmap. write syntax
+Ø  diff overloading and overriding.
+Ø  program for overriding
+Ø  prime no programme
+Ø  oop concept relation to framework
+Ø  threading.program for threading.
+Ø  how to throw user defined exception.
+Ø  how to acheive run time polymorphism.
+Ø  Write a program to find duplicate in a String?
+Ø  Write a program to reverse a string?
+Ø  Difference between arraylist and linked list?
+Ø  Difference between abstraction and encapsulation?
+Ø  Difference between protected and default access specifiers?
+Ø  What is single ton class ??
+Ø  Benefits of Oops??
+Ø  What is polymorphism??
+Ø  What is synchronisation?
+Ø  What is polymorphism?
+Ø  What is interface?
+Program to extract numbers from given string
+Ø  explain abstraction
+Ø  Write a program on to reverse a string?
+Ø  how do u handle dropdowns
+Ø  Write differences between abstract class and interface?
+Ø  Difference between Method overloading & Method overridding?
+Ø  Difference between interface & class?
+Ø  What is Encapsulation & Where have you Used in your frame Work?
+Ø  What is In-Heritance & How to Achieve it & Why it is Used?
+Ø  write a java program to swap 2 numbers without using third variable
+Ø  What is super and this keyword in java.
+Ø  Difference between Arraylist and LinkedList.
+
+
+
+

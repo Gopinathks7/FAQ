@@ -1,0 +1,150 @@
+for(int i=1;i<=3;i++){
+for(int j=1;j<=3;j++){
+System.out.print("* ");
+}
+System.out.println();
+}
+* * * 
+* * * 
+* * * 
+--------------------------------------------------------------------------------------
+for(int i=1;i<=3;i++){
+for(int j=1;j<=i;j++){
+System.out.print("* ");
+}
+System.out.println();
+}
+* 
+* * 
+* * * 
+--------------------------------------------------------------------------------------
+for(int i=1;i<=5;i=i+2){
+for(int j=1;j<=i;j++){
+System.out.print("* ");
+}
+System.out.println();
+}
+* 
+* * * 
+* * * * * 
+-----------------------------------------------------------------------------------------
+for(int i=1;i<=5;i=i+2){
+for(int k=5;k>=i;k--){
+System.out.print(" ");
+}
+for(int j=1;j<=i;j++){
+System.out.print("* ");
+}
+System.out.println();
+}
+* 
+* * * 
+* * * * * 
+---------------------------------------------------------------------------------------------
+int c=0;
+for(int i=1;i<=5;i=i+2){
+for(int k=5;k>=i;k--){
+System.out.print(" ");
+}
+c++;
+for(int j=1;j<=i;j++){
+if(j==c){
+System.out.print("A ");
+}
+else
+{
+System.out.print("* ");
+}
+}
+System.out.println();
+}
+A 
+* A * 
+* * A * *
+
+
+**************************************************
+
+public class Pattern {
+public static void main(String[] args) {
+int c=0;
+char chr='A';
+for(int i=1;i<=5;i=i+2){
+for(int k=5;k>=i;k--){
+System.out.print(" ");
+}
+c++;
+for(int j=1;j<=i;j++){
+if(j==c){
+System.out.print(chr+" ");
+chr++;
+}
+else
+{
+System.out.print("* ");
+}
+}
+System.out.println();
+}
+for(int i=3;i>=1;i=i-2){
+for(int k=i;k<=5;k++){
+System.out.print(" ");
+}
+c--;
+for(int j=1;j<=i;j++){
+if(j==c){
+System.out.print(chr+" ");
+chr++;
+}
+else
+{
+System.out.print("* ");
+}
+}
+System.out.println();
+}
+}
+**********************************************************************************
+
+
+
+
+public class Program
+{
+public static void main(String[] args)
+{
+int n=5;
+int count=1;
+int count2=1;
+for (int i = 0; i <n; i++)
+{
+for (int j = 0; j <=i; j++) 
+{
+if(i%2!=0)
+{
+System.out.print(count--+" ");
+count2++;
+}
+else
+{
+System.out.print(count2+++" ");
+count--;
+} 
+if(j<i)
+{
+System.out.print(" * ");
+}
+}
+count=count+(2*i)+n-2;
+System.out.println();
+}
+}
+}
+
+
+
+down vote
+You can do some thing like:
+
+String course = "My Curriculum" + genData.generateRandomAlphaNumeric(10);
+driver.findElement(By.id("Text1")).sendKeys(course);

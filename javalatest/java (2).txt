@@ -1,0 +1,33 @@
+15) What are the four parameter you have to pass in Selenium?
+
+Four parameters that you have to pass in Selenium are
+
+Host
+Port Number
+Browser
+URL
+
+2) What are the advantages of Automation framework?
+
+Advantage of Test Automation framework
+
+Reusability of code
+Maximum coverage
+Recovery scenario
+Low cost maintenance
+Minimal manual intervention
+Easy Reporting
+
+3) List out the advantages of TestNG over Junit?
+
+Advantages of JUnit over TestNG includes
+
+Compare to JUnit annotations, TestNG are easy to understand
+Unlike JUnit, TestNG does not require to declare @BeforeClass and @AfterClass
+Method name constraint is not there in TestNG
+TestNG allows you the grouping of test cases easily which is not possible in JUnit
+TestNG supports following three additional setup: @Before/AfterSuite, @Before/AfterTest and @Before/AfterGroup
+TestNG does not need to extend any class
+In TestNG, it is possible to run selenium test cases in parallel
+Based on group TestNG allows you to execute the test cases
+TestNG allows you to determine the dependent test cases; each test case is autonomous to other test case

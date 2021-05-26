@@ -1,0 +1,38 @@
+package com.jbt;
+ 
+import java.util.Calendar;
+ 
+/*
+ * Here we will learn to calculate the difference in days between two date.
+ * There is Java API(JODA Api) available which can also be used to calculate difference between date.
+ * But here we will talk about the option available in Java only.
+ */
+public class CalculateDifferenceInDays {
+ 
+ public static void main(String args[]) {
+ 
+ // Create Calendar instance
+ Calendar calendar1 = Calendar.getInstance();
+ Calendar calendar2 = Calendar.getInstance();
+ calendar1.set(2012, 2, 12);
+ calendar1.set(2011, 3, 12);
+ 
+
+
+ long miliSecondForDate1 = calendar1.getTimeInMillis();
+ long miliSecondForDate2 = calendar2.getTimeInMillis();
+ long diffInMilis = miliSecondForDate2 - miliSecondForDate1;
+ 
+ long diffInSecond = diffInMilis / 1000;
+ long diffInMinute = diffInMilis / (60 * 1000);
+ long diffInHour = diffInMilis / (60 * 60 * 1000);
+ long diffInDays = diffInMilis / (24 * 60 * 60 * 1000);
+ 
+ System.out.println("Difference in Seconds : " + diffInSecond);
+ System.out.println("Difference in Minute : " + diffInMinute);
+ System.out.println("Difference in Hours : " + diffInHour);
+ System.out.println("Difference in Days : " + diffInDays);
+ 
+ }
+ 
+}

@@ -1,0 +1,33 @@
+package com.general.com;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.util.Scanner;
+
+public class ReadFromNotepad {
+
+	public static void main(String[] args) 
+	{
+		File file = new File("E:/sample.txt");
+		try
+		{
+		Scanner sc = new Scanner(new FileInputStream(file));
+		  int count=0;
+		   while(sc.hasNext())
+		   {
+		       sc.next();
+		    //   sc.nextLine();
+			        count++;
+		}
+		    
+		System.out.println("Number of words: " + count);
+		}
+	
+	
+	catch(Exception e)
+	{
+		e.printStackTrace();
+	}
+	}
+
+}

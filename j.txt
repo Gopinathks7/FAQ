@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Scanner;
+public class StringImplement {
+static void replaceChar(String s2) {
+char[] ch = s2.toCharArray();
+ArrayList<String> al = new ArrayList<String>();
+for (int i = 0; i < ch.length; i++) {
+String temp = String.valueOf(ch[i]);
+if (!(temp.equalsIgnoreCase("A")) && !(temp.equalsIgnoreCase("E")) && (!temp.equalsIgnoreCase("I"))
+&& (!temp.equalsIgnoreCase("O")) && (!temp.equalsIgnoreCase("U")))
+{
+al.add(temp);
+}
+}
+Iterator<String> i1 = al.iterator();
+while (i1.hasNext()) {
+System.out.println(i1.next());
+}
+}

@@ -1,0 +1,41 @@
+class StackUsingQueue
+{
+Queue<Integer> q ;
+Queue<Integer> tmp ;
+
+public stackUsingQueue()
+{
+q = new LinkedList<Integer>();
+tmp = new LinkedList<Integer>();
+} 
+
+
+public void push(int data)
+{
+if (q.size() == 0)
+q.add(data);
+System.out.println("Nothing to pop");
+else
+{
+
+for (int i = 0; i < q.size(); i++)
+tmp.add(q.remove()); 
+q.add(data);
+ int l;
+for (int i = 0; i < l; i++)
+q.add(tmp.remove());
+}
+} 
+public int pop()
+{
+if (q.size() == 0)
+throw new NoSuchElementException("Underflow"); 
+return q.remove();
+} 
+public int getSize()
+{
+return q.size();
+} 
+}
+
+http://www.sanfoundry.com/java-program-implement-stack-using-two-queues/

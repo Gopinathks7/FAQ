@@ -1,0 +1,15 @@
+
+1) How you could say and justify your framework is scaleable?
+2) How you could say and justify your framework is Reliable?
+3) how you would run testNg failed testcases along with Normal execution? I don't need  to run failed test cases alone here?as it is time consuming.
+4) write a program to get the days printed for the given any 2 dates
+5) Write a prime number program from 2 to 50 using a constructor, try catch block as well as final keyword wherever it is possible
+6) Write a program to print to max 2 numbers from an array, using interface, implement the interface by inheritance concept, as well as use the constructor.  Use final keyword wherever it is applicable.
+7)Other questions were like static binding an dynamic binding and implementation towards framework
+8)Can we overload and override the main method in java?
+9) Can abstract class be final? can static method be overloaded OR override?
+10)Types of  Type casting-> wherever it is applicable in framework
+11) How can you build a robust framework
+12) How can take a take sceenshot from a webpage, total code and class and method have used
+13)Define Robot class and usage
+

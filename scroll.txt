@@ -1,0 +1,18 @@
+public class Test1 {
+
+    public static void main(String[] args) {
+        WebDriver driver=new FirefoxDriver();
+        driver.get("http://news.google.co.in/nwshp?hl=en&tab=wn");
+        
+
+	JavascriptExecutor js = (JavascriptExecutor)driver;
+        Object o=js.executeScript("return document.body.scrollHeight");
+        int i=Integer.parseInt(o.toString());
+        System.out.println("Total height of the page:"+i+" pixels");
+        int percentage=30;
+        i=(i*percentage)/100;
+        js.executeScript("javascript:window.scrollTo(0,"+i+")");
+        System.out.println("Scrolling to "+percentage+"%");
+
+    }
+}

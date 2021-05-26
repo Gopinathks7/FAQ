@@ -1,0 +1,1225 @@
+Real Time Selenium & java interview questions below, for experience candidates============================
+IBM QNS…..3 year
+1st Round Telephonic
+1.What is your specification.
+2.what type projects you handled & the modules you came across?
+3.Can you explain your framework?
+4.why Review is required,& who are involved?
+5.Difference between class and object?
+6.Difference between Thread.sleep() & selenium.set speed() ?
+2nd f2f
+1.tell me about yourself?
+2.difference between inner join & outer join?
+3.write a program to check whether a year is leap year or not.
+4.what bug tracking tool you used & how you work on that.
+5.write a program for binary search?
+6.oops concepts…& real time examples….?
+7.what is assertion…& what are the types you used.
+8 where to use hashmap & where hash table?
+9.Xpath qns……?
+10.along with xpath what different methods you used?
+11.why string is immutable?
+12.some qn from sql…join ,alter,drop,delete?.
+13.find first 4 salary getter in employee table?
+14.same qn, again ;if 3 employee has highest salary ?then how we fetch? ANS. Use ” Rank Over”
+15. manual qns.
+3rd tech f2f with panel of 3 members
+1.introduction?
+2.framework?
+3.Agile phases? Ans:1.concept,2.inception,3.construction,4.Release,5.Production6.Retirement
+4.How you select cases for regression testing.
+5.wap program to see the out put as 0,1,1,2,3…..
+6.difference between Volatile & transient?
+7.Final & finally difference, Example?
+8.do you have idea on Enumeration?
+9.how to handle different window?
+10..Return type of getwindow handle()?
+11.String reverse.
+12.find only those students who scored 4th highest mark . Ans use’ Minus’
+13.Manual qns conceptual 5-6 qns? Ie V&V vs Agile,test case templates..etc
+14.How you work with SVN.
+15.qn regarding file attachment?
+16. What is the execution order???
+@test1 (priority=1)
+@test2 (priority=2)
+@test3
+@test4(priority=3)
+17. can we start from 0 ie.prority=0; can we give priority= -12 ie. –ve no????
+18.what difference you see when working with different browser?(except set up or configuration level)
+19.have you got any issue that something working fine in FF but not in Ie. At that time what you ‘ll do?
+Will you change code for different browser…
+20.. few common qn which are already repeated different interviews….ie. test Ng,
+Ssl handle, frame handle, working with dynamic weblist,auto it,apache poi qns….etc
+21. 3-4 qns from QC.
+22. there is a round shaped cake, I need 8 equal pieces, you have option of cut the cake 3 times?
+23.how about your weakness?
+24.if we say directly you are rejected then what’s your reaction?
+4th round. _MGR+hr
+1.All qns regarding the process followed in the organization
+2.projects & modules
+3.basic,depth manual qns with real time example, like After you receive the build what is the next stage you will do?ans: go with smoke 1st,then….; Agile, Build, Rtm, Daily schedule in office…etc(easy because daily we do same thing in off., so prepare for these types )
+4.high priority, low severity, Lp Hs, HS HP…examples(except text,image..dont say these issues)
+4.Do you know SQL injection,
+5.have you ever use PURGE,Flash..Back Querry…
+6.file handling. Qn
+7.database handling.
+9. file attachment without Auto it? advantage of using Page Object Model in Selenium?
+88) As a tester what difference you see in product based & Service based company.
+10.Bug life cycle.
+11.Automation lifecycle.
+12.how to import file in Qc.
+13. 4-5 qn on qc. (dash board, test plan…etc)
+14.why you choose testing not development & that to selenium automation. My ans: Testing is meant for only smart peoples, development need dedication. Testing is meant for quality ;& I belive in quality not in quantity……& so on..
+15.(lady Hr. so the qn is) 
+1 morning when you’ll wake up from bed .you see that I am in front of you & I told you that ,I am pregnant,& no one knows about this); then what you ‘ll do? My-Ans. I’ll ask for a traet,We’ll celebrate your happiness & I’ll inform your Hausband about this & if possible to your parents also.
+15. if we say you are not selected then what’s your action?
+16. if we say you are getting hired by our organization…?
+finally……sal. negotiaton, Np. (**few qns I forgot…hope this’ll help all)
+Lik
+GENPACT
+Technical Round 1 (Manual + SQL)
+Can you tell me about your project?
+What testing methodology do you follow in your project?
+What is the difference between regression testing and functional testing?
+Can you please explain me the defect life cycle?
+What is Ad-hoc testing?
+Difference between static and dynamic testing?
+What are the types of joins?
+Can you write the syntax for Inner-Join?
+How do you update a table with new set of data on both row and columns?
+Can you explain me on MAX () function in SQL with example?
+Can you elaborate DDL, DML with few commands for each type?
+What is the difference between primary key and unique key?
+Can primary key accept null values?
+Can a table have multiple primary keys?
+Technical Round 2 (Manual +Java/Selenium+ SQL)
+Manual
+Explain me your project architecture?
+Explain me Agile-Scrum methodology?
+Tell me about Bug life cycle with all phases?
+Have you come across deferred defects and what those defects indicate?
+What is compatibility testing? Give me example? 
+What is severity and priority?
+Give example for high severity and high priority?
+Difference between regression and retesting?
+How do you map test case to requirements in QC?
+How do you link defect to test case in QC?
+How did you perform integration testing in your project? 
+When can I use stubs or drivers? Have you used top-down approach or bottom up approach type of integration testing?
+Have you involved in SDLC process? Explain me High Level process of STLC?
+What do you do in test closure?
+What is difference between two-tier and n-tier architecture?
+Java
+What is abstract class?
+Difference between abstract class and interface?
+How do you know when to use abstract class and Interface?
+What is overloading and overriding? Justify me with your examples by implementing your code?
+What is comparable and comparator in java?
+What is the significance of final & finally?
+What is the use of this and super keywords?
+Explain oops concepts with examples?
+Explain about exceptions in java?
+Why string is immutable?
+Difference between Array list and Vector?
+Draw collections hierarchy?
+What is boxing and un-boxing?
+Selenium
+Explain ATLC (Automation Life Cycle)?
+What are the differences between SIDE, RC and Web Driver?
+What is your framework and explain me about your framework?
+What is object repository and explain page factory technique?
+Write a code how you will access web elements x-paths from page factory classes?
+How to invoke an application in web driver?
+How do you handle dynamic web elements?
+What are the different exceptions you got when working with Web Driver?
+Difference between implicit wait and explicit wait?
+What are web elements and what are the different ways to identify them?
+Explain me about JDBC connections with web driver?
+What types of testing does selenium automation supports?
+How to work on dynamic drop down list, tell me the steps to work with it and it must include actions class with mouse hover operations?
+How to launch different browsers in Web Driver? Write code for it.
+What is Apache POI?
+Write a code to get the data from excel using POI library?
+Why TestNG and why not JUnit?
+Explain me @Before Method and @After Class annotations in TestNG?
+What is batch and group execution in TestNG?
+What are listeners?
+When you will use data provider?
+What is Selenium Grid?
+How do you know which test cases to automate and which not to automate?
+What are the challenges you faced when working with selenium?
+What is log4j and how did you use in web driver?
+Explain how ANT and Jenkins work? Advantages of Jenkins?
+SQL
+What are types of joins?
+Write the syntax for left join?
+Gave two tables and asked to perform full outer join?
+I want to find out 3rd largest salary in table, asked to write query for the table?
+I want to get 40% of records from given table, write a query?
+How do I display employee name starting with ‘N’?
+What is group by and having clauses? Explain having clause with example?
+Tell me different types of constraints in SQL?
+Explain Foreign Key constraint and Not Null constraint?
+Difference between DELETE, TRUNCATE & DELETE?
+Manager Round
+What do you know about Agile Methodology? What are its advantages and disadvantages?
+Types of joins you know in SQL?
+What is a trigger?
+What is Index? Index is performed on column or table?
+Which framework you are following in your project?
+UNIX commands?
+What are TestNG, Apache POI and Log4J?
+If I ask you to select Automation or Manual what is your choice? Want only one answer?
+Why Automation?
+What do you know about GENPACT and why GENPACT?
+Why I need to hire you?
+HappyestMind & Ness
+Selenium
+1.Write the syntax of drop down
+2.What is Webdriver-Java interface
+3.What is the current Version of Selinum webdriver
+4.How to get the text value from text box
+5.StrinG x="ABC";
+String x="ab"; does it create two objects?
+6.write a program to compare the strings
+7.Class a
+{
+}
+class b extends a
+{
+}
+A a= new A();
+B b=new B();
+A a= new B();
+B a=new A();//nvalid
+Which is valid and invalid?
+8.How to handle differnt type of pop up.(Wnidow,Alerts,Invisible popup)
+9.How to handle DropDown menu
+10. How to handle SSL certificate
+11.How to handle Google search text.
+12. How to handle dynamic text box which contains the 3 numbers, get
+the number and add the three number and add it other text box.
+13.How to handle Ajax Objects
+8.Explain webdriver architecture
+9.Explain File downloading
+10.Explain File attachments other that Auto IT
+11.Write the syntax for finding the row count in dynamic web table
+12.Differnece between class and Interface
+13. What type of class is the string class
+14.WHAT are the differnt methods that are used along with Xpath
+15.Explain Interface
+16 Explain Abstract
+17.What is selenum grid
+18 what is selenium RC
+19.Why is key word drivern frame work only choosen,
+1. how to handle dynamic object
+2. how to work with button which is in div tag and and u have to click
+without using xpath
+3. JVM is dependent or independent platform
+4.how many Test script you write in day
+5. describe your framework
+6. how to parameterized your junit
+7.how to handle ssl security
+8. how to handle window pops
+9. diffnct between implicit and explicit
+10.what are the types of assertion and what are assertion in junit
+11.How to handle ssl certificate
+12.What is dom concept
+13.What is the challenges u have faced during Automation
+14What is genrics
+15.What is synchronization
+Java
+1.JVM is dependent or independent platform
+2.diffn bw hashmap and hash set, set and linkedlist, arraylist and
+vector list , linkedhash set and hashset
+3.abstract and interface
+4.throw and throws
+5.how to split
+6.checked and unchecked exception
+7.how to work with azax aplication
+8.why sring is immutable
+9.wat is the retru ntype of getwindowhandles();
+10.what are the types of assertion and what are assertion in java
+11.differnce between interface and Abstract classes
+12.What is static varaible
+13.what is volitile
+14. what is trainsient
+15.what is the differnece between Final,Finalize and finally
+16.what is the differnce between Public,private and protected
+FICO
+1.what is the default package in java ? 
+2.: why we use interface why not abstract class ...what if i implements same method in interface and abstract ....thn ?? any diffrnc??
+3. what are inner classes ..name them ?
+4.in public static void main(String arr[])... what if i replace public with private ........... remove static ........replace void with string
+5.in hash map we have (key and value ) pair , can we store inside a value =(key, value ) again ??
+5. what are variable scope in java (in class , in method , in static block)
+6. what are the oops concept ? explain them each with real world examples
+7.write a program so that when ever u create a object ... u get to know how many object u have created 
+8. what is singleton classes ?
+9.what is difference between .equals() , (==) and compare-to();
+10. what is the difference between hash code and equals
+11.write a program to get substring of string ex: javais good ... so result : avais
+12.write a program to reverse the string 
+13. wap for binary search 
+14.what is the use of package 
+15. why we use interface and abstract 
+16.we have 2 interface both have print method , in my class i have implemented the print method , how u wil get to know that i have implemented the first interface and how u will use it .. if u want to use it 
+17.what is the difference between vector list and arraylist
+18. difference between hashmap and hash table, what is synchronization , how it is achieved 
+19. what is the use of collection, when we use it 
+20. what is priority queue in collection , what is the use , how u have use in your project 
+21.where to use hashmap and hashtable
+22. where u have use the concept of interface and abstract in your framework
+23.
+SPAN Info tech
+Selenium question:
+How to work with dynamic webtable ?
+What is asserstion & types of asserstion ?
+what to work with file attachment & file download in webdriver ?
+How to file attachment with out Autoit scripts ?
+how to work with weblist @ radio button in webdriver ?
+what is the difference between the implicit wait & webdriver wait ?
+Which repository you have used to store the test scripts ?
+What is Check-in & check-out , revert ?
+how to work with Radio buttun ?
+how to work with weblist ?
+what is the use of Actions class in webdriver?
+how to work with keybord and mouse opration in java ?
+how to get the text from the UI in runtime ? 
+expain the Architructure of Webdriver?
+How to run the test scripts with mulitiple browser ?
+Java Qustion
+IN parent and child class i have disp() methode , using child class reference how to call parent disp() methode ?
+what is the use of this keyword
+how many types execption avilable in java?
+difference between final finaly , finalize?
+difference between Overriding and overload ?
+differebce between MAP & set ?
+Mind tree interview Question
+Selenium
+1. how to handle dynamic object 
+2. how to work with button which is in div tag and and u have to click without using xpath
+3. JVM is dependent or independent platform
+4.how many Test script you write in day
+5. describe your framework
+6. how to parameterized your junit
+7.how to handle ssl security
+8. how to handle window pops
+9. diffnct between implicit and explicit
+10.what are the types of assertion and what are assertion in junit
+Java
+1.JVM is dependent or independent platform
+2.diffn bw hashmap and hash set, set and linkedlist, arraylist and vector list , linkedhash set and hashset
+3.abstract and interface
+4.throw and throws
+5.how to split 
+6.checked and unchecked exception 
+7.how to work with azax aplication 
+8.why sring is immutable
+9.wat is the retru ntype of getwindowhandles();
+10.what are the types of assertion and what are assertion in java
+Indicomm Interview Question
+Interview Questions AltiMetrik
+1 what is inheritence?Explain the use of inheritence?
+2 what is abstract class?
+3 what is interface?
+4 when to use inheritence and when to use abstract class?
+5 what happence if i not provide abstract method in abstract class
+and interface?
+6 what is method overriding java what is the use of method
+overriding?
+7 what is constructor ?use of constructor and can i ovverride the
+costructor?
+8 how to call the super class method in subclass?
+9 what is the base class for all java class?tell me the methods?
+10 what is hashcode method explain programtically(asked
+implementaion of hashcode method)?
+11 what is toString method ?what happens when i use in the program
+explain? 
+12 what is String builder?
+13 what is String tokenizer?
+14 what is the difference between string and String Buffer?
+15 what is the capacity of String Buffer?
+16 what is collection ?
+17 what is list?
+18 what is Arraylist Expain?
+19 Write logic for Array to Arraylist?
+20 write logic for Arraylist to Array?
+21 why vector class is defined Synchronized ?
+22 what is exception ?
+22 difference between Throw And Throws?
+23 what is custom Exception explain?
+24 What is finally block?Use of Finally block?explain
+25 what happens if exception not found in try catch block?
+Then finally block will be Excuted or not
+Questions from Infinite
+if u have multiple alerts, how do you handle it.
+if you have two password/reneter password
+assert equals/assert same
+navigate() and switch to
+one webdriver driver is opened, what to do to make addons to work
+how to join two sets/answer: by using addon method....
+what are all the collections you used
+india/all states, need to select the last value of the dropdown list
+Software AG
+----------
+how to work with ajax application, flash, frame, log files,
+log file will generated, for each action u do...ex: for gmail, compose mail;> there would be some log generated....so how to capture that log...
+if you have a .bat file, how do you call that...
+what exactly you call for this..
+how you will make sure that page has been loaded...
+StarMark Interview Questions
+1. Diff between static and non static
+2. What is multiple inheritance 
+3. Write program for prime no.
+4.How to run build.xml through command prompt
+5. Diff b/w overloading and overriding
+6. how many wait methods you are using in webdriver
+7. Difference between assertion and verification 
+8. What are the roles and responsibilities.
+9. Why TestNG is better than JUNIT
+HCL interview Questions:
+1. difference between string and string buffer?
+2. difference between linked list and arraylist?
+3. thread concepts?
+4. why string class is immutable?
+5. Singleton class?
+Adobe Interview Questions:
+1. Retrieve the test data from excel sheet, put in in google search bar, click on search button and click on the first link opened in google search.
+2. Write a program to check whether the string can be a palindrome. for example if the string aab(it is not a palindrom string). replace the characters in a string like aba, baa etc. and check that can be a palindrome string.
+3. How will you Identify the webelement that has same property values?
+4. write a pgm to return the no.of rows and columns in a webtable?
+5. Write a prm to return the row and colum value like(3,4) for a given data in web table?
+interview question from companies(happest minds,emids and adobe)
+1) how to create a folder in build.xml
+2) describe about your framework.
+3) difference between selenium rc and selenium webdriver
+4) explain the architecture of your project
+5) draw ur framework
+6) write a code for fetching the data from excel sheet
+7) write a code for palindrome
+explain about jenkins
+9) explain about ur control version tool
+10) how to handle with drop down
+11) how to handle window id
+12) how to handle with google search text box
+13) how to handle alert and window pop up
+14) how u will get the frame id
+15) how to handle dynamic webtable
+16) why we are using follwing siblings
+17) create a pagefactory for login page
+18) how u will group,how u will add classes from different packages 
+EBAY InterView Questions
+TESTNG QUESTIONS ASKED IN EBAY
+1. What is the use of TestNG/Junit ?
+2. What is parameterized testing?
+3. How can u achieve parameterized testing using TestNG?
+With the help of 2 annotations @Parameters and @Dataprovider.
+4. Can you map test method names in XML file along with class names?
+Yes, we can do it please see below ex:
+<classes>
+<class name="test.IndividualMethodsTest">
+<methods>
+<include name="testMethod" />
+</methods>
+</class>
+</classes>
+5. Sequence of execution of below annotations:
+@Test
+@BeforeGroups
+@AfterGroups
+@BeforeSuite
+@AfterSuite
+@BeforeMethod
+@AfterMethod
+@BeforeClass
+@AfterClass
+6. What is Yaml file?
+TestNG supports YAML as an alternate way of specifying your suite file.You might find the YAML file format easier to read and to maintain. YAML files are also recognized by the TestNG Eclipse plug-in.
+7. How will you execute only selected test methods in particular Test class?
+8. How do you fail test cases in TestNg?
+9. Can we execute test cases parallely in TestNg?
+10. How can we control the order of test method invocation?
+We need to create Dependency.
+TestNG allows you to specify dependencies either with annotations or in XML.: 
+You can use the attributes dependsOnMethods or dependsOnGroups, found on the @Test annotation.
+Alternatively, you can specify your group dependencies in the testng.xml file. You use the <dependencies> tag to achieve this:
+11. How can you make sure test methods which are run in a certain order doesn't really depend on the success of others ?
+By adding "alwaysRun=true" in your @Test annotation.
+ACCOLITE INTERVIEW QUESTIONS:
+1.What is the use of static keyword in Main()?
+2.can a class without main() gets compilation successful?
+3.difference between abstract and interface.
+4.Example of function overloading in Selenium Webdriver
+5.Can we private access specifier inside interface?
+6.Is there any way to deallocate memory in JAVA?
+7.What is the use of finalize method? whether implementation is already available.
+8.How do you handle drop down list box.
+9.Write a pgm for removing white spaces in a String?
+10.Write five critical testcases for the above written pgm.
+11.What is missing in Selenium Webdriver compared to Selenium RC?
+12.you have a parametrized constructor, whether it will call default constructor first? or directly it will call parametrized contructor?
+13.What is the difference between Webdriver Wait(Explicit Wait) and Implicit wait?
+14.Write a xpath using following-sibling?
+15.How will you analyze the failures after giving a run in the TestNG framework?
+16.Explain the Selenium Webdriver Architecture?
+17.Explain The framework you were using ?
+18.What is Object class?
+19.Jenkins Tool - Scheduled Batch Run - any idea
+20.What is the current version of Selenium Webdriver ? What are the other languages do Selenium Support?
+21.How are you writing log files in your framework?Using Log4J Jars or any other methods.
+22.How to handle SSL certificate?
+23.What is the latest version of selenium webdriver?
+All interview Qustions
+HeadStronginterview qustions
+1.explain framework
+2.page factory model code?diffrence between pagefactory and page object model?
+3.what is object reposiratory?
+4.How to overwrite a data in excel sheet?
+5.explain different frame works.
+6.what are property files?
+7.howgroupin is done in testng xml.
+8.how to run tests in different browser.
+9.how to handle alerts.
+10.jdbc connections?
+11.how to report ?
+12.common method for reverse a string?
+13.challenges faced?
+14.String s=”AABBBCFFDD” Count the presence of each letter.
+15 pascle triangle program.
+16.class and interface difference?
+17 interface and inheritance difference?
+18.what is polymorphism?
+19.diffrence between string and string builder?
+20.what is static variable,
+21.what is null pointer exception .
+22.what are the exception you found?
+23.bug lifecycle?
+24.web driver waits and implicit wait?
+25.can we write multiple CATCH in webdriver code?
+26.if we close the driver in try block then,FINALLY will execute or not?
+27.what are the different types of framework ?
+28.why we go for hybrid frame work?
+29.diffrence between data driven and modular f/w?
+Exlliant Interview qustions
+1.what is testng?why we go for testng?
+2.can we run a test without testng?
+3.what is the difference between verification and valiation?
+4.what are the different locators in selenium?
+5.what is xpath?
+6.diffrence between absolute and relative path?
+7.what is difference between abstract class and interface?
+8.what in diff between method overloading and constructor overloading?with example?
+9.diffrence between string and string buffer?
+10.what is overriding ?
+11.how to handle dynamic elements?
+12.how to get the no of emp getting same salary?
+CalSoft labs interview qustions?
+1.explain your framework?
+2.how to do grouping?with code?
+3.how to handle different pop ups?
+4.diffrence between string and string buffer?
+5.what is difference between abstract class and interface?
+6.diffrence between final,finaly,finalize?
+7.diffrence between normal class and final class?
+8.how to handle frames without having any attributes?
+9.diffence between smoke and sanity testing?
+10.QA process you follows?
+11.adapter design in java?
+Bosch interview Qustions
+1.Reverse a string without using inbuilt functions?
+2.Sorting of numbers?
+3.Generic method for select dropdown?
+4.generic code for fetching data from xl sheet?
+5.What is testNg?
+6.What is selenium grid?write the code?
+7.how to do parallel execution?
+8.how to handle ssl certification in ie?
+9.how to handle popup’s?
+10.how to fetch all the options in auto suggest?
+11.how to upload a file ?write the code?
+12.how to generate daily execution report?
+13.explain frame work?
+14.difference between junit and testng?
+Techmetric interview 
+1.what is webdriver?
+2.where all of abstract methods of webdriver are implemented?
+3.how to handle dynamics webelement?
+5.how to fetch data from excel sheet?
+6.how to write xpath,css?
+7.how to connect to the database?
+Explain ur responsibility in ur project?
+2. Explain ur project(team size,domain etc)
+3. Automation process?
+4. All basic questions on Manual Testing?
+5. Diff between RC,IDE,GRID and Web Driver?
+6. How to handle SSL issue,POP-Up alert?...
+HappiestMind interview questions
+1.what is collection in java.
+2.play with any of the collections.
+3.scarch a letter in string?
+4.reverse a number?
+5. sorting ana array?
+6 .What is page object model?
+7between css and xpath which one is faster?
+8.what is exception.tell some exception.
+9.tell some exception you get while writing code.
+10.how to handle exception ?
+11.is it agood approche to throw an exception?
+14.how to generate a report?
+15.how many testcase you have automated.
+16.how many test case you run in a batch execution?
+17.what is the minimum time to run a batch execution?
+18.tell me complex secnarion of your application?
+19.challenges you faced in automation.
+20.how to upload file other than Autoit?
+21.negative testcase for a pen?
+22.how to run a test 3times if the test fail ?
+Happiest Minds Technologies
+1. what is the diff between STRING and STRING BUFFER.
+2. WAP For String Reverse.
+3. Find how many duplicate values in Array List.
+4. string [] str={"abc","efg","fgh"};
+conver array to string.
+5. about file downloading and uploading.
+6. what is PageFactory explain.
+7. explain method overloading and overriding .. how practically 
+implemented in ur project.
+8. what are the challenges of SELENIUM.
+9. explain the features of JAVA.
+10. how do u say JAVA is platform independent.
+11. is JVM platform independent.
+12. write code for data fetch of excelSheet.
+13. explain how do u access DB in selenium.
+14. explain ANT and what are the pros and cons.
+15. how do u achieve parallel execution in TestNG.
+16. what is the dictionary meaning of SELENIUM.
+17. accronomy of ANT and POI.
+Explain ur responsibility in ur project?
+2. Explain ur project(team size,domain etc)
+3. Automation process?
+4. All basic questions on Manual Testing?
+5. Diff between RC,IDE,GRID and Web Driver?
+6. How to handle SSL issue,POP-Up alert?...
+IBM QNS…..3 year
+1st Round Telephonic
+1.What is your specification.
+2.what type projects you handled & the modules you came across?
+3.Can you explain your framework?
+4.why Review is required,& who are involved?
+5.Difference between class and object?
+6.Difference between Thread.sleep() & selenium.set speed() ?
+2nd f2f
+1.tell me about yourself?
+2.difference between inner join & outer join?
+3.write a program to check whether a year is leap year or not.
+4.what bug tracking tool you used & how you work on that.
+5.write a program for binary search?
+6.oops concepts…& real time examples….?
+7.what is assertion…& what are the types you used.
+8 where to use hashmap & where hash table?
+9.Xpath qns……?
+10.along with xpath what different methods you used?
+11.why string is immutable?
+12.some qn from sql…join ,alter,drop,delete?.
+13.find first 4 salary getter in employee table?
+14.same qn, again ;if 3 employee has highest salary ?then how we fetch? ANS. Use ” Rank Over”
+15. manual qns.
+3rd tech f2f with panel of 3 members
+1.introduction?
+2.framework?
+3.Agile phases? Ans:1.concept,2.inception,3.construction,4.Release,5.Production6.Retirement
+4.How you select cases for regression testing.
+5.wap program to see the out put as 0,1,1,2,3…..
+6.difference between Volatile & transient?
+7.Final & finally difference, Example?
+8.do you have idea on Enumeration?
+9.how to handle different window?
+10..Return type of getwindow handle()?
+11.String reverse.
+12.find only those students who scored 4th highest mark . Ans use’ Minus’
+13.Manual qns conceptual 5-6 qns? Ie V&V vs Agile,test case templates..etc
+14.How you work with SVN.
+15.qn regarding file attachment?
+16. What is the execution order???
+@test1 (priority=1)
+@test2 (priority=2)
+@test3
+@test4(priority=3)
+17. can we start from 0 ie.prority=0; can we give priority= -12 ie. –ve no????
+18.what difference you see when working with different browser?(except set up or configuration level)
+19.have you got any issue that something working fine in FF but not in Ie. At that time what you ‘ll do?
+Will you change code for different browser…
+20.. few common qn which are already repeated different interviews….ie. test Ng,
+Ssl handle, frame handle, working with dynamic weblist,auto it,apache poi qns….etc
+21. 3-4 qns from QC.
+22. there is a round shaped cake, I need 8 equal pieces, you have option of cut the cake 3 times?
+23.how about your weakness?
+24.if we say directly you are rejected then what’s your reaction?
+4th round. _MGR+hr
+1.All qns regarding the process followed in the organization
+2.projects & modules
+3.basic,depth manual qns with real time example, like After you receive the build what is the next stage you will do?ans: go with smoke 1st,then….; Agile, Build, Rtm, Daily schedule in office…etc(easy because daily we do same thing in off., so prepare for these types )
+4.high priority, low severity, Lp Hs, HS HP…examples(except text,image..dont say these issues)
+4.Do you know SQL injection,
+5.have you ever use PURGE,Flash..Back Querry…
+6.file handling. Qn
+7.database handling.
+9. file attachment without Auto it? advantage of using Page Object Model in Selenium?
+88) As a tester what difference you see in product based & Service based company.
+10.Bug life cycle.
+11.Automation lifecycle.
+12.how to import file in Qc.
+13. 4-5 qn on qc. (dash board, test plan…etc)
+14.why you choose testing not development & that to selenium automation. My ans: Testing is meant for only smart peoples, development need dedication. Testing is meant for quality ;& I belive in quality not in quantity……& so on..
+15.(lady Hr. so the qn is) 
+1 morning when you’ll wake up from bed .you see that I am in front of you & I told you that ,I am pregnant,& no one knows about this); then what you ‘ll do? My-Ans. I’ll ask for a traet,We’ll celebrate your happiness & I’ll inform your Hausband about this & if possible to your parents also.
+15. if we say you are not selected then what’s your action?
+16. if we say you are getting hired by our organization…?
+finally……sal. negotiaton, Np. (**few qns I forgot…hope this’ll help all)
+Lik
+GENPACT
+Technical Round 1 (Manual + SQL)
+Can you tell me about your project?
+What testing methodology do you follow in your project?
+What is the difference between regression testing and functional testing?
+Can you please explain me the defect life cycle?
+What is Ad-hoc testing?
+Difference between static and dynamic testing?
+What are the types of joins?
+Can you write the syntax for Inner-Join?
+How do you update a table with new set of data on both row and columns?
+Can you explain me on MAX () function in SQL with example?
+Can you elaborate DDL, DML with few commands for each type?
+What is the difference between primary key and unique key?
+Can primary key accept null values?
+Can a table have multiple primary keys?
+Technical Round 2 (Manual +Java/Selenium+ SQL)
+Manual
+Explain me your project architecture?
+Explain me Agile-Scrum methodology?
+Tell me about Bug life cycle with all phases?
+Have you come across deferred defects and what those defects indicate?
+What is compatibility testing? Give me example? 
+What is severity and priority?
+Give example for high severity and high priority?
+Difference between regression and retesting?
+How do you map test case to requirements in QC?
+How do you link defect to test case in QC?
+How did you perform integration testing in your project? 
+When can I use stubs or drivers? Have you used top-down approach or bottom up approach type of integration testing?
+Have you involved in SDLC process? Explain me High Level process of STLC?
+What do you do in test closure?
+What is difference between two-tier and n-tier architecture?
+Java
+What is abstract class?
+Difference between abstract class and interface?
+How do you know when to use abstract class and Interface?
+What is overloading and overriding? Justify me with your examples by implementing your code?
+What is comparable and comparator in java?
+What is the significance of final & finally?
+What is the use of this and super keywords?
+Explain oops concepts with examples?
+Explain about exceptions in java?
+Why string is immutable?
+Difference between Array list and Vector?
+Draw collections hierarchy?
+What is boxing and un-boxing?
+Selenium
+Explain ATLC (Automation Life Cycle)?
+What are the differences between SIDE, RC and Web Driver?
+What is your framework and explain me about your framework?
+What is object repository and explain page factory technique?
+Write a code how you will access web elements x-paths from page factory classes?
+How to invoke an application in web driver?
+How do you handle dynamic web elements?
+What are the different exceptions you got when working with Web Driver?
+Difference between implicit wait and explicit wait?
+What are web elements and what are the different ways to identify them?
+Explain me about JDBC connections with web driver?
+What types of testing does selenium automation supports?
+How to work on dynamic drop down list, tell me the steps to work with it and it must include actions class with mouse hover operations?
+How to launch different browsers in Web Driver? Write code for it.
+What is Apache POI?
+Write a code to get the data from excel using POI library?
+Why TestNG and why not JUnit?
+Explain me @Before Method and @After Class annotations in TestNG?
+What is batch and group execution in TestNG?
+What are listeners?
+When you will use data provider?
+What is Selenium Grid?
+How do you know which test cases to automate and which not to automate?
+What are the challenges you faced when working with selenium?
+What is log4j and how did you use in web driver?
+Explain how ANT and Jenkins work? Advantages of Jenkins?
+SQL
+What are types of joins?
+Write the syntax for left join?
+Gave two tables and asked to perform full outer join?
+I want to find out 3rd largest salary in table, asked to write query for the table?
+I want to get 40% of records from given table, write a query?
+How do I display employee name starting with ‘N’?
+What is group by and having clauses? Explain having clause with example?
+Tell me different types of constraints in SQL?
+Explain Foreign Key constraint and Not Null constraint?
+Difference between DELETE, TRUNCATE & DELETE?
+Manager Round
+What do you know about Agile Methodology? What are its advantages and disadvantages?
+Types of joins you know in SQL?
+What is a trigger?
+What is Index? Index is performed on column or table?
+Which framework you are following in your project?
+UNIX commands?
+What are TestNG, Apache POI and Log4J?
+If I ask you to select Automation or Manual what is your choice? Want only one answer?
+Why Automation?
+What do you know about GENPACT and why GENPACT?
+Why I need to hire you?
+HappyestMind & Ness
+Selenium
+1.Write the syntax of drop down
+2.What is Webdriver-Java interface
+3.What is the current Version of Selinum webdriver
+4.How to get the text value from text box
+5.StrinG x="ABC";
+String x="ab"; does it create two objects?
+6.write a program to compare the strings
+7.Class a
+{
+}
+class b extends a
+{
+}
+A a= new A();
+B b=new B();
+A a= new B();
+B a=new A();
+Which is valid and invalid?
+8.How to handle differnt type of pop up.(Wnidow,Alerts,Invisible popup)
+9.How to handle DropDown menu
+10. How to handle SSL certificate
+11.How to handle Google search text.
+12. How to handle dynamic text box which contains the 3 numbers, get
+the number and add the three number and add it other text box.
+13.How to handle Ajax Objects
+8.Explain webdriver architecture
+9.Explain File downloading
+10.Explain File attachments other that Auto IT
+11.Write the syntax for finding the row count in dynamic web table
+12.Differnece between class and Interface
+13. What type of class is the string class
+14.WHAT are the differnt methods that are used along with Xpath
+15.Explain Interface
+16 Explain Abstract
+17.What is selenum grid
+18 what is selenium RC
+19.Why is key word drivern frame work only choosen,
+1. how to handle dynamic object
+2. how to work with button which is in div tag and and u have to click
+without using xpath
+3. JVM is dependent or independent platform
+4.how many Test script you write in day
+5. describe your framework
+6. how to parameterized your junit
+7.how to handle ssl security
+8. how to handle window pops
+9. diffnct between implicit and explicit
+10.what are the types of assertion and what are assertion in junit
+11.How to handle ssl certificate
+12.What is dom concept
+13.What is the challenges u have faced during Automation
+14What is genrics
+15.What is synchronization
+Java
+1.JVM is dependent or independent platform
+2.diffn bw hashmap and hash set, set and linkedlist, arraylist and
+vector list , linkedhash set and hashset
+3.abstract and interface
+4.throw and throws
+5.how to split
+6.checked and unchecked exception
+7.how to work with azax aplication
+8.why sring is immutable
+9.wat is the retru ntype of getwindowhandles();
+10.what are the types of assertion and what are assertion in java
+11.differnce between interface and Abstract classes
+12.What is static varaible
+13.what is volitile
+14. what is trainsient
+15.what is the differnece between Final,Finalize and finally
+16.what is the differnce between Public,private and protected
+FICO
+1.what is the default package in java ? 
+2.: why we use interface why not abstract class ...what if i implements same method in interface and abstract ....thn ?? any diffrnc??
+3. what are inner classes ..name them ?
+4.in public static void main(String arr[])... what if i replace public with private ........... remove static ........replace void with string
+5.in hash map we have (key and value ) pair , can we store inside a value =(key, value ) again ??
+5. what are variable scope in java (in class , in method , in static block)
+6. what are the oops concept ? explain them each with real world examples
+7.write a program so that when ever u create a object ... u get to know how many object u have created 
+8. what is singleton classes ?
+9.what is difference between .equals() , (==) and compare-to();
+10. what is the difference between hash code and equals
+11.write a program to get substring of string ex: javais good ... so result : avais
+12.write a program to reverse the string 
+13. wap for binary search 
+14.what is the use of package 
+15. why we use interface and abstract 
+16.we have 2 interface both have print method , in my class i have implemented the print method , how u wil get to know that i have implemented the first interface and how u will use it .. if u want to use it 
+17.what is the difference between vector list and arraylist
+18. difference between hashmap and hash table, what is synchronization , how it is achieved 
+19. what is the use of collection, when we use it 
+20. what is priority queue in collection , what is the use , how u have use in your project 
+21.where to use hashmap and hashtable
+22. where u have use the concept of interface and abstract in your framework
+23.
+SPAN Info tech
+Selenium question:
+How to work with dynamic webtable ?
+What is asserstion & types of asserstion ?
+what to work with file attachment & file download in webdriver ?
+How to file attachment with out Autoit scripts ?
+how to work with weblist @ radio button in webdriver ?
+what is the difference between the implicit wait & webdriver wait ?
+Which repository you have used to store the test scripts ?
+What is Check-in & check-out , revert ?
+how to work with Radio buttun ?
+how to work with weblist ?
+what is the use of Actions class in webdriver?
+how to work with keybord and mouse opration in java ?
+how to get the text from the UI in runtime ? 
+expain the Architructure of Webdriver?
+How to run the test scripts with mulitiple browser ?
+Java Qustion
+IN parent and child class i have disp() methode , using child class reference how to call parent disp() methode ?
+what is the use of this keyword
+how many types execption avilable in java?
+difference between final finaly , finalize?
+difference between Overriding and overload ?
+differebce between MAP & set ?
+
+Mind tree interview Question
+Selenium
+1. how to handle dynamic object 
+2. how to work with button which is in div tag and and u have to click without using xpath
+3. JVM is dependent or independent platform
+4.how many Test script you write in day
+5. describe your framework
+6. how to parameterized your junit
+7.how to handle ssl security
+8. how to handle window pops
+9. diffnct between implicit and explicit
+10.what are the types of assertion and what are assertion in junit
+Java
+1.JVM is dependent or independent platform
+2.diffn bw hashmap and hash set, set and linkedlist, arraylist and vector list , linkedhash set and hashset
+3.abstract and interface
+4.throw and throws
+5.how to split 
+6.checked and unchecked exception 
+7.how to work with azax aplication 
+8.why sring is immutable
+9.wat is the retru ntype of getwindowhandles();
+10.what are the types of assertion and what are assertion in java
+Indicomm Interview Question
+Interview Questions AltiMetrik
+1 what is inheritence?Explain the use of inheritence?
+2 what is abstract class?
+3 what is interface?
+4 when to use inheritence and when to use abstract class?
+5 what happence if i not provide abstract method in abstract class
+and interface?
+6 what is method overriding java what is the use of method
+overriding?
+7 what is constructor ?use of constructor and can i ovverride the
+costructor?
+8 how to call the super class method in subclass?
+9 what is the base class for all java class?tell me the methods?
+10 what is hashcode method explain programtically(asked
+implementaion of hashcode method)?
+11 what is toString method ?what happens when i use in the program
+explain? 
+12 what is String builder?
+13 what is String tokenizer?
+14 what is the difference between string and String Buffer?
+15 what is the capacity of String Buffer?
+16 what is collection ?
+17 what is list?
+18 what is Arraylist Expain?
+19 Write logic for Array to Arraylist?
+20 write logic for Arraylist to Array?
+21 why vector class is defined Synchronized ?
+22 what is exception ?
+22 difference between Throw And Throws?
+23 what is custom Exception explain?
+24 What is finally block?Use of Finally block?explain
+25 what happens if exception not found in try catch block?
+Then finally block will be Excuted or not
+
+Questions from Infinite
+if u have multiple alerts, how do you handle it.
+if you have two password/reneter password
+assert equals/assert same
+navigate() and switch to
+one webdriver driver is opened, what to do to make addons to work
+how to join two sets/answer: by using addon method....
+what are all the collections you used
+india/all states, need to select the last value of the dropdown list
+Software AG
+----------
+how to work with ajax application, flash, frame, log files,
+log file will generated, for each action u do...ex: for gmail, compose mail;> there would be some log generated....so how to capture that log...
+if you have a .bat file, how do you call that...
+what exactly you call for this..
+how you will make sure that page has been loaded...
+
+StarMark Interview Questions
+1. Diff between static and non static
+2. What is multiple inheritance 
+3. Write program for prime no.
+4.How to run build.xml through command prompt
+5. Diff b/w overloading and overriding
+6. how many wait methods you are using in webdriver
+7. Difference between assertion and verification 
+8. What are the roles and responsibilities.
+9. Why TestNG is better than JUNIT
+
+HCL interview Questions:
+1. difference between string and string buffer?
+2. difference between linked list and arraylist?
+3. thread concepts?
+4. why string class is immutable?
+5. Singleton class?
+
+Adobe Interview Questions:
+1. Retrieve the test data from excel sheet, put in in google search bar, click on search button and click on the first link opened in google search.
+2. Write a program to check whether the string can be a palindrome. for example if the string aab(it is not a palindrom string). replace the characters in a string like aba, baa etc. and check that can be a palindrome string.
+3. How will you Identify the webelement that has same property values?
+4. write a pgm to return the no.of rows and columns in a webtable?
+5. Write a prm to return the row and colum value like(3,4) for a given data in web table?
+interview question from companies(happest minds,emids and adobe)
+1) how to create a folder in build.xml
+2) describe about your framework.
+3) difference between selenium rc and selenium webdriver
+4) explain the architecture of your project
+5) draw ur framework
+6) write a code for fetching the data from excel sheet
+7) write a code for palindrome
+explain about jenkins
+9) explain about ur control version tool
+10) how to handle with drop down
+11) how to handle window id
+12) how to handle with google search text box
+13) how to handle alert and window pop up
+14) how u will get the frame id
+15) how to handle dynamic webtable
+16) why we are using follwing siblings
+17) create a pagefactory for login page
+18) how u will group,how u will add classes from different packages 
+
+EBAY InterView Questions
+
+TESTNG QUESTIONS ASKED IN EBAY
+1. What is the use of TestNG/Junit ?
+2. What is parameterized testing?
+3. How can u achieve parameterized testing using TestNG?
+With the help of 2 annotations @Parameters and @Dataprovider.
+4. Can you map test method names in XML file along with class names?
+Yes, we can do it please see below ex:
+<classes>
+<class name="test.IndividualMethodsTest">
+<methods>
+<include name="testMethod" />
+</methods>
+</class>
+</classes>
+5. Sequence of execution of below annotations:
+@Test
+@BeforeGroups
+@AfterGroups
+@BeforeSuite
+@AfterSuite
+@BeforeMethod
+@AfterMethod
+@BeforeClass
+@AfterClass
+6. What is Yaml file?
+TestNG supports YAML as an alternate way of specifying your suite file.You might find the YAML file format easier to read and to maintain. YAML files are also recognized by the TestNG Eclipse plug-in.
+7. How will you execute only selected test methods in particular Test class?
+8. How do you fail test cases in TestNg?
+9. Can we execute test cases parallely in TestNg?
+10. How can we control the order of test method invocation?
+We need to create Dependency.
+TestNG allows you to specify dependencies either with annotations or in XML.: 
+You can use the attributes dependsOnMethods or dependsOnGroups, found on the @Test annotation.
+Alternatively, you can specify your group dependencies in the testng.xml file. You use the <dependencies> tag to achieve this:
+11. How can you make sure test methods which are run in a certain order doesn't really depend on the success of others ?
+By adding "alwaysRun=true" in your @Test annotation.
+
+ACCOLITE INTERVIEW QUESTIONS:
+1.What is the use of static keyword in Main()?
+2.can a class without main() gets compilation successful?
+3.difference between abstract and interface.
+4.Example of function overloading in Selenium Webdriver
+5.Can we private access specifier inside interface?
+6.Is there any way to deallocate memory in JAVA?
+7.What is the use of finalize method? whether implementation is already available.
+8.How do you handle drop down list box.
+9.Write a pgm for removing white spaces in a String?
+10.Write five critical testcases for the above written pgm.
+11.What is missing in Selenium Webdriver compared to Selenium RC?
+12.you have a parametrized constructor, whether it will call default constructor first? or directly it will call parametrized contructor?
+13.What is the difference between Webdriver Wait(Explicit Wait) and Implicit wait?
+14.Write a xpath using following-sibling?
+15.How will you analyze the failures after giving a run in the TestNG framework?
+16.Explain the Selenium Webdriver Architecture?
+17.Explain The framework you were using ?
+18.What is Object class?
+19.Jenkins Tool - Scheduled Batch Run - any idea
+20.What is the current version of Selenium Webdriver ? What are the other languages do Selenium Support?
+21.How are you writing log files in your framework?Using Log4J Jars or any other methods.
+22.How to handle SSL certificate?
+23.What is the latest version of selenium webdriver?
+All interview Qustions
+
+HeadStronginterview qustions
+1.explain framework
+2.page factory model code?diffrence between pagefactory and page object model?
+3.what is object reposiratory?
+4.How to overwrite a data in excel sheet?
+5.explain different frame works.
+6.what are property files?
+7.howgroupin is done in testng xml.
+8.how to run tests in different browser.
+9.how to handle alerts.
+10.jdbc connections?
+11.how to report ?
+12.common method for reverse a string?
+13.challenges faced?
+14.String s=”AABBBCFFDD” Count the presence of each letter.
+15 pascle triangle program.
+16.class and interface difference?
+17 interface and inheritance difference?
+18.what is polymorphism?
+19.diffrence between string and string builder?
+20.what is static variable,
+21.what is null pointer exception .
+22.what are the exception you found?
+23.bug lifecycle?
+24.web driver waits and implicit wait?
+25.can we write multiple CATCH in webdriver code?
+26.if we close the driver in try block then,FINALLY will execute or not?
+27.what are the different types of framework ?
+28.why we go for hybrid frame work?
+29.diffrence between data driven and modular f/w?
+
+Exlliant Interview qustions
+1.what is testng?why we go for testng?
+2.can we run a test without testng?
+3.what is the difference between verification and valiation?
+4.what are the different locators in selenium?
+5.what is xpath?
+6.diffrence between absolute and relative path?
+7.what is difference between abstract class and interface?
+8.what in diff between method overloading and constructor overloading?with example?
+9.diffrence between string and string buffer?
+10.what is overriding ?
+11.how to handle dynamic elements?
+12.how to get the no of emp getting same salary?
+
+CalSoft labs interview qustions?
+
+1.explain your framework?
+2.how to do grouping?with code?
+3.how to handle different pop ups?
+4.diffrence between string and string buffer?
+5.what is difference between abstract class and interface?
+6.diffrence between final,finaly,finalize?
+7.diffrence between normal class and final class?
+8.how to handle frames without having any attributes?
+9.diffence between smoke and sanity testing?
+10.QA process you follows?
+11.adapter design in java?
+
+Bosch interview Qustions
+1.Reverse a string without using inbuilt functions?
+2.Sorting of numbers?
+3.Generic method for select dropdown?
+4.generic code for fetching data from xl sheet?
+5.What is testNg?
+6.What is selenium grid?write the code?
+7.how to do parallel execution?
+8.how to handle ssl certification in ie?
+9.how to handle popup’s?
+10.how to fetch all the options in auto suggest?
+11.how to upload a file ?write the code?
+12.how to generate daily execution report?
+13.explain frame work?
+14.difference between junit and testng?
+
+Techmetric interview 
+1.what is webdriver?
+2.where all of abstract methods of webdriver are implemented?
+3.how to handle dynamics webelement?
+5.how to fetch data from excel sheet?
+6.how to write xpath,css?
+7.how to connect to the database?
+Explain ur responsibility in ur project?
+2. Explain ur project(team size,domain etc)
+3. Automation process?
+4. All basic questions on Manual Testing?
+5. Diff between RC,IDE,GRID and Web Driver?
+6. How to handle SSL issue,POP-Up alert?...
+
+HappiestMind interview questions
+1.what is collection in java.
+2.play with any of the collections.
+3.scarch a letter in string?
+4.reverse a number?
+5. sorting an a array?
+6 .What is page object model?
+7between css and xpath which one is faster?
+8.what is exception.tell some exception.
+9.tell some exception you get while writing code.
+10.how to handle exception ?
+11.is it agood approche to throw an exception?
+14.how to generate a report?
+15.how many testcase you have automated.
+16.how many test case you run in a batch execution?
+17.what is the minimum time to run a batch execution?
+18.tell me complex secnarion of your application?
+19.challenges you faced in automation.
+20.how to upload file other than Autoit?
+21.negative testcase for a pen?
+22.how to run a test 3times if the test fail ?
+
+Happiest Minds Technologies
+1. what is the diff between STRING and STRING BUFFER.
+2. WAP For String Reverse.
+3. Find how many duplicate values in Array List.
+4. string [] str={"abc","efg","fgh"};
+conver array to string.
+5. about file downloading and uploading.
+6. what is PageFactory explain.
+7. explain method overloading and overriding .. how practically 
+implemented in ur project.
+8. what are the challenges of SELENIUM.
+9. explain the features of JAVA.
+10. how do u say JAVA is platform independent.
+11. is JVM platform independent.
+12. write code for data fetch of excelSheet.
+13. explain how do u access DB in selenium.
+14. explain ANT and what are the pros and cons.
+15. how do u achieve parallel execution in TestNG.
+16. what is the dictionary meaning of SELENIUM.
+17. accronomy of ANT and POI.
+Explain ur responsibility in ur project?
+2. Explain ur project(team size,domain etc)
+3. Automation process?
+4. All basic questions on Manual Testing?
+5. Diff between RC,IDE,GRID and Web Driver?
+6. How to handle SSL issue,POP-Up alert?...
+
+How to copy the contents of one file into Another
+How to Sort the contents of a File and store it in another File
+

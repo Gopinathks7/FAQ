@@ -1,0 +1,22 @@
+tell abt ur roles and responsibilites in ur current project?
+what is hybrid framework ?
+which framework ur using? 
+explain ur framework in detail?
+y u choose this frame work?
+which type of test cases u select to automate ?and y ?
+write a selenium code that u wrote in ur current project?
+difference between find element and find elements?
+explain abt select class and methods?
+other way u can select element other than select class?
+wat r the challenges u faced in ur project ?how u overcome it?
+what is encapuslation?
+what is abstract class ,method how u handle it ?
+difference between throw and throws?
+explain try catch block?
+wat is ur contribution to ur organization or team?
+wat is ur contribution in prepration of ur framework?
+give me one invalid scenario in ur project? apart from usual reqirement
+if an option given to change a framework wat is approach and y ?
+wat is fianlly block ?how execution goes ?is finally block executes isrespective of expection or not 
+give a scenario where finally block doesnt execute
+expalin abt test ng

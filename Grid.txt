@@ -1,0 +1,38 @@
+java -jar F:/gri/selenium-server-standalone-2.53.1.jar -role hub
+
+java -jar F:/gri/selenium-server-standalone-3.5.3.jar -role hub
+
+java -jar F:/gri/selenium-server-standalone-3.5.0.jar -role hub
+
+
+java -Dwebdriver.chrome.driver=F:/gri/chromedriver.exe -jar F:/gri/selenium-server-standalone-3.5.0.jar -role node -hub http://localhost:4444/grid/register
+
+java -Dwebdriver.chrome.driver=F:/gri/chromedriver.exe -jar F:/gri/selenium-server-standalone-3.5.0.jar -role node -hub http://localhost:4444/grid/register
+
+java -Dwebdriver.chrome.driver=F:/gri/chromedriver.exe -jar F:/gri/selenium-server-standalone-2.53.1.jar -role node -hub http://localhost:4444/grid/register
+
+
+excel sheet some thing is written in excel sheet then compare those value with web page values.
+compare the value of excel sheet with value of web page in selenium
+
+How do you know the Remote m/c details. Like OS, browsers details.
+
+A part of string is called substring. In other words, substring is a subset of another string. In case of substring startIndex is inclusive and endIndex is exclusive.
+
+public static void CompareStringTextByID(String xlpath,String sheetName,int rownum,int cellnum,String LocationName,String WebelementID)
+{
+    WebElement TxtBoxContent = driver.findElement(By.id(WebelementID));
+    String Content = TxtBoxContent.getAttribute("value");
+    String ExcelData = Generic.getXlCellValue(xlpath, sheetName, rownum, cellnum);
+    Assert.assertEquals(Content, ""+ExcelData);
+    Reporter.log(LocationName+" Data Verification -- PASS",true);
+
+17. find higdest value in list.
+}
+
+
+
+
+
+
+

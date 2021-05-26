@@ -1,0 +1,13 @@
+alwaysRun : This is used when we want to make sure a method always runs even if the parameters on which the method depends,
+
+alwaysRun : This is used when we want to make sure a method always runs even if the parameters on which the method depends, fails. If set to true, this test method will always run. Eg: @Test(alwaysRun = true)
+dataProvider: TestNG dataProvider is used to provide any data for parameterization. Eg. @Test(dataProvider = “Hello”).
+dataProviderClass: This is the class from where we pass the data to data provider. In our case dataProvider class name is “Hello”.
+dependsOnGroups: It is the list of groups this method depends on. Eg: @Test (groups = { “City” ,”State” })
+dependsOnMethods: This command is used to execute a method based on its dependent method. Eg: @Test (dependsOnMethods = { “OpenBrowser” ,”database is up” })
+description: It is the description for the method. Eg: @Test(description = “test method”)
+invocationCount: It refers to the number of times a method should be invoked. It will work as a loop. Eg: @Test(invocationCount = 7) . Hence, this method will execute 7 times.
+invocationTimeOut: This refers to the maximum number of milliseconds a method should take for all the invocationCount to complete. This attribute will be ignored if invocationCount is not specified. Eg: @Test(invocationCount =7,invocationTimeOut = 30 )
+priority: This command sets the priority of the test method. Lower priorities will be scheduled first. Eg: @Test(priority =1 )
+
+https://www.softwaretestinghelp.com/testng-annotations-in-selenium/

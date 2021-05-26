@@ -1,0 +1,13 @@
+public class Writetoxls
+{
+public static void main(String[] args) throws Exception 
+{
+String path="d:/book1.xlsx";
+try
+{
+FileInputStream fis=new FileInputStream(path);
+Workbook wb = WorkbookFactory.create(fis);
+Sheet s = wb.createSheet("MySheet");
+s.createRow(0).createCell(0).setCellValue("Gopinath");
+
+wb.write(new FileOutputStream(path));

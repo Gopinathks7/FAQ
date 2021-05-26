@@ -1,0 +1,159 @@
+Explain your Framework 
+
+What is interface? where you have used in Framework?
+To keep all  path of file and folder we use interface
+
+Interface is blue print of class which consist of abstract method and static final variables by default all the methods are abstract any class which is implementing the interface should overrode all the abstract methods We use interface for declarign all our paths
+
+What is inheritance? where you have used
+Inheritance is the concept of aquirign the properties of one class to another class like Class which is aquiring the properties from super class to sub class is know as child class or sub class
+A class from which properties are inheriting is know as parent class or super class
+we are extending all our TestNG class to POM class
+
+How to achieve multiple inheritance?
+Directly we cannot achieve the multiple inheritance but through interface concept we can achieve multiple inheritance
+
+Write program to reverse a given number
+public class Reverse
+{
+public static void main(String[] ar)
+{
+int number=12345;
+int temp=0;
+int rem=0;
+while(numer>0)
+{
+temp=number%10;
+rem=rem*10+temp;
+number=number/10;
+}
+System.out.printly(rem+" ");
+
+How you select an option in list box
+alist=driver.findElement(By.id("list");
+Select select=new Select(alist);
+select.selectById();
+select.selectByVisibleText();
+select.selectByValue();
+
+What is iframe?
+one web page embeded in another web page is know as iframe
+driver.switchTo().frame(int);
+driver.switchTo().frame(string);
+driver.switchTo().frame(WebElement);
+
+How to handle file downloading & upload popup?
+BY using the auto it script we can handel
+
+difference between implicit and explicit Wait?
+implict wait can used by only findElement and findElements methods
+when timeout it will throw nuSuchElementFoundexception
+We can use pridicates in implict wait
+implict wait accept seconds,min,hours,days
+
+explict wait can used by any methods
+when timeout it will throw timeout exception
+it accepts only seconds
+We can use pridicates 
+
+how do you count total number of rows in a Web table?
+
+List<WebElement>table=driver.findElements(By.tagName("td");
+int count=table.size();
+system.out.println(count +" ");
+
+How to select a check box present in a grid
+What are web driver exceptions you have faced
+NoSuchElementFound,ElementNotVisible,StaleElementReference
+
+How to read data from an excel file?
+String path="E:/input.xlsx;
+FileInputStream fis=new FileInputStream(path);
+Workbook book=new Workbookfactory.createFile(fin);
+int row=book.getSheet("Sheet1").getLastRowNUm();
+int col=book.getSheet("Sheet1").getLastcellNUm();
+
+for(int i=0;i<row;i++)
+{
+
+for(int j-0;j<col;j++)
+{
+Cell c=book.getSheet("Sheet").getRow(row).getcell(col);
+System.out.print(c+" ");
+}
+System.out.println();
+
+}
+
+   
+How many testing teams are there in ur organization
+Write an XPath to find all the links
+List<WebElement>links=driver.findElemetns(By.tagName("a"));
+int count=links.size();
+for(int i=0;i<count;i++)
+{
+  Webelement link=links.get(i);
+String test=link.getText();
+System.out.println(test+"");
+}
+
+
+How to read the tooltip text
+
+How to Check if an element is displayed or not
+WebElement elm=driver.findElement(By.id("some"));
+if(elm.isDisplayed())
+{
+system.out.println("displayed")
+}
+else
+{
+system.out.println("Not displayed")
+}
+
+What are the locators you have used in ur project
+By.id and xpath by.name
+
+give me xpath types and which one you have used in your project give example
+
+which class implements WebDriver?
+
+an element has an id "bng_123" but number is changing how to handle it?
+[contains(@id,'bng_')]
+
+how to get text from hidden elements?
+What is timeout in grid?<
+What do you mean by max instance and max session?
+What do you mean by max instance and max session?
+System.out.println(Integer.MAX_VALUE);
+System.out.printl(Integer.MIN_VALUE);
+
+Can you define multiple public classes in single java file.is it possible?
+No we cannot have multiple public class in jave we can have only one public class
+
+Class name and java file name should be same?
+yes
+
+What you mean by final,finally,finalize?
+final keyword is used to declare constants(class,variables)
+finally is an block of code which will execute difinetly with occurance of exception
+finalized it is method  of java.lang package used to call garbagecollector expelictly
+
+What do you mean by for each loop?
+it works like iterator
+
+Diff b/w arraylist and vector?
+ArrayList is extended version of vector
+Vectors are synchronised
+Vectore are class are thread safe
+
+How do you write custom class which is immutable?
+String oldname="gopinath";
+String newname=oldname.replace('g','G');
+
+Create a Custom class which contains interface in it, custom class should responsible for performing operation. which type of interface will you use to create such a custom class.
+
+
+@Test(threadPoolSize = 3, <code class="plain">invocationCount = </code><code class="value">10</code>)
+public void testCase1(){}
+In this example, the method testCase1 will be invoked from three different threads

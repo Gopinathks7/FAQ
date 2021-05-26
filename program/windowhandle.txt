@@ -1,0 +1,55 @@
+package com.TestCase;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import java.util.Set;
+
+public class Windo {
+
+public static void main(String[] args) 
+	{
+	
+String key="webdriver.chrome.driver";
+String value="E:/BrowserDrivers/chromedriver.exe";
+System.setProperty(key, value);
+WebDriver driver=new ChromeDriver();
+driver.manage().window().maximize();
+driver.get("https://www.naukri.com/");
+Set<String> number=driver.getWindowHandles();
+for(String name:number )
+{
+WebDriver allbrowser = driver.switchTo().window(name);
+System.out.println(allbrowser.getTitle());
+String expected="Amazon";		
+if(allbrowser.getTitle().equals(expected))
+{driver.close();}}}}
+
+****************************************************
+package com.TestCase;
+import java.util.Iterator;
+import java.util.Set;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Mouse;
+public class ContextClick {
+public static void main(String[] args){
+String key="webdriver.chrome.driver";
+String value="E:/BrowserDrivers/chromedriver.exe";
+System.setProperty(key, value);
+WebDriver driver=new ChromeDriver();
+driver.manage().window().maximize();
+driver.get("http://localhost/login.do;jsessionid=4hueqtgamhttj");
+WebElement link = driver.findElement(By.linkText("actiTIME Inc."));
+link.click();
+Set<String> browser = driver.getWindowHandles();
+Iterator<String> allbrowser = browser.iterator();
+String parent=allbrowser.next();
+String child=allbrowser.next();
+System.out.println(parent);
+System.out.println(child);
+WebDriver ch = driver.switchTo().window(child);
+ch.close();}}}
+*******************************************************************
+
+

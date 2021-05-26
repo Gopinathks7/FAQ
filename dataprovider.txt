@@ -1,0 +1,33 @@
+package com.collection;
+
+import org.testng.Reporter;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+public class Readdata 
+{
+		public final String path="E:/data.xlsx";
+	@DataProvider
+	public String[][] getData()
+	{
+
+	int rc=Excel.getRowCount(path, "Sheet1");
+	
+	String [][] s=new String[3][3];
+	for(int i=0;i<=rc;i++)
+	{
+	for(int j=0;j<=2;j++)
+	{
+	s[i][j]=Excel.getCellValue(path, "Sheet1", i, j);
+	}
+	}
+	return s;
+	}
+
+	@Test(dataProvider="getData")
+	public void testFetch(String sub1,String sub2,String sub3)
+	{
+	Reporter.log(sub1+" "+sub2+" "+sub3);
+	}
+	}
+	

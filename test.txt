@@ -1,0 +1,32 @@
+3) List out the advantages of TestNG over Junit?
+
+Advantages of JUnit over TestNG includes
+
+Compare to JUnit annotations, TestNG are easy to understand
+Unlike JUnit, TestNG does not require to declare @BeforeClass and @AfterClass
+Method name constraint is not there in TestNG
+TestNG allows you the grouping of test cases easily which is not possible in JUnit
+TestNG supports following three additional setup: @Before/AfterSuite, @Before/AfterTest and @Before/AfterGroup
+TestNG does not need to extend any class
+In TestNG, it is possible to run selenium test cases in parallel
+Based on group TestNG allows you to execute the test cases
+TestNG allows you to determine the dependent test cases; each test case is autonomous to other test case
+
+
+6) Explain what is testing.xml file used for?
+
+File testing.xml captures your entire testing in XML.  This file makes it easy to define all your test suites and their parameters in one file, which you can verify in your code repository or e-mail to coworkers. It also makes easy to pull out subsets of your tests or split several runtime configurations.
+
+@ThreadPool
+@Test (threadPoolSize=?): The threadPoolSize attributes tell TestNG to form a thread pool to run the test method through multiple threads. With threadpool, the running time of the test method reduces greatly.
+
+<groups>
+<run>
+<include>com.general.one
+
+
+ By using parallel execution of classes, each class will be started and executed simultaneously in different threads.
+
+By using the parallel execution of methods ecah methos will be started in executed simultaneously  different thread
+
+By using the parallel execution of test each test will be started and executed sim in different thread

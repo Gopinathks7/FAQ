@@ -1,0 +1,210 @@
+     <include name=".*product.*"/>
+<suite name="Suite One">
+  <test name="Test One" >
+  <classes>
+   <class name="TestNGOnePack.ClassOne">
+    <methods>
+     <include name=".*two.*"/>
+    </methods>
+   </class>
+   <class name="TestNGTwoPack.ClassTwo">
+    <methods>
+     <exclude name=".*two.*"/>
+    </methods>
+   </class>
+  </classes>
+ </test>
+</suite>
+
+Boolean elePresent = driver.findElements(By.id("ID of element")).isEmpty();
+
+Boolean elePresent = driver.findElements( By.id("ID of element") ).size() != 0;
+
+driver.get(driver.getCurrentUrl());
+
+driver.navigate().to(driver.getCurrentUrl());
+
+driver.findElement(By.xpath("//h1[@class='title']")).sendKeys(Keys.F5);
+
+
+
+How to enhance Selenium WebDriver Test Cases?
+ 
+• By inserting verification points, Adding comments, Exception handling, Synchronization, Parametrization and using functions (reusable components) we can enhance Test cases.
+
+• Using Java or other supported programming language features we can enhance Test cases.
+
+• Using JUnit or TestNG Annotations also we can enhance WebDriver Test cases.
+
+
+
+How to Select Test cases for Automation?
+ 
+No restricts for selecting Test cases for Automation, generally we select Three categories of test cases.
+
+• Tests that we have to execute on every build (Sanity tests).
+
+• Tests that we have to execute on every modified build(Regression Tests).
+
+• Tests that we have execute using multiple sets of Test data (Data Driven Tests).
+
+
+Give a detailed introduction about Selenium WebDriver?
+ 
+Selenium 1 (Selenium IDE + selenium RC + Selenium Grid)
+
+Selenium 2 (Selenium IDE + Selenium RC + Selenium WebDriver + Selenium Grid)
+
+Note: Selenium WebDriver merged with Selenium 1 and called as Selenium 2. 
+
+• It is a most important tool in Selenium suite.
+
+• It is has programming interface allows us to create and execute Test cases against different browsers (ex: Firefox, IE, Google Chrome etc...)
+
+• WebDriver supports various programming languages(Java, .Net, PHP, Perl, Python and Ruby) to enhance Test cases.
+
+• WebDriver supports various operating environments (MS Windows, UNIX and Macintosh etc...) to create and execute Test cases.
+
+• WebDriver supports Data Driven testing, Cross browser testing.
+
+• Webdriver is faster than other tools in Selenium suite.
+
+• WebDriver supports Parallel test execution with the help of TestNG.
+
+• WebDriver doesn't have IDE, only Programming interface.
+
+• WebDriver doesn't have built in Result reporting facility, it provides summary only.
+(* with the help of TestNG we can generate HTML test reports.)
+
+• No object Repository in selenium WebDriver (This limitation is for entire Suite), so no centralized maintenance of Objects).
+
+• Using Element locators, Webdriver methods and Java programming features we can createand execute Test cases.
+
+
+
+
+How to create Test cases using Selenium WebDriver?
+ 
+• Using Element locators, WebDriver methods and Java programming features we can create Test cases.
+
+• Element locators for recognizing objects/elements.
+
+• WebDriver Methods are used perform operatopns on Elements or objects.
+
+• Java Programming for enhancting Test cases.
+
+
+What are the important operations on Browser object?
+ 
+Operation: Open URL
+WebDriver code: driver.get("http:/google.com");
+
+Operation: Return Browser Title
+WebDriver code: String s = driver.getTitle();
+
+Operation: Return Current URL
+WebDriver code: String s = driver.getCurrentUrl();
+
+Operation: Close focused Browser
+WebDriver code: driver.close
+
+Operation: Close all Browsers that opened by WebDriver
+WebDriver code: driver.quit
+
+What are the Elements/Objects in Web Applications?
+ 
+Link
+Button
+Image, Image Link, Image Button
+Text box
+Edit Box
+Text Area
+Check box
+Radio Button
+Drop down box
+List box
+Combo box
+Web table /HTML table
+Frame
+Etc...
+
+
+ Explain what is exception test?
+
+TestNG gives option for tracing the Exception handling of code.  You can test whether a code throws the expected results or not.  The expectedExceptions parameter is availed along with @Test annotation.
+
+3) Explain what does @Test(invocationCount=?) and (threadPoolSize=?) indicates?
+
+@Test (threadPoolSize=?): The threadPoolSize attributes tell TestNG to form a thread pool to run the test method through multiple threads. With threadpool, the running time of the test method reduces greatly.
+@Test(invocationCount=?): The invocationcount tells how many times TestNG should run this test method
+
+ Explain what is Group Test in TestNG?
+
+It is a new feature included in TestNG, it allows you to dispatch methods into proper portions and perform grouping of test methods.  With group test, you can not only declare methods that belong to groups, but you can also specify groups that contain other groups.  Groups are determined in your testing.xml file using the group test.
+
+
+What are the basic steps for creating TestNG test cases?
+
+
+1- Write down the business logic of your test.
+
+2- Add appropriate TestNG annotations in your code.
+
+3- In <build.xml> or <testing.xml>, add the information about your test.
+
+4- Run your TestNG project.
+
+
+List out different ways to run TestNG?
+
+Answer:
+
+You can run TestNG in the following ways.
+
+1- Start directly from the Eclipse IDE, or
+
+2- Run using the IntelliJ’s IDEA IDE.
+
+3- Run with ant build tool.
+
+4- Launch from the command line.
+What are the advantages of TestNG over JUnit ?
+
+a) In TestNG, there is no method name constraint as in JUnit. We can give any name to the test methods in TestNG. 
+b) In JUnit, we have to declare @BeforeClass and @AfterClass but in TestNG this is not necessary. 
+c) In TestNG we can tell the test that one method is dependent on another method but in JUnit it is not possible. In JUnit each test is independent of each other.
+d) We can group the test cases in TestNG which is not possible in JUnit.
+e) TestNG support various kind of annotations like @BeforeSuite, @AfterSuite, @BeforeTest, @AfterTest, @BeforeGroup, @AfterGroup etc. 
+
+A Test suite is a collection of test cases that are intended to test a behavior or set of behaviors of software program. In TestNG, we cannot define a suite in testing source code, but it is represented by one XML file as suite is the feature of execution. This also allows flexible configuration of the tests to be run. A suite can contain one or more tests and is defined by the <suite> tag.
+
+<suite> is a root tag of your testng.xml. It describes a test suite, which in turn is made of several <test> sections.
+
+Which of the following statements is correctly defining the Time-out test in TestNG?
+
+t's the time duration to wait for a test to finish its execution.
+
+What is Hub in Selenium Grid?
+The Hub is the central point that will receive all the test request and distribute them the the right nodes.
+
+
+How to start Selenium hub?
+
+java -jar selenium-server-standalone-2.32.0.jar -role node -hub http://localhost:4444/grid/register
+
+How to start remote control on port “5556” and register it to the local hub?
+
+ant -Dport =5556 launch-remote-controL
+
+What does the term DOM expands to ? 
+
+Document Object Model
+
+when are you chose  Selenium Grid ?
+Executing parallel tests
+
+
+Which of the following command is a “Onevent Handler” ?  
+
+
+

@@ -1,0 +1,41 @@
+1) Check if the sensitive data such as password, credit
+card, CVV numbers are getting encrypted or not.
+2) Check browser navigation after logout
+3) Check direct URL access for the both secured and non
+secured pages.
+4) Check for session expiry
+5) Check view source code option for secured pages.
+6) Check for Authorization
+7) Check for Authentication
+8) Check cookies
+
+
+1. priortise the tests based on the requirements 
+criticality,complexity, end user stressed .
+2. check with the developers about what requirements are 
+going to be changed and how many tests are going to be 
+effected due to that.
+3.check with the project manager to defer any of the 
+functionality testing for later .
+4. check with the developers how thorough that their 
+modules are tested 
+
+
+What is Test Coverage in Software Testing?
+
+Amount of testing performed by a set of test cases is called Test Coverage. 
+
+what is defered status in bug life cycle
+
+men developer accept bug but schudel to rectify in next release
+
+High severity with low proprity
+
+what is the test harness?
+Colection of test data  for testin is test harnes
+
+what is the test stub and driver?
+
+driver are used to test bottomup approach
+stubs are used to test top down approach
+

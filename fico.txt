@@ -1,0 +1,159 @@
+2. why we use interface why not abstract class ...what if i implements same method in interface and abstract ....thn ?? any diffrnc??
+When some of the functionalities are common among implementing class and some are class specific then we go for abstract class, when all the functionalities are common to the implementing classes and implementation is class specific then we go with interface.
+
+In interface has all abstract methods the class which implements the interface should implement all the methods and abstract class is the class which has both abstract methods and concrete methods to implement the common functionalities. so if there is a common method in interface and the abstract class, and if the class implements the interface and can extend only one class if the method is abstract method, then sub class will add the functionality. so there won’t be any difference among them.
+In case common method is concrete method in abstract class, then when the class implements the interface having common method and extends the abstract class, the sub class if implements the common method, then the method is overridden, if we want the abstract class method functionality then we can upcast while creating the object. so that we can choose what we want while creating the object.
+
+3. what are inner classes ..name them ?
+In Java, just like methods, variables of a class too can have another class as its member. Writing a class within another is allowed in Java. The class written within is called the nested class, and the class that holds the inner class is called the outer class.
+There are four types of inner classes: member, static member, local, and anonymous.
+
+4.in public static void main(String arr[])... what if i replace public with private ........... remove static ........replace void with string
+We cannot execute the main method since it is not static it will not get executed, if main is public jvm recognizes the main method outside the class Since main is the function that acts as an execution point. Main function is called by the JVM which is outside the class so it must be declared as public. if we declare as private then jvm will not be able to access it.
+Static is a kind of keyword used in java to specify that there is no need to create any instance of it. As we know main method also reside inside a class and to access the particular function of a class from outside the class (In this case from JVM), an instance of that particular class is needed, so to avoid these we simply put static to make access main method outside of class., so if we remove static we need to create an object to access main method, so not possible to execute.
+the execution of main method happens if the main does not return any value i.e void. if not we get error when the return type is string while executing it.
+
+5. in hash map we have (key and value ) pair , can we store inside a value =(key, value ) again ?
+Yes we can store in value =(key,value) again in hash map the syntax is.
+HashMap<String,HashMap<String,String>> countries=new HashMap<>();
+countries.put("IN", incities);
+
+HashMap<String,String> incities=new HashMap<>();
+incities.put("KAR","Bangalore");
+incities.put("AP", "Hyderabad");
+incities.put("TN","Chennai");
+incities.put("MH", "Mumbai");
+
+6. what are variable scope in java (in class , in method , in static block)
+scope of variable in class if it is non static and static variable then within the class, in method it is within the method block, and in static block within the block which is declared as static and it gets initialized when the static block gets executed before the main method.
+
+7. what are the oops concept ? explain them each with real world examples
+The oops concept is which allows to create a object define a class and supports the 
+Abstraction: It is defined as the essential features of a system without or partially involved in complexity, this can be achieved by using abstract class and interface
+real life example of Abstraction is ATM Machine; All are performing operations on the ATM machine like cash withdrawal, money transfer, retrieve mini-statement…etc. but we can't know internal details about ATM.
+Polymorphism : A method performing different task on based on different context which is achieved as in method overloading and redefining a task or enhanced task in subclass as in method overriding. in class room that time we behave like a student, when we are in market at that time we behave like a customer, when at home that time we behave like a son or daughter, Here one person present in different-different behaviours.
+Inheritance: Inheriting all the properties of parent class to the child class except private members. this can be achieved using the extends keyword, we can inherit all the static, non static, final members. The real life example of inheritance is child and parents, all the properties of father are inherited by his son.
+Encapsulation: Binding the data members with member functions. packing the data with member functions and hiding the data from the actual implementation this can be achieved by making the data members as private and accessing the member functions through public getter and setter method.
+a car as an example. What are expectations from Car? Start the car. Accelerate the car. Accelerate more and more. Break. Move to reverse slowly. Stop. That’s it. To achieve these behaviour, you are provided with some of the mechanisms. Ignition to start and stop the car. Gearbox, accelerator and break to increase or decrease the speed of car. You use these accelerator and break to achieve the desired speed of the car.
+
+8. what is singleton classes ?
+A singleton class is a class in which we can create one object at any time, if we try to create more than one object the reference of the other object remains same.
+
+9.what is difference between .equals() , (==) and compare-to();
+equals() is a method in Object class which when overridden will compare the values, by default it compares values in String and all the wrapper classes, otherwise it compares the address of the two reference variable.
+== is the relational operator which compares the values of two primitive type variables, but when used with reference variables compares address.
+compare-to():The method compareTo() is used for comparing two strings. Each character of both the strings is converted into a Unicode value for comparison. If both the strings are equal then this method returns 0 else it returns positive or negative value.
+
+10. what is the difference between hash code and equals?
+Hashcode returns the refence variable address in integer type, and when it is overridden we can get the value. When equals method is overridden even the hash code should be overridden
+Equals method when used without overriding it compares the address of the two objects, if it is overridden then it is used to compare the values. It returns the Boolean value true or false accordingly.
+
+11.write a program to get substring of string ex: javais good ... so result : avais
+public class SubstringEx 
+{
+public static void main(String[] args) {
+String str="javais good ... so";
+String rev="";
+String str1=str.substring(0,6);
+System.out.println(str1);
+for(int i=str1.length()-1;i>=0;i--)
+{
+rev=rev+str1.charAt(i);
+}
+System.out.println(rev);
+}
+}
+
+12.write a program to reverse the string
+public class ReverseString {
+public static void main(String[] args) {
+String s="Life is good";
+System.out.println("Given string is "+s); 
+StringBuffer sb=new StringBuffer(s);
+System.out.println("Reverse of a string is "+sb.reverse());
+//using iteration
+String rev="";
+for(int i=s.length()-1;i>=0;i--){
+rev=rev+s.charAt(i);
+}
+System.out.println("String reverse using iteration is "+rev);
+}
+}
+
+
+13.what is the use of package?
+This helps in grouping of related types like classes and interfaces
+avoiding name conflicts with classes related in same or other projects in the same company.
+we can allow types within the package to have unrestricted access to one another yet still restrict access for types outside the package.
+14. why we use interface and abstract
+When some of the functionalities are common among implementing class and some are class specific then we go for abstract class, when all the functionalities are common to the implementing classes and implementation is class specific then we go with interface.
+15. we have 2 interface both have print method , in my class i have implemented the print method , how u will get to know that i have implemented the first interface and how u will use it .. if u want to use it
+we can upcast interface to access their respective methods through the sub class. Since we are overriding in the subclass we get the same output after upcasting any of the interfaces.
+interface IDemo{
+void print();
+}
+interface IDemo1{
+void print();
+}
+public class InterfaceDemo implements IDemo,IDemo1{
+public static void main(String[] args) {
+InterfaceDemo i=new InterfaceDemo();
+i.print();
+((IDemo)i).print();
+((IDemo1)i).print();
+}
+@Override
+public void print() {
+System.out.println("Hello");
+}
+}
+
+
+18. difference between hashmap and hash table, what is synchronization , how it is achieved
+Hashtable is synchronized, whereas HashMap is not. This makes HashMap better for non-threaded applications, as unsynchronized Objects typically perform better than synchronized ones.
+Hashtable does not allow null keys or values. HashMap allows one null key and any number of null values.
+One of HashMap's subclasses is LinkedHashMap, so in the event that you'd want predictable iteration order (which is insertion order by default), you could easily swap out the HashMap for a LinkedHashMap. This wouldn't be as easy if you were using Hashtable.
+Synchronization:
+Synchronization in java is the capability to control the access of multiple threads to any shared resource.
+Java Synchronization is better option where we want to allow only one thread to access the shared resource.
+The synchronization is mainly used to
+To prevent thread interference.
+To prevent consistency problem.
+
+19. what is the use of collection, when we use it
+A collection - is called a container - is simply an object that groups multiple elements into a single unit. Collections are used to store, retrieve, manipulate, and communicate aggregate data. Typically, they represent data items that form a natural group, such as a collection of strings, or a mapping of names to addresses.
+Collections are used in situations where data is dynamic. Collections allow adding an element, deleting an element and host of other operations. There are a number of Collections in Java allowing to choose the right Collection for the right context.
+Benifits are:
+we can focus on business logic development rather than implementing our own collection classes. So, it reduces development efforts.
+Collection classes are already developed, so get proper quality classes, rather than creating your own.
+Reduced effort for code maintenance by using collection classes shipped with JDK in util package.
+
+20. What is priority queue in collection, what is the use, how you have use in your project
+A priority queue class extends abstract queue which implements queue interface.
+It does not order the elements in FIFO manner
+It internally auto sort
+Random display
+Dissimilar objects throw classcastexception
+null is not allowed in this collection
+
+21.where to use hashmap and hashtable
+HashMap and Hashtable both are used to store data in key and value form. Both are using hashing technique to store unique keys.
+HashMap is non synchronized. It is not-thread safe and can't be shared between many threads without proper synchronization code. 
+Hashtable is synchronized. It is thread-safe and can be shared with many threads.
+HashMap allows one null key and multiple null values.
+Hashtable doesn't allow any null key or value.
+HashMap is a new class introduced in JDK 1.2.
+Hashtable is a legacy class.
+HashMap is fast. Hashtable is slow.
+We can make the HashMap as synchronized by calling this code
+Map m = Collections.synchronizedMap(hashMap); 
+Hashtable is internally synchronized and no need to synchronize. 
+HashMap is traversed by Iterator. 
+Hashtable is traversed by Enumerator and Iterator.
+Iterator in HashMap is fail-fast.
+Fail-fast ? a fail-fast system is one which immediately reports at its interface any condition that is likely to indicate a failure. Fail-fast systems are usually designed to stop normal operation rather than attempt to continue a possibly flawed process.
+Enumerator in Hashtable is not fail-fast.
+
+22. where you have use the concept of interface and abstract in your framework
+we have used the concept of interface, while creating the autoconst interface which consists of all the final static variables declarations like CONFIG_PATH="./config/config.properties",REPORT_PATH="./report/"; etc
+we have used the abstract class as the base test class in our framework where which consists of initializing the log4j and on creating of the object it will call all the methods present in the class as per the TestNG annotations, all the test scripts class extends this base test class.

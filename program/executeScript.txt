@@ -1,0 +1,3 @@
+js.executeScript("document.getElementById('datePickerDepart_dom1').value='18/07/2013'");
+
+("document.getElementById('one').value='gopinath'");

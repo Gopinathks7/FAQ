@@ -1,0 +1,126 @@
+Reading the Excel file and Storing data in HashMap
+Excel data is look like as below and having Multiple sheets-
+
+
+UserState	UserID	LoginID	Secure/Unsecured 	InBoundTo	InboundFrom
+Avaliable,  	1000	654789	U	258963	147852
+UnAvaliable	1001	123456	S	147852	258963
+
+
+
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
+import java.util.List;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelReader
+{
+
+    public static HashMap loadExcelLines(File fileName)
+    {
+        // Used the LinkedHashMap and LikedList to maintain the order
+        HashMap<String, LinkedHashMap<Integer, List>> outerMap = new LinkedHashMap<String, LinkedHashMap<Integer, List>>();
+
+        LinkedHashMap<Integer, List> hashMap = new LinkedHashMap<Integer, List>();
+
+        String sheetName = null;
+        // Create an ArrayList to store the data read from excel sheet.
+        // List sheetData = new ArrayList();
+        FileInputStream fis = null;
+        try
+        {
+            fis = new FileInputStream(fileName);
+            // Create an excel workbook from the file system
+            XSSFWorkbook workBook = new XSSFWorkbook(fis);
+            // Get the first sheet on the workbook.
+            for (int i = 0; i < workBook.getNumberOfSheets(); i++)
+            {
+                XSSFSheet sheet = workBook.getSheetAt(i);
+                // XSSFSheet sheet = workBook.getSheetAt(0);
+                sheetName = workBook.getSheetName(i);
+
+                Iterator rows = sheet.rowIterator();
+                while (rows.hasNext())
+                {
+                    XSSFRow row = (XSSFRow) rows.next();
+                    Iterator cells = row.cellIterator();
+
+                    List data = new LinkedList();
+                    while (cells.hasNext())
+                    {
+                        XSSFCell cell = (XSSFCell) cells.next();
+                        cell.setCellType(Cell.CELL_TYPE_STRING);
+                        data.add(cell);
+                    }
+                    hashMap.put(row.getRowNum(), data);
+
+                    // sheetData.add(data);
+                }
+                outerMap.put(sheetName, hashMap);
+                hashMap = new LinkedHashMap<Integer, List>();
+            }
+
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+        finally
+        {
+            if (fis != null)
+            {
+                try
+                {
+                    fis.close();
+                }
+                catch (IOException e)
+                {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+            }
+        }
+
+        return outerMap;
+
+    }
+}
+
+
+
+OuterMap will return the data of all your sheets in HashMap
+
+as below-
+
+HashMap of HashMap
+Sheet1 as Key and its corresponding data as hashmap with row no as key and corresponding data in list
+
+{Sheet1={
+    0=[UserState, UserID, LoginID, Secure/Unsecured, InBoundTo, InboundFrom], 
+    1=[Avaliable, 1000, 654789, U, 258963, 147852, ], 
+    2=[UnAvaliable, 1000, 123456, S, 147852, 258963, ], 3=[], 4=[], 5=[]}, 
+    
+  Sheet2 as Key and its corresponding data as hashmap with row no as key and corresponding data in list  
+Sheet2={
+    0=[UserID, Password, Extention, ACDID, Env, Life_Cycle, Web_URL], 
+    1=[XYZ, xyz, 71000, 66001, Cisco, DEV, https://www.facebook.com/, ], 
+    2=[ABC, abc, 71000, 66001, Cisco, DEV, https://www.facebook.com/, ], 3=[, , ], 7=[, ]}, 
+    
+ Sheet3 as Key and its corresponding data as hashmap with row no as key and corresponding data in list   
+Sheet3={
+    0=[Outbound, State, ClientID, PPID, SecurityState], 
+    1=[7777777, Avaliable, 0000, 8888, U, ], 
+    2=[777777, Avaliable, 0000, 8888, S, ], 3=[, ]}, 
+    
+    

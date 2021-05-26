@@ -1,0 +1,59 @@
+85) Why string objects are immutable in java?
+
+Because java uses the concept of string literal. Suppose there are 5 reference variables,all referes to one object "sachin".If one reference variable changes the value of the object, it will be affected to all the reference variables. That is why string objects are immutable in java.
+
+
+If there is any static data member in a class, it will not be serialized because static is the part of class not object.
+
+
+import java.lang.reflect.Method;
+
+public class B {
+
+	public static void main(String[] args)
+	{
+		try
+		{
+		Class b=Class.forName("A");
+		Object o= b.newInstance();
+		Method m=b.getDeclaredMethod("mesg", null);
+		m.setAccessible(true);
+		m.invoke(o, null);
+		System.out.println(m);
+			}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+
+}
+	
+}
+What is a native method?
+
+A native method is a method that is implemented in a language other than Java.
+
+What is multithreading?
+
+Multithreading is a process of executing multiple threads simultaneously. Its main advantage is:
+
+Threads share the same address space.
+Thread is lightweight.
+Cost of communication between process is low.
+
+
+No.	Iterator	
+1)	Iterator traverses the elements in forward direction only.	.
+2)	Iterator can be used in List, Set and Queue.	
+
+ListIterator:-ListIterator traverses the elements in backward and forward directions both
+ListIterator can be used in List only.
+
+Why is the main() method declared static?
+main() method is called by the JVM even before the instantiation of the class hence it is declared as static.
+
+What are the restriction imposed on a static method or a static block of code?
+A static method should not refer to instance variables without creating an instance and cannot use "this" operator to refer the instance.
+
+What is the importance of static variable?
+static variables are class level variables where all objects of the class refer to the same variable. If one object changes the value then the change gets reflected in all the objects.

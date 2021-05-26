@@ -1,0 +1,5 @@
+Inputs
+1. Does the script implement each step of the test case?
+2. Does the script implement each step in the correct order?
+3. Does the script implement each validation given in the test case?
+4. Does the script have each validation after the correct step?

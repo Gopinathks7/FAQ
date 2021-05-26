@@ -1,0 +1,57 @@
+public class monthsdup_hashmap 
+{
+public static int getValue(HashMap<String,Integer> map,String key)
+{
+try
+{
+Integer v=map.get(key); 
+
+return v;
+}
+
+catch(Exception e)
+{
+return 0;
+}
+
+}
+
+public static void main(String[] args)
+{
+System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
+WebDriver driver=new ChromeDriver();
+driver.get("file:///D:/monthshashmap.html");
+WebElement months = driver.findElement(By.id("month"));
+Select select=new Select(months);
+ArrayList<String> a=new ArrayList<String>();
+for(WebElement month:select.getOptions())
+{
+a.add(month.getText());
+
+}
+
+
+
+
+
+
+HashMap<String,Integer> h=new HashMap<String,Integer>();
+
+
+for(String text:a)
+{
+int i=getValue(h,text); 
+
+
+h.put(text, ++i); 
+}
+System.out.println(h);
+
+
+}
+
+
+
+
+
+}

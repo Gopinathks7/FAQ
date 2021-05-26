@@ -1,0 +1,54 @@
+import java.io.FileInputStream;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.List;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+
+public class ReadToHash 
+{
+@Test
+public void getDateFromExcel()
+{
+	try
+	{
+		Cell c=null;
+		Cell c1=null;
+		
+	String path="E:/pass.xlsx";
+	FileInputStream fin=new FileInputStream(path);
+	Workbook book=WorkbookFactory.create(fin);
+	int row=book.getSheet("Sheet1").getLastRowNum();
+	int r=book.getSheet("Sheet1").getLastRowNum();
+	 
+	for(int i=0;i<=row;i++)
+	{
+	 c=book.getSheet("Sheet1").getRow(i).getCell(0);
+	System.out.println(c+"  ");
+}
+	
+	for(int j=0; j<=r ;  j++)
+	{
+		 c1=book.getSheet("Sheet1").getRow(j).getCell(1);
+		
+		
+		System.out.println(c1+"  ");
+	}
+	
+
+
+	}
+	
+	catch(Exception e)
+	{
+		e.printStackTrace();
+	}
+	
+	
+	
+}
+}

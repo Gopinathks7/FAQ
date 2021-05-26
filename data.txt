@@ -1,0 +1,22 @@
+package org.one;
+
+import java.time.LocalDate;
+import java.time.Month;
+
+public class PRG31 {
+
+	public static void main(String[] args) 
+	{
+		
+		LocalDate local=LocalDate.now();
+		int day=local.getDayOfMonth();
+		Month month=local.getMonth();
+		int year=local.getYear();
+		System.out.println(local+"   ");
+		System.out.println(month+"  ");
+		System.out.println(year+"   ");
+	
+
+	}
+
+}

@@ -1,0 +1,8 @@
+http://learn-automation.com/how-to-write-dynamic-xpath-in-selenium/
+
+.//h2[contains(text(),'Online Services')]/following::a[5]
+.//h2[contains(text(),'Online Services')]/following::a[5]/preceding::a[4]
+.//div[@class='ndtvlogo']/following::div[1]//child::a[2]
+
+https://www.youtube.com/watch?v=a6B6XYbviRI
+.//a[contains(text(),'OPINION')]

@@ -1,0 +1,42 @@
+What is abstract class?
+Difference between abstract class and interface?
+How do you know when to use abstract class and Interface?
+What is overloading and overriding? Justify me with your examples by implementing your code?
+What is comparable and comparator in java?
+What is the significance of final & finally?
+What is the use of this and super keywords?
+Explain oops concepts with examples?
+Explain about exceptions in java?
+Why string is immutable?
+Difference between Array list and Vector?
+Draw collections hierarchy?
+What is boxing and un-boxing?
+
+Selenium
+
+Explain ATLC (Automation Life Cycle)?
+What are the differences between SIDE, RC and Web Driver?
+What is your framework and explain me about your framework?
+What is object repository and explain page factory technique?
+Write a code how you will access web elements x-paths from page factory classes?
+How to invoke an application in web driver?
+How do you handle dynamic web elements?
+What are the different exceptions you got when working with Web Driver?
+Difference between implicit wait and explicit wait?
+What are web elements and what are the different ways to identify them?
+Explain me about JDBC connections with web driver?
+What types of testing does selenium automation supports?
+How to work on dynamic drop down list, tell me the steps to work with it and it must include actions class with mouse hover operations?
+How to launch different browsers in Web Driver? Write code for it.
+What is Apache POI?
+Write a code to get the data from excel using POI library?
+Why TestNG and why not JUnit?
+Explain me @Before Method and @After Class annotations in TestNG?
+What is batch and group execution in TestNG?
+What are listeners?
+When you will use data provider?
+What is Selenium Grid?
+How do you know which test cases to automate and which not to automate?
+What are the challenges you faced when working with selenium?
+What is log4j and how did you use in web driver?
+Explain how ANT and Jenkins work? Advantages of Jenkins?

@@ -1,0 +1,12 @@
+		DesiredCapabilities cap= new DesiredCapabilities();
+		String url="";
+		Proxy p= new Proxy();
+		p.setFtpProxy(url);
+		p.setHttpProxy(url);
+		p.setSslProxy(url);
+		
+		cap.setCapability(CapabilityType.PROXY,p);
+
+
+http://www.softwaretestingclass.com/test-estimation-techniques/
+

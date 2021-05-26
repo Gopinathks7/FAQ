@@ -1,0 +1,5 @@
+java -jar F:/selenium-server-standalone-2.53.1.jar -Dwebdriver.chrome.driver=F:/chromedriver.exe
+http://127.0.0.1:4444/wd/hub
+
+
+java -jar F:/selenium-server-standalone-3.0.0-beta1.jar -Dwebdriver.chrome.driver=F:/chromedriver.exe

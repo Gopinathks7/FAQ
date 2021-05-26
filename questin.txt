@@ -1,0 +1,140 @@
+1:driver.switchTo().defaultContent();
+
+2> what is difference between pom and pagefactory?
+->one is design pattern another is class
+
+3> where does automation fit into testing flow?
+->After Manual Test Execution
+
+4> what are challenges that you faced while automating testcases?
+->refer doc present in Files tab of this group 
+
+5> scenario: there is a submit button in page it has id property.
+by using id we got NoSuchElementException, how will you handle dis situation. what might be the problem in dis case.
+
+->use implicit wait or if it is inside frame use switchTO...
+
+6> scenario: if submit button contain in one of 3 frames in page, how will you handle this.
+->switch to every frame and check button is present or not
+
+7> if element is loaded by taking much time how to handle dis situation in selenium.
+->implicit or explict wait
+
+8> what is the problem with thread.sleep in code?
+-> throws exception and need to specify multiple times
+
+9> what is the concept of selenium grid?
+-> for compatibility testing used to run script on mulitple environment 
+
+10> when we execute testcases in grid where results will be stored in node or hub?
+->hub
+
+11> difference b/w quit and close.
+->closes all browser; closes current browser
+
+12> scenario: manually u opened a firefox browser window with gmail login, now with selenium you opened
+a firefox browser window with facebook login. what happens when we use quit method?
+->closes only facebook browser
+
+13> what all annotations used in testng in ur project?
+> Before (Suite,Test,Class,Method) After((Suite,Test,Class,Method) @Test
+@Parameters, @DataProvider,@Listener...
+
+14> if we wanna do datadriven with testng what are all annotations required?
+@DataProvider
+
+15> is it possible to pass test data through testng.xml file, if yes how?
+yes use @Parameters, 
+
+16> how to run specific kind of testcases using testng?
+use testng groups
+
+17> how to prioritize test cases in testng?
+use priority
+
+18> what are all interfaces available in selenium?
+many ; imp are WebDriver, WebElement, SearchContext,JavascriptExecutor, Alert, TakesScreenshot....
+
+19> actions is class or interface?
+Class
+
+20> why we using testng? what are benefits we get using testng? cant we execute testcases in order
+without using testng?
+
+To run multiple scripts; benefits-> has many built in features like DataProvider, Listener Assert...
+we can execute with out TestNG also
+
+
+26> scenario: der are 10 pages in same window, an image is present in any page out of ten pages in same window.
+
+how will you validate this scenario?
+navigate to every page using a loop and check image is present or not
+
+27> how to check image is loaded correctly or not in page?
+we can check its response code or we can compare its pixel
+
+29> what is the purpose of sikuli?
+its another automation tool ; we can use it with selenium to handle window popup
+
+30> is it possible to compare two images with sikuli?
+yes
+
+31> how do you compare image in some path of drive and image on page?
+use BufferedImage and DataBuffer class
+
+
+33> how to handle file upload window in selenium?
+->sendKeys
+
+34> scenario: There are ten drop downs in page with same name.. in one of drop downs i have option called cts employee
+how select dat particular option in out of ten drop downs in page? what is ur approach?
+easy way is use xpath
+
+40> scenario: der is grid table 1st column contains links with same names in all rows.
+2nd column contains different name for those links present in 1st column.
+now based on 2nd column click on required link in 1st column how will you do it.
+use independent-dependent xpath
+
+
+41> how do you handle synchronization in selenium.
+implicit and explicit wait
+44> scenario: <table
+<tr
+<td
+<td
+now based on 2nd td tag find tr tag element. write xpath for it.
+-> //td[2]/..
+
+45> what is auto it? how will you exexute auto it code in selenium?
+-> its free window based automation tool; we can execute using Runtime class
+46> how to handle elements like ajax?
+same as handling other element
+
+47> how to handle elements which has no attribute inside tag?
+use text or independent-dependent xpath or groupindex
+
+48> what is proctractor?
+its AngularJS based framework for selenium
+
+49> what are loctors present in proctractor?
+binding,exactBinding,model,buttonText,partialButtonText,repeater,exactRepeater,cssContainingText,options ,deepCss
+
+51> diff b/w sikuli and auto it.
+Sikuli recognises element base on image comparision where as AutoIT uses properties like id text class name ...
+
+
+public class Samsung
+{
+public static void main(String[] args){
+System.setProperty("webdriver.chrome.driver", "E:/BrowserDrivers/chromedriver.exe");
+WebDriver driver=new ChromeDriver();
+driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+driver.get("https://www.flipkart.com");
+driver.findElement(By.name("q")).sendKeys("samsung j7");
+driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
+String xp="//div[.='SAMSUNG Galaxy J7 (Black, 16 GB)']/../../div[2]//div[1]";
+String price = driver.findElement(By.xpath(xp)).getText();
+System.out.println(price);
+
+}
+}

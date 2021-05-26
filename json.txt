@@ -1,0 +1,47 @@
+ import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import org.apache.commons.io.FileUtils;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.json.CDL;
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+public class JsonDemo {
+public static void writeToExcel(String path,String sheet,int r,String[] data){
+try{
+Workbook wb = WorkbookFactory.create(new FileInputStream(path));
+Sheet s =wb.getSheet(sheet);
+Row row = s.createRow(r);
+for(int i=0;i<data.length;i++){
+row.createCell(i).setCellValue(data[i]);
+}
+wb.write(new FileOutputStream(path));
+}
+catch(Exception e)
+{
+e.printStackTrace();
+}
+}
+public static void main(String[] args) throws IOException {
+String s = FileUtils.readFileToString(new File("./data/bhanu.json"));
+JSONObject json = new JSONObject(s);
+JSONArray ja = json.getJSONArray("book");
+String csv = CDL.toString(ja);
+int i=0;
+for(String d:csv.split("\n")){
+writeToExcel("./data/bhanu.xlsx","sheet1",i++,d.split(","));
+}
+}
+
+}
+
+onverting json to xml
+String s = FileUtils.readFileToString(new File("./data/bhanu.json"));
+JSONObject json = new JSONObject(s);
+String xml = XML.toString(json);
+System.out.println(xml);

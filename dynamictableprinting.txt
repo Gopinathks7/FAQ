@@ -1,0 +1,32 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class LatestDynamicTable {
+
+	public static void main(String[] args) 
+	{
+		System.setProperty("webdriver.chrome.driver", "E:/BrowserDrivers/chromedriver.exe");
+		WebDriver driver= new ChromeDriver();
+		driver.get("E:/Demohtml/tabledynamic.html");
+	 int c=0;
+	
+		for(int i=1;i<=3;i++)
+		{
+			String xpath="//td["+i+"]";
+	for(WebElement td:driver.findElements(By.xpath(xpath)))
+				{
+	
+		System.out.println(td.getText()+":-"+c++);
+					
+			}
+	System.out.println();
+}
+	}
+	
+	
+
+	
+
+}

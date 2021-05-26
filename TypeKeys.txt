@@ -1,0 +1,4 @@
+ What is the difference between type keys and type commands?
+TypeKeys() will trigger JavaScript event in most of the cases whereas .type() won't.
+28) What is the difference between "type" and "typeAndWait" command?
+"type" command is used to type keyboard key values into text box of software web application. It can also be used for selecting values of combo box whereas "typeAndWait" command is used when your typing is completed and software web page start reloading. This command will wait for software application page to reload. If there is not page reload event on typing, you have to use simple "type" command.

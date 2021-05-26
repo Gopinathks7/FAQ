@@ -1,0 +1,30 @@
+How to build using maven and jankins
+
+1:-Install apache tomcat-version 9
+
+2:-Install apache maven-3.5
+
+3:-create a common folder 
+			   	
+Store maven(set M2_HOME:-F:\ci\maven & PATH:-%M2% & M2:-%M2_HOME%\bin)
+
+Store tomcat
+
+goto webApps folder in tomcat folder
+
+copy and paste jenkins.jar file
+
+start the tomcat
+
+Set path for Maven and java in Jenkins(Global Tool Configuration)
+
+create workspace and copy and paste the files in workspace 
+
+run the build
+faq
+
+https://www.tutorialspoint.com/maven/maven_interview_questions.htm
+
+https://www.youtube.com/watch?v=NGp7Khrwgi4
+
+

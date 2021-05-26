@@ -1,0 +1,21 @@
+Selecting today's date in cleartrip-for present weekend Selenium BSSW11
+package qsp;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class ClearTrip {
+public static void main(String[] args) {
+System.setProperty("webdriver.chrome.driver","./driver/chromedriver.exe");
+WebDriver driver=new ChromeDriver();
+driver.get("https://www.cleartrip.com/");
+driver.findElement(By.id("DepartDate")).click();
+SimpleDateFormat s=new SimpleDateFormat("d");
+String today=s.format(new Date());
+System.out.println("Today is:"+today);
+//clicking using linkText
+// driver.findElement(By.linkText(today)).click();
+//clicking using xpath
+String xp="//a[.='"+today+"']";
+driver.findElement(By.xpath(xp)).click();

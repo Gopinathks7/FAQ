@@ -1,0 +1,29 @@
+What are the benefits of using TestNG ?
+
+? Posted by Testing World at 8:43 PM
+a) TestNG allows us to execute of test cases based on group.
+
+b) In TestNG Annotations are easy to understand.
+
+c) Parallel execution of Selenium test cases is possible in TestNG.
+
+d) Three kinds of report generated
+
+e) Order of execution can be changed
+
+f) Failed test cases can be executed
+
+g) Without having main function we can execute the test method.
+
+
+Advantage of TestNG
+
+That is better that you use TestNG , It has following advantages :
+
+It generate logs
+You can do parallel testing
+Annotations helps to set program/function priority easy
+Allow to generate HTML report of execution
+You can group test cases
+You can set test cases priorities.
+You can do data Parameterization

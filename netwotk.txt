@@ -1,0 +1,12 @@
+Juniper Networks interview questions
+1) Explain your framework diagram
+2) Give explanation on any one page in your framework
+3) Have you designed any APIs for your testing? what are they?
+4) How are objects grouped in your project?
+5) Write a program to check if a given "the" is present in a string s1 "This is the best time"
+6) Can the above program be written using substring method of java
+7) Write a program to click on all links on the webpage
+8) Write a program to open three windows, go to 3rd window, perform action, move to 2nd window close it and get control back to first window
+9) which was the toughest and problematic coding in your project, why was it tough? can you write the code for that 
+10) which is the versioning tool you have used in your project.
+11) There is an excel sheet with emp name and emp id, another excel containing only emp name in jumbled order, can you write a program to copy the emp id from first excel and add it to the matching emp name in the second excel sheet.

@@ -1,0 +1,29 @@
+	public class ExceptionTestDemo 
+	{
+	    @Test(expectedExceptions = { IOException.class }, expectedExceptionsMessageRegExp = "Pass Message test")
+	    public void exceptionTestOne() throws Exception {
+	        throw new IOException("Pass Message test");
+	    }
+	}
+
+
+If the value for skipFailedInvocations is set true and invocation count (here maxCount in the RetryAnalyzer class) is > 1, then all invocations after a failure will be marked as a SKIP instead of a FAIL.
+
+@Test(retryAnalyzer = Tests.RetryAnalyzer.class)
+
+he types of Listeners in TestNG are,
+
+IAnnotationTransformer
+IAnnotationTransformer2
+IConfigurable
+IConfigurationListener
+IExecutionListener
+IHookable
+IInvokedMethodListener
+IInvokedMethodListener2
+IMethodInterceptor
+IReporter
+ISuiteListener
+ITestListener
+
+eleteAllVisibleCookies() in selenium

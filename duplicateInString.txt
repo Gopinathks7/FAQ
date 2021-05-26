@@ -1,0 +1,18 @@
+
+public class duplicateInString {
+
+	public static void main(String[] args) 
+	{
+	String name="this is for testing the app;ication";
+	String msg="Not Found";
+	for(String b:name.split(" " ))
+	{
+		if(b.equalsIgnoreCase("Theee"))
+		{
+			msg="Found";
+		}
+	}
+System.out.println(msg);
+	}
+
+}

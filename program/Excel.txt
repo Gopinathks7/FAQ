@@ -1,0 +1,52 @@
+package com.Excel.generic;
+import java.io.FileInputStream;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+public class Excel
+{
+public static  int getRowCount(String xlPath ,String SheetName)
+{
+   		try
+		{  
+		FileInputStream fin=new FileInputStream(xlPath);
+		Workbook wb=WorkbookFactory.create(fin); 
+		Sheet s=wb.getSheet(SheetName);
+		int rc=s.getLastRowNum();
+		return rc;
+		}
+			catch(Exception e)
+		{
+				e.printStackTrace();
+				return -1;
+		}
+	
+	
+	}
+	public static  String  getCellvalue(String xlPath ,String SheetName,int row,int cell )
+		{
+
+				try
+{
+	FileInputStream fin=new FileInputStream(xlPath);
+	Workbook wb=WorkbookFactory.create(fin); 
+	Sheet s=wb.getSheet(SheetName);
+	String v=s.getRow(row).getCell(cell).getStringCellValue();
+	return v;
+		}
+	catch(Exception e)
+
+{
+		System.out.println(e.toString());
+		return " ";
+}
+
+
+}
+	}
+
+
+
+	
+
+

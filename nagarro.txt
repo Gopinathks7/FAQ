@@ -1,0 +1,38 @@
+1) How you could say and justify your framework is scalable?
+its developed using reusable generic library
+
+2) How you could say and justify your framework is Reliable?
+its been successfully implemented in many project & its base lined
+
+3) how you would run testNg failed testcases along with Normal execution?
+I don't need to run failed test cases alone here?as it is time consuming.
+to re run failed script automatically we can use retryanalyzer
+to run all the script we use testng.xml
+
+
+7)static binding an dynamic binding
+Static binding in Java occurs during Compile time while Dynamic binding occurs during Runtime
+
+8)Can we overload and override the main method in java?
+we can overload main method
+we cant override main method
+
+9) Can abstract class be final? 
+No
+
+can static method be overloaded
+yes
+
+can static method be override?
+No
+
+10)Types of Type casting-> wherever it is applicable in framework
+WebDriver driver=new FirefoxDriver(); Upcasting
+JavascriptExecutor j=(JavascriptExecutor)driver; typecasting
+RemoteWebDriver r=(RemoteWebDriver)driver; downcasting
+
+
+xpath for Phone number of Mumbai in irctc.com (for BSSW14)
+//label[.='Mumbai']/../label[2]
+//label[.='Mumbai']/../label[contains(.,'022')]
+//label[.='Mumbai']/../label[starts-with(text(),': 022')]

@@ -1,0 +1,124 @@
+What is object in java?
+*****************************************************
+What is class?
+class is collection of object mmember function and 
+*******************************************************
+What is constructor?
+Constructor is special kind of method used to initalised the non static member of the class
+Name of the constructor should be as same as class name
+Constructor will not return any value
+All java class must have constructor
+If user dont write constructor expalicitly then complier writes imlictly constructor at compile time
+If user write constructor expalictly then compiler will not write implictly constructor
+There are two type of constructor parmaterised constructor and zero parametrised constructor
+********************************************************************************************
+What is default constructor?
+Constructor written by compiller at the time of compliation
+***********************************************
+Constructor returns any value?
+No
+*************************************************************
+What is the difference between static and not static variable?
+Nay varialbe declared with key word become static variable it can be acces with class name dot operator
+Only static variable can be accessed by class name
+Any variable declared without static key word is non static variable
+non static variable can be accessed with instance of the class
+***************************************************************************
+What is the difference between static and not static(Instance) method?
+Static method can be accessed with class name along dot operator
+static method cannot be overridden
+Static method canot be inherited
+******************************************************************
+What is inheritance in java?
+Aquring the properties of one class to another class is inheritance
+**********************************************************************
+Multiple inheritance is supported in java on class level? If No.. Why?
+Since two super() statment is not allowed in the subclass constructor body
+*****************************************************************
+What is method overriding in java?
+An sub class aquring the  super class method by retaining the method declaration and changing the implimintation 
+only non static method can be overridden
+Static and private method cannot be overridden
+***********************************************************************************************  
+Why main method is static?
+Since main method is static and dont return any value
+***************************************************************************************************
+What is method overloading?
+Developing one or more method with same name but difference in type of argument,order of argument and size of argument
+Both static and non static method can be overload
+Even main method also can be overload but complier gives importance for the main method with string argument
+**************************************************************************************************************************
+What is constructor overloading?
+************************************************************************************************************
+Can we override static methods?
+No only non static method can be override 
+************************************************************************************************************
+Can we use private member of parent class in sub class?
+**********************************************************
+What is an interface in java?
+Interface are developed by using interface key word 
+By default all method are abstract in interface
+By default  all variable are static and final in interface
+Class implementing the interface should provide implimintation for all abstract method
+One interface can extends to another interface 
+one interface cannot implements another interface
+**************************************************************************************************
+Can we access protected method of parent class in sub class?
+yes  through inheritance we can access
+**************************************************************************************************
+What is an array in java?
+An array is homegenus collection of elements and size of arry is fixed 
+********************************************************************
+Explain System.out.println();
+System : is a final class in  java.lang package.out : is a static member of system class. It is an instance of java.io.PrintStream. This stream is already open and ready to accept output data.
+println : is a method of java.io.PrintStream .It is an overloaded method.
+Write program to print fibonacci series 0, 1, 1, 2, 3, 5, 8, 13, 21,... 
+What is local variable in java?
+What is a Instance Variable in java?
+What is a Class Variable in java?
+What is the difference between instance variable and class variable?
+What is access modifier in java?
+What is default value of local variable.
+***********************************************************
+Java support constructor inheritance?
+No java dont support constructor inheritance
+***********************************************************************************
+Which is super class of all other classes in java?
+Object class is the super class for all java class by default complier extends to Object class
+Write the supe() statment in the subclass constructor body
+**************************************************************************************************
+What is Encapsulation?
+process of binding of member function with into single unit and hide all the implimintation and give the behavior
+******************************************************************************************************
+Write a program to reverse a string without using reverse function.
+**************************************************************************************************************************
+What is the difference between the Constructor and Method?
+What are the different types of types of constructors in java?
+parametrise constructor and zero parametrised constructor
+********************************************************************
+What is the difference between “this” and “super” keywords in Java?
+************************************************************************
+What is return type of main method?
+main method dont return any value
+************************************************************************
+Can We Overload main method in java?
+Since method overload support static method so we can overload main method also since main method is also static method
+********************************************************************************************************************
+Can we declare class as protected?
+No we  cannot declare class as protected identifier
+*************************************************************************************************************************
+Write a program to remove given character from string.
+How to convert string from upper to lower and lower to upper case?
+What is Polymorphism?
+What is the advantages of Polymorphism?
+Answer : Main advantage of polymorphism is code reusabilty. You can dynamically supply different implementations through polymorphism. So it will reduce your work volume in terms of handling and distinguishing various objects.
+What is a package?
+What is string in java?
+What is StringBuffer in java?
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+Aswani Enugolu RuntimeException is handled only by try catch block.in selenium all r unchecked,so in framework we should always handle using try catch in order to avoid terminating from Execution.
+
+=>in framework after creating employee or deleting emp we check if emp present or not,possible to get ElementNotVisibleexe.
+
+
+=>in list box if duplicates present or not ,we used hashmap, there possible to get null pointer exception.
+
+
+
+=>No such element ,Nosuch window, NoAlertPresent these exceptions even b4 arising we overcome by synchronizing findElement (without try catch)
+
+String s1="This is the best time";
+
+for(String s: s1.split(" "))
+
+{
+
+if(s.equals("the"))
+
+System.out.println("the is present in a string s1");
+
+}

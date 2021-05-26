@@ -1,0 +1,5 @@
+//div[@id(contains(text(),'+some or blacl+'))
+
+http://www.guru99.com/xpath-selenium.html
+
+Page Factory is an optimized way to create object repository in POM concept. AjaxElementLocatorFactory is a lazy load concept in Page Factory pattern to identify WebElements only when they are used in any operation.
